@@ -282,9 +282,10 @@ for workerName in names:
     f.write(insertStr)
     i = i + 1
 
-# I THINK WE SHOULD NOT SEED THIS DATA, IT SHOULD BE FILLED IN APP
-#
-# #Orders TABLE
+# I THINK WE SHOULD NOT SEED THIS DATA, IT SHOULD BE FILLED IN APP FOR KURSACH
+# BUT FOR TSYMBALUK WE NEED THIS SEEDING
+
+#Orders TABLE
 # f.write(GetComment("Orders"))
 # ordersCount = 100
 # i = 0
@@ -293,7 +294,7 @@ for workerName in names:
 #     psId = random.randrange(1, len(psNames) + 1)
 #     workerId =  random.randrange(1, len(names) + 1)
 #     date = random.choice(startedDates)
-#     status = random.choice(["Виготоволяється", "Завершено", "Доставляється", "Прийнято"])
+#     status = random.choice(["Виготовляється", "Завершено", "Доставляється", "Прийнято"])
 #     insertStr = GetInsertStr("Orders", "CustomerID, PaymentSystemId, WorkerId, OrderDate, Status",
 #         f'{customerId}, {psId}, {workerId}, \"{date}\", \"{status}\"')
 #     f.write(insertStr)
@@ -315,7 +316,7 @@ for workerName in names:
 #     f.write(insertStr)
 #     i = i + 1
 
-# #WarehouseMovement TABLE
+#WarehouseMovement TABLE
 # f.write(GetComment("WarehouseMovements"))
 # movementCount = 20
 # i = 0

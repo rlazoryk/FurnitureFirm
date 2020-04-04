@@ -1,8 +1,8 @@
 
-CREATE DATABASE FurnitureFirm
+CREATE DATABASE FurnitureFirmDW
 GO
 
-USE FurnitureFirm
+USE FurnitureFirmDW
 GO
 
 CREATE TABLE AdditionalDetailsOrdered
