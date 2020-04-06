@@ -1,49 +1,36 @@
-<h2>{{furniture.name}}</h2>
+<h2 fxLayout="row" fxLayoutAlign="center center">Додаткові деталі</h2>
+<h5>{{furniture.name}}</h5>
 
-<div *ngFor="let detail of additionalDetails" fxLayout="row" fxLayoutAlign="space-around start">
+<div *ngFor="let detail of additionalDetails" class="row" fxLayout="row" fxLayoutAlign="space-around center">
     <div>{{detail.name}}</div>
-    <div>{{detail.price}}</div>
-    <button mat-flat-button color="accent" (click)="addDetail(element)">
-        <mat-icon>add</mat-icon>
-        <span>Додати</span>
+    <div>{{detail.price}} грн.</div>
+    <button mat-icon-button (click)="showInfo(detail)">
+        <mat-icon>info</mat-icon>
+        <span>Опис</span>
+    </button>
+    <div fxLayout="row" fxLayoutAlign="end center">
+        <button mat-icon-button (click)="removeDetail(detail)">
+            <mat-icon>remove</mat-icon>
+        </button>
+        <span>{{this.orderedFurniture.additionalDetails[detail.detailId]}}</span>
+        <button mat-icon-button (click)="addDetail(detail)">
+            <mat-icon>add</mat-icon>
+        </button>
+    </div>
+</div>
+
+<div class="padding-top" fxLayout="row" fxLayoutAlign="center center">
+    <div fxFlex="65" fxLayout="row" fxLayoutAlign="start center">
+        <span fxFlex="20">Кількість:</span>
+        <button mat-icon-button (click)="removeFurniture()">
+            <mat-icon>remove</mat-icon>
+        </button>
+        <span>{{this.orderedFurniture.count}}</span>
+        <button mat-icon-button (click)="addFurniture()">
+            <mat-icon>add</mat-icon>
+        </button>
+    </div>
+    <button mat-flat-button color="accent" (click)="addToOrder()">
+        <span>Додати в корзину</span>
     </button>
 </div>
-<!-- <table mat-table [dataSource]="additionalDetails" class="mat-elevation-z8"> -->
-
-    <!--- Note that these columns can be defined in any order.
-          The actual rendered columns are set as a property on the row definition" -->
-
-    <!-- Name Column -->
-    <!-- <ng-container matColumnDef="name">
-        <th mat-header-cell *matHeaderCellDef> Name </th>
-        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
-    </ng-container> -->
-
-    <!-- Sizes Column -->
-    <!-- <ng-container matColumnDef="price">
-        <th mat-header-cell *matHeaderCellDef> Price </th>
-        <td mat-cell *matCellDef="let element"> {{element.price}} </td>
-    </ng-container> -->
-
-    <!-- Symbol Column -->
-    <!-- <ng-container matColumnDef="description">
-        <th mat-header-cell *matHeaderCellDef></th>
-        <td mat-cell *matCellDef="let element"><button mat-icon-button (click)="showInfo(element)">
-                <mat-icon>info</mat-icon>
-            </button></td>
-    </ng-container> -->
-
-    <!-- Symbol Column -->
-    <!-- <ng-container matColumnDef="add">
-        <th mat-header-cell *matHeaderCellDef></th>
-        <td mat-cell *matCellDef="let element">
-            <button mat-flat-button color="accent" (click)="addDetail(element)">
-                <mat-icon>add</mat-icon>
-                <span>Додати</span>
-            </button>
-        </td>
-    </ng-container>
-
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-</table> -->

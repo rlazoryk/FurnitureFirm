@@ -1,3 +1,15 @@
 table {
     width: 100%;
 }
+
+.row {
+    margin: 0, 30px;
+}
+
+h2, h5 {
+    margin-bottom: 30px;
+}
+
+.padding-top {
+    padding-top: 30px;
+}
