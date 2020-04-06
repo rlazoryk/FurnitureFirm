@@ -11,11 +11,15 @@ export class HttpService {
 
   constructor(private httpClient: HttpClient) { }
 
+  getCategories(){
+    return this.httpClient.get(this.furnitureUrl + "categories");
+  }
+
   getFurnituresByCategory(categoryName: string){
     return this.httpClient.get(this.furnitureUrl + categoryName);
   }
 
   getAdditionalDetails(furnitureId: number){
-    return this.httpClient.get(this.furnitureUrl + "additional/" + furnitureId)
+    return this.httpClient.get(this.furnitureUrl + "additional/" + furnitureId);
   }
 }

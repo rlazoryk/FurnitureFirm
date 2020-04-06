@@ -1,25 +1,29 @@
-<h2 fxLayout="row" fxLayoutAlign="center center">Додаткові деталі</h2>
+<h2 fxLayout="row" fxLayoutAlign="center center">Конфігурація</h2>
 <h5>{{furniture.name}}</h5>
 
-<div *ngFor="let detail of additionalDetails" class="row" fxLayout="row" fxLayoutAlign="space-around center">
-    <div>{{detail.name}}</div>
-    <div>{{detail.price}} грн.</div>
-    <button mat-icon-button (click)="showInfo(detail)">
-        <mat-icon>info</mat-icon>
-        <span>Опис</span>
-    </button>
-    <div fxLayout="row" fxLayoutAlign="end center">
-        <button mat-icon-button (click)="removeDetail(detail)">
-            <mat-icon>remove</mat-icon>
+<div>
+    <div *ngIf="this.additionalDetails.length == 0">Немає додаткових деталей</div>
+    <div *ngFor="let detail of additionalDetails" class="row" fxLayout="row" fxLayoutAlign="space-around center">
+        <div>{{detail.name}}</div>
+        <div>{{detail.price}} грн.</div>
+        <button mat-icon-button (click)="showInfo(detail)">
+            <mat-icon>info</mat-icon>
+            <span>Опис</span>
         </button>
-        <span>{{this.orderedFurniture.additionalDetails[detail.detailId]}}</span>
-        <button mat-icon-button (click)="addDetail(detail)">
-            <mat-icon>add</mat-icon>
-        </button>
+        <div fxLayout="row" fxLayoutAlign="end center">
+            <button mat-icon-button (click)="removeDetail(detail)">
+                <mat-icon>remove</mat-icon>
+            </button>
+            <span>{{this.orderedFurniture.additionalDetails[detail.detailId]}}</span>
+            <button mat-icon-button (click)="addDetail(detail)">
+                <mat-icon>add</mat-icon>
+            </button>
+        </div>
     </div>
+    <div class="space"></div>
 </div>
 
-<div class="padding-top" fxLayout="row" fxLayoutAlign="center center">
+<div fxLayout="row" fxLayoutAlign="center center">
     <div fxFlex="65" fxLayout="row" fxLayoutAlign="start center">
         <span fxFlex="20">Кількість:</span>
         <button mat-icon-button (click)="removeFurniture()">

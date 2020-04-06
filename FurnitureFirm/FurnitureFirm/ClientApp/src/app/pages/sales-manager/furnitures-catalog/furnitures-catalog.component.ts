@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from 'src/app/services/http/http.service';
 
 @Component({
   selector: 'app-furnitures-catalog',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FurnituresCatalogComponent implements OnInit {
 
-  constructor() { }
+  categories : string[];
+  constructor(private httpService : HttpService) { }
 
   ngOnInit() {
+    this.httpService.getCategories()
+      .subscribe(response => {
+        console.log(response)
+        this.categories = response as string[];
+      });
   }
-
 }

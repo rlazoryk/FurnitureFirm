@@ -1,2 +1,5 @@
-<p>TEST</p>
-<app-furniture-table category="Ліжка"></app-furniture-table>
+<mat-tab-group>
+    <mat-tab *ngFor="let category of categories" [label]='category'>
+        <app-furniture-table [category]='category'></app-furniture-table>
+    </mat-tab>
+</mat-tab-group>

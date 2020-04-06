@@ -23,13 +23,12 @@ namespace FurnitureFirm.Controllers
             _context = context;
         }
 
-        // GET: api/Furnitures
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Furnitures>>> GetFurnitures()
+        // GET: api/Furnitures/categories
+        [HttpGet("categories")]
+        public async Task<ActionResult<IEnumerable<string>>> GetCategories()
         {
-            return await _context.Furnitures
-                .Include(f => f.Collection)
-                .Include(f => f.DetailsInFurnitures.Where(d => d.IsAdditional == 1))
+            return await _context.Categories
+                .Select(c => c.Name)
                 .ToListAsync();
         }
 
@@ -68,8 +67,8 @@ namespace FurnitureFirm.Controllers
             return await _context.DetailsInFurnitures
                 .Where(d => d.FurnitureId == id)
                 .Where(d => d.IsAdditional == 1)
-                .Include(d=>d.Detail)
-                .Select(d=> d.Detail)
+                .Include(d => d.Detail)
+                .Select(d => d.Detail)
                 .ProjectTo<DetailDto>(mapperConfig)
                 .ToListAsync();
         }
