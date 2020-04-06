@@ -88,8 +88,8 @@ for cityName in citiesNames:
 
 # Colors TABLE
 f.write(GetComment("Colors"))
-colorNames = ['синій', 'зелений', 'жовтий', 'червоний',
-              'чорний', 'білий', 'сірий', 'коричновий']
+colorNames = ['Синій', 'Зелений', 'Жовтий', 'Червоний',
+              'Чорний', 'Білий', 'Сірий', 'Коричновий']
 for colorName in colorNames:
     insertStr = GetInsertStr("Colors", "Name", f'\'{colorName}\'')
     f.write(insertStr)
@@ -126,7 +126,7 @@ f.write(GetComment("Details"))
 detailNums = np.arange(1, 61)
 detailNames = []
 for detail in detailNums:
-    detailNames.append("Detail " + str(detail))
+    detailNames.append("Деталь " + str(detail))
 for name in detailNames:
     materialId = random.randrange(1, len(materialNames) + 1)
     colorId = random.randrange(1, len(colorNames) + 1)
@@ -138,7 +138,7 @@ for name in detailNames:
 
 # Warehouses TABLE
 f.write(GetComment("Warehouses"))
-warehouseCount = 20
+warehouseCount = 10
 i = 0
 while i <= warehouseCount:
     cityId = random.randrange(1, len(citiesNames) + 1)
@@ -206,10 +206,11 @@ for name in collectionNames:
 
 # Furnitures TABLE
 f.write(GetComment("Furnitures"))
-furnitureNums = np.arange(1, 101)
+furnitureCount = 30
+furnitureNums = np.arange(1, furnitureCount + 1)
 furnitureNames = []
 for furniture in furnitureNums:
-    furnitureNames.append("FURNITURE  " + str(furniture))
+    furnitureNames.append("Мебель  " + str(furniture))
 for name in furnitureNames:
     timeToBuild = random.randrange(1, 11, 1)
     categoryId = random.randrange(1, len(categoryNames) + 1)
@@ -225,19 +226,22 @@ for name in furnitureNames:
 
 # DetailInFurniture TABLE
 f.write(GetComment("DetailsInFurnitures"))
-detailInFurnitureCount = 100
 i = 0
-while i <= detailInFurnitureCount:
-    furnitureId = random.randrange(1, len(furnitureNames) + 1)
-    detailId = random.randrange(1, len(detailNames) + 1)
-    count = random.randrange(1, 21)
-    isAdditional = random.choice([1, 0, 0, 0])
-    timeToIntegrate = random.randrange(1, 10)
-    if isAdditional:
-        timeToIntegrate = random.randrange(1, 11, 1)
-    insertStr = GetInsertStr("DetailsInFurnitures", "DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate",
-                             f'{detailId}, {count}, {furnitureId}, {isAdditional}, {timeToIntegrate}')
-    f.write(insertStr)
+while i <= furnitureCount:
+    detailsPerFurniture = random.randrange(1, 6)
+    j = 0
+    while j <= detailsPerFurniture:
+        furnitureId = i
+        detailId = random.randrange(1, len(detailNames) + 1)
+        count = random.randrange(1, 21)
+        isAdditional = random.choice([1, 0, 0, 0])
+        timeToIntegrate = random.randrange(1, 10)
+        if isAdditional:
+            timeToIntegrate = random.randrange(1, 11, 1)
+        insertStr = GetInsertStr("DetailsInFurnitures", "DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate",
+                                f'{detailId}, {count}, {furnitureId}, {isAdditional}, {timeToIntegrate}')
+        f.write(insertStr)
+        j += 1
     i = i + 1
 
 # PaymentSystems TABLE
@@ -257,8 +261,8 @@ for customerName in names:
 
 # Posts TABLE
 f.write(GetComment("Posts"))
-postNames = ('Менеджер з продажу', 'Працівник складу', 'Адмін')
-salary = (1000, 600, 2000)
+postNames = ('Менеджер з продажу','Менеджер з поставок', 'Фахівець з виробництва', 'Працівник складу', 'Адмін')
+salary = (1100, 1000, 700, 600, 2000)
 i = 0
 for postName in postNames:
     insertStr = GetInsertStr("Posts", "Name, Salary",
