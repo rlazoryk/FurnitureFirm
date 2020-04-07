@@ -10,10 +10,12 @@ import { HomeComponent } from './home/home.component';
 import { FurnituresCatalogComponent } from './pages/sales-manager/furnitures-catalog/furnitures-catalog.component';
 import { FurnitureTableComponent } from './pages/sales-manager/furnitures-catalog/furniture-table/furniture-table.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatTableModule, MatIconModule, MatButtonModule, MatDialogModule, MatSortModule, MatTab, MatTabsModule } from '@angular/material';
-import { DescriptionModalComponent } from './pages/sales-manager/furnitures-catalog/furniture-table/description-modal/description-modal.component';
-import { FurnitureConfiguringModalComponent } from './pages/sales-manager/furnitures-catalog/furniture-configuring-modal/furniture-configuring-modal.component';
+import { MatTableModule, MatIconModule, MatButtonModule, MatDialogModule, MatSortModule, MatTab, MatTabsModule, MatCardModule, MatExpansionModule, MatFormFieldModule, MatSelectModule, MatInputModule } from '@angular/material';
+import { DescriptionModalComponent } from './pages/shared/description-modal/description-modal.component';
+import { FurnitureConfiguringModalComponent } from './pages/sales-manager/shared/furniture-configuring-modal/furniture-configuring-modal.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { BasketComponent } from './pages/sales-manager/basket/basket.component';
+import { OrderedFurnituresTableComponent } from './pages/sales-manager/basket/ordered-furnitures-table/ordered-furnitures-table.component';
 
 
 @NgModule({
@@ -25,6 +27,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     FurnitureTableComponent,
     DescriptionModalComponent,
     FurnitureConfiguringModalComponent,
+    BasketComponent,
+    OrderedFurnituresTableComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -33,6 +37,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'furnitures', component: FurnituresCatalogComponent},
+      { path: 'basket', component: BasketComponent},
     ]),
     BrowserAnimationsModule,
     MatTableModule,
@@ -42,6 +47,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatSortModule,
     FlexLayoutModule,
     MatTabsModule,
+    MatCardModule,
+    MatExpansionModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

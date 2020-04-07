@@ -14,7 +14,7 @@ namespace FurnitureFirm.Models
         public int FurnitureId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public DateTime? TimeToBuild { get; set; }
+        public int? TimeToBuild { get; set; }
         public int? CategoryId { get; set; }
         public int? Height { get; set; }
         public int? Width { get; set; }

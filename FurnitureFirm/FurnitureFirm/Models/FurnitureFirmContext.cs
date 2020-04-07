@@ -368,8 +368,6 @@ namespace FurnitureFirm.Models
 
                 entity.Property(e => e.FurnitureId).HasColumnName("FurnitureID");
 
-                entity.Property(e => e.TimeToIntegrate).HasColumnType("datetime");
-
                 entity.HasOne(d => d.Detail)
                     .WithMany(p => p.DetailsInFurnitures)
                     .HasForeignKey(d => d.DetailId)
@@ -422,8 +420,6 @@ namespace FurnitureFirm.Models
                     .IsRequired()
                     .HasMaxLength(20)
                     .IsUnicode(false);
-
-                entity.Property(e => e.TimeToBuild).HasColumnType("datetime");
 
                 entity.HasOne(d => d.Category)
                     .WithMany(p => p.Furnitures)

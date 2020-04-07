@@ -14,7 +14,7 @@
             <button mat-icon-button (click)="removeDetail(detail)">
                 <mat-icon>remove</mat-icon>
             </button>
-            <span>{{this.orderedFurniture.additionalDetails[detail.detailId]}}</span>
+            <span>{{this.getOrderedDetailCount(detail)}}</span>
             <button mat-icon-button (click)="addDetail(detail)">
                 <mat-icon>add</mat-icon>
             </button>
@@ -23,16 +23,14 @@
     <div class="space"></div>
 </div>
 
-<div fxLayout="row" fxLayoutAlign="center center">
-    <div fxFlex="65" fxLayout="row" fxLayoutAlign="start center">
-        <span fxFlex="20">Кількість:</span>
-        <button mat-icon-button (click)="removeFurniture()">
-            <mat-icon>remove</mat-icon>
-        </button>
-        <span>{{this.orderedFurniture.count}}</span>
-        <button mat-icon-button (click)="addFurniture()">
-            <mat-icon>add</mat-icon>
-        </button>
+<div fxLayout="row" fxLayoutAlign="space-between center">
+    <mat-form-field fxFlex="20">
+        <mat-label>Кількість</mat-label>
+        <input type="number" matInput placeholder="1" [(ngModel)]="this.orderedFurniture.count">
+    </mat-form-field>
+    <div fxFlex fxLayout="row" fxLayoutAlign="space-evenly center">
+        <span>Загальна ціна:</span>
+        <span>{{this.getTotalPrice()}} грн.</span>
     </div>
     <button mat-flat-button color="accent" (click)="addToOrder()">
         <span>Додати в корзину</span>

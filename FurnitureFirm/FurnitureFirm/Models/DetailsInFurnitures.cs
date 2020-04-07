@@ -15,7 +15,7 @@ namespace FurnitureFirm.Models
         public int? DetailId { get; set; }
         public int? FurnitureId { get; set; }
         public byte? IsAdditional { get; set; }
-        public DateTime? TimeToIntegrate { get; set; }
+        public int? TimeToIntegrate { get; set; }
 
         public virtual Details Detail { get; set; }
         public virtual Furnitures Furniture { get; set; }

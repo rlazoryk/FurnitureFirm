@@ -23,6 +23,7 @@ namespace FurnitureFirm.Controllers
             _context = context;
         }
 
+
         // GET: api/Furnitures/categories
         [HttpGet("categories")]
         public async Task<ActionResult<IEnumerable<string>>> GetCategories()
@@ -32,8 +33,27 @@ namespace FurnitureFirm.Controllers
                 .ToListAsync();
         }
 
+        // GET: api/Furnitures/id
+        [HttpGet("{id}")]
+        public async Task<ActionResult<FurnitureDto>> GetFurnitureById(int id)
+        {
+            var mapperConfig = new MapperConfiguration(cfg =>
+            {
+                cfg.CreateMap<Collections, CollectionDto>()
+                    .ForMember(c => c.StyleName, opt => opt.MapFrom(c => c.Style.Name));
+                cfg.CreateMap<Furnitures, FurnitureDto>();
+            });
+
+            return await _context.Furnitures
+                .Where(f=>f.FurnitureId == id)
+                .Include(f => f.Collection)
+                .ThenInclude(c => c.Style)
+                .ProjectTo<FurnitureDto>(mapperConfig)
+                .FirstOrDefaultAsync();
+        }
+
         // GET: api/Furnitures/categoryName
-        [HttpGet("{categoryName}")]
+        [HttpGet("category/{categoryName}")]
         public async Task<ActionResult<IEnumerable<FurnitureDto>>> GetFurnituresByCategory(string categoryName)
         {
             var mapperConfig = new MapperConfiguration(cfg =>
@@ -57,18 +77,20 @@ namespace FurnitureFirm.Controllers
         {
             var mapperConfig = new MapperConfiguration(cfg =>
             {
-                cfg.CreateMap<Details, DetailDto>()
-                    .ForMember(d => d.ColorName, opt => opt.MapFrom(d => d.Color.Name))
-                    .ForMember(d => d.MaterialName, opt => opt.MapFrom(d => d.Material.Name))
-                    .ForMember(d => d.ColorName, opt => opt.MapFrom(d => d.Color.Name))
-                    .ForMember(d => d.ProducerName, opt => opt.MapFrom(d => d.Producer.Name));
+                cfg.CreateMap<DetailsInFurnitures, DetailDto>()
+                    .ForMember(d => d.ColorName, opt => opt.MapFrom(d => d.Detail.Color.Name))
+                    .ForMember(d => d.MaterialName, opt => opt.MapFrom(d => d.Detail.Material.Name))
+                    .ForMember(d => d.Description, opt => opt.MapFrom(d => d.Detail.Description))
+                    .ForMember(d => d.DetailId, opt => opt.MapFrom(d => d.Detail.DetailId))
+                    .ForMember(d => d.Name, opt => opt.MapFrom(d => d.Detail.Name))
+                    .ForMember(d => d.Price, opt => opt.MapFrom(d => d.Detail.Price))
+                    .ForMember(d => d.ProducerName, opt => opt.MapFrom(d => d.Detail.Producer.Name));
             });
 
             return await _context.DetailsInFurnitures
                 .Where(d => d.FurnitureId == id)
                 .Where(d => d.IsAdditional == 1)
                 .Include(d => d.Detail)
-                .Select(d => d.Detail)
                 .ProjectTo<DetailDto>(mapperConfig)
                 .ToListAsync();
         }

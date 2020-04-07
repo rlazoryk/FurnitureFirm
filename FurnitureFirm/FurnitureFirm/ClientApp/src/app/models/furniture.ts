@@ -9,4 +9,5 @@ export class Furniture {
     depth : number
     collection : Collection
     price : number
+    timeToBuild: number
 }

@@ -1,8 +1,8 @@
 
-CREATE DATABASE FurnitureFirmDW
+CREATE DATABASE FurnitureFirm
 GO
 
-USE FurnitureFirmDW
+USE FurnitureFirm
 GO
 
 CREATE TABLE AdditionalDetailsOrdered
@@ -234,7 +234,7 @@ CREATE TABLE DetailsInFurnitures
 	DetailID             integer  NULL ,
 	FurnitureID          integer  NULL ,
 	IsAdditional         tinyint  NULL ,
-	TimeToIntegrate      datetime  NULL 
+	TimeToIntegrate      integer  NULL 
 )
 go
 
@@ -270,7 +270,7 @@ CREATE TABLE Furnitures
 	FurnitureID          integer IDENTITY(1, 1) NOT NULL ,
 	Name                 varchar(20)  NOT NULL ,
 	Description          varchar(20)  NULL ,
-	TimeToBuild          datetime  NULL ,
+	TimeToBuild          integer  NULL ,
 	CategoryID           integer  NULL ,
 	Height               integer  NULL ,
 	Width                integer  NULL ,

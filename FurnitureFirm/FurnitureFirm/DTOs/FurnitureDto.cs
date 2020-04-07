@@ -15,5 +15,6 @@ namespace FurnitureFirm.DTOs
         public int? Depth { get; set; }
         public CollectionDto Collection { get; set; }
         public int? Price { get; set; }
+        public int? TimeToBuild { get; set; }
     }
 }

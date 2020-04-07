@@ -14,7 +14,6 @@ export class FurnituresCatalogComponent implements OnInit {
   ngOnInit() {
     this.httpService.getCategories()
       .subscribe(response => {
-        console.log(response)
         this.categories = response as string[];
       });
   }

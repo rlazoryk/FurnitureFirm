@@ -1,7 +1,9 @@
-import { Detail } from "./detail";
+import { OrderedDetail } from "./ordered-detail";
 
 export class OrderedFurniture {
     furnitureId : number
-    additionalDetails : { [detailId: number] : number; } = {}
+    additionalDetails : OrderedDetail[] = new Array<OrderedDetail>();
     count : number
+    totalPrice : number
+    totalTime : number
 }

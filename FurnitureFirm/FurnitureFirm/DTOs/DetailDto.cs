@@ -14,5 +14,6 @@ namespace FurnitureFirm.DTOs
         public string MaterialName { get; set; }
         public string ProducerName { get; set; }
         public string Description { get; set; }
+        public int? TimeToIntegrate { get; set; }
     }
 }

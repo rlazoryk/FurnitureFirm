@@ -6,8 +6,9 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HttpService {
 
-  baseUrl = "api/";
-  furnitureUrl = this.baseUrl + "furnitures/"
+  private baseUrl = "api/";
+  private furnitureUrl = this.baseUrl + "furnitures/"
+  private orderUrl = this.baseUrl + "orders/"
 
   constructor(private httpClient: HttpClient) { }
 
@@ -15,8 +16,16 @@ export class HttpService {
     return this.httpClient.get(this.furnitureUrl + "categories");
   }
 
+  getPaymentSystems(){
+    return this.httpClient.get(this.orderUrl + "paymentSystems");
+  }
+
+  getFurnituresById(id: number) {
+    return this.httpClient.get(this.furnitureUrl + id);
+  }
+
   getFurnituresByCategory(categoryName: string){
-    return this.httpClient.get(this.furnitureUrl + categoryName);
+    return this.httpClient.get(this.furnitureUrl + "category/" + categoryName);
   }
 
   getAdditionalDetails(furnitureId: number){

@@ -1,0 +1,19 @@
+mat-card {
+    padding: 25px 20px;
+}
+
+mat-card-actions {
+    margin : 0;
+}
+
+.total {
+    font-size : 20px;
+}
+
+.space {
+    height: 30px;
+}
+
+.subtitle {
+    color: rgba(128, 128, 128, 0.5);
+}

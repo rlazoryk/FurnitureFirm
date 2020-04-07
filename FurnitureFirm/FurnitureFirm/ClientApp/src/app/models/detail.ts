@@ -6,4 +6,5 @@ export class Detail {
     materialName : string
     producerName : string
     description : string
+    timeToIntegrate: number
 }
