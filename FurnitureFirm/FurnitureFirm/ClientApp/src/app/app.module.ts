@@ -20,7 +20,6 @@ import { DetailsCatalogComponent } from './pages/provide-manager/details-catalog
 
 
 
-
 @NgModule({
   declarations: [
     AppComponent,

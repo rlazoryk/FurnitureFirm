@@ -52,7 +52,7 @@ namespace FurnitureFirm.Controllers
                     .ForMember(d => d.Description, opt => opt.MapFrom(d => d.Description))
                     .ForMember(d => d.DetailId, opt => opt.MapFrom(d => d.DetailId))
                     .ForMember(d => d.Name, opt => opt.MapFrom(d => d.Name))
-                    .ForMember(d => d.Price, opt => opt.MapFrom(d => d.Price))
+                    .ForMember(d => d.Price, opt => opt.MapFrom(d => d.Price - d.Price*0.2))
                     .ForMember(d => d.ProducerName, opt => opt.MapFrom(d => d.Producer.Name));
             });
 
@@ -61,7 +61,7 @@ namespace FurnitureFirm.Controllers
                 .Include(d => d.Color)
                 .Include(d => d.Producer)
                 .ProjectTo<DetailDto>(mapperConfig)
-                .ToListAsync();
+                .ToListAsync();            
         }              
 
         // PUT: api/Details/5
