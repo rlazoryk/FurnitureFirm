@@ -14,8 +14,12 @@ import { MatTableModule, MatIconModule, MatButtonModule, MatDialogModule, MatSor
 import { DescriptionModalComponent } from './pages/shared/description-modal/description-modal.component';
 import { FurnitureConfiguringModalComponent } from './pages/sales-manager/shared/furniture-configuring-modal/furniture-configuring-modal.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+<<<<<<< Updated upstream
 import { BasketComponent } from './pages/sales-manager/basket/basket.component';
 import { OrderedFurnituresTableComponent } from './pages/sales-manager/basket/ordered-furnitures-table/ordered-furnitures-table.component';
+=======
+import { AppRoutingModule } from './app-routing.module';
+>>>>>>> Stashed changes
 
 
 @NgModule({
