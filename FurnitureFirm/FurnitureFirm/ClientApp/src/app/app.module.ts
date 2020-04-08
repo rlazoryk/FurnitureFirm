@@ -14,12 +14,11 @@ import { MatTableModule, MatIconModule, MatButtonModule, MatDialogModule, MatSor
 import { DescriptionModalComponent } from './pages/shared/description-modal/description-modal.component';
 import { FurnitureConfiguringModalComponent } from './pages/sales-manager/shared/furniture-configuring-modal/furniture-configuring-modal.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
-<<<<<<< Updated upstream
 import { BasketComponent } from './pages/sales-manager/basket/basket.component';
 import { OrderedFurnituresTableComponent } from './pages/sales-manager/basket/ordered-furnitures-table/ordered-furnitures-table.component';
-=======
-import { AppRoutingModule } from './app-routing.module';
->>>>>>> Stashed changes
+import { DetailsCatalogComponent } from './pages/provide-manager/details-catalog/details-catalog.component';
+
+
 
 
 @NgModule({
@@ -33,6 +32,7 @@ import { AppRoutingModule } from './app-routing.module';
     FurnitureConfiguringModalComponent,
     BasketComponent,
     OrderedFurnituresTableComponent,
+    DetailsCatalogComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -42,6 +42,7 @@ import { AppRoutingModule } from './app-routing.module';
       { path: '', component: HomeComponent },
       { path: 'furnitures', component: FurnituresCatalogComponent},
       { path: 'basket', component: BasketComponent},
+      { path: 'details', component: DetailsCatalogComponent }
     ]),
     BrowserAnimationsModule,
     MatTableModule,

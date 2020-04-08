@@ -52,7 +52,7 @@ namespace FurnitureFirm.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=DESKTOP-CCJQSRQ;Database=FurnitureFirm;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=localhost;Database=FurnitureFirm;Trusted_Connection=True;");
             }
         }
 

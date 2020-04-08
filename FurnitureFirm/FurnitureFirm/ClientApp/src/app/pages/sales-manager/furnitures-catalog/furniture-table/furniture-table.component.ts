@@ -2,8 +2,10 @@ import { Component, OnInit, Input, ViewChild } from '@angular/core';
 import { HttpService } from 'src/app/services/http/http.service';
 import { Furniture } from 'src/app/models/furniture';
 import { MatDialog, MatSort, MatTableDataSource } from '@angular/material';
-import { DescriptionModalComponent } from '../../../shared/description-modal/description-modal.component';
+import { DescriptionModalComponent } from 'src/app/pages/shared/description-modal/description-modal.component';
 import { FurnitureConfiguringModalComponent } from '../../shared/furniture-configuring-modal/furniture-configuring-modal.component';
+
+
 
 @Component({
   selector: 'app-furniture-table',
