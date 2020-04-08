@@ -19,7 +19,37 @@
                     <mat-expansion-panel-header>
                         Інформація про доставку
                     </mat-expansion-panel-header>
-                    <button mat-button>Click me</button>
+                    <div fxLayout="column" fxLayoutAlign="start start">
+                        <mat-form-field>
+                            <mat-label>Ім'я клієнта</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                        <mat-form-field>
+                            <mat-label>Номер телефону</mat-label>
+                            <span matPrefix>+380 &nbsp;</span>
+                            <input matInput type="tel">
+                        </mat-form-field>
+                        <div class="space"></div>
+                        <div fxLayout="row">
+                            <mat-form-field>
+                                <mat-label>Місто</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                            <div class="space-horizontal"></div>
+                            <mat-form-field>
+                                <mat-label>Вулиця</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                            <div class="space-horizontal"></div>
+                            <mat-form-field>
+                                <mat-label>Будинок</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </div>
+                        <div>
+                            <span class="subtitle">(Ціна доставки: 50 грн.)</span>
+                        </div>
+                    </div>
                 </mat-expansion-panel>
             </div>
             <div class="space"></div>
@@ -58,7 +88,7 @@
         </mat-card-content>
         <mat-card-actions fxLayout="row" fxLayoutAlign="end center">
             <div>
-                <button mat-flat-button color="accent">Оформити замовлення</button>
+                <button mat-flat-button color="accent" class="order-button">Оформити замовлення</button>
             </div>
         </mat-card-actions>
     </ng-template>

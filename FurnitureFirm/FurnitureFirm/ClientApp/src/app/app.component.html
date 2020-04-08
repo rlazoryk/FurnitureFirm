@@ -1,6 +1,13 @@
-<body>
-  <app-nav-menu></app-nav-menu>
-  <div class="container">
+<body fxLayout="column">
+  <div>
+    <app-nav-menu></app-nav-menu>
+  </div>
+  <div class="container" fxFlex fxFlexFill>
     <router-outlet></router-outlet>
+  </div>
+  <div>
+    <footer fxLayout="row" fxLayoutAlign="center center">
+      (c) Andrii Lakusta & Roman Lazoryk Prod. 2020.
+    </footer>
   </div>
 </body>
