@@ -16,6 +16,9 @@ import { FurnitureConfiguringModalComponent } from './pages/sales-manager/shared
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { BasketComponent } from './pages/sales-manager/basket/basket.component';
 import { OrderedFurnituresTableComponent } from './pages/sales-manager/basket/ordered-furnitures-table/ordered-furnitures-table.component';
+import { DetailsCatalogComponent } from './pages/provide-manager/details-catalog/details-catalog.component';
+
+
 
 
 @NgModule({
@@ -29,6 +32,7 @@ import { OrderedFurnituresTableComponent } from './pages/sales-manager/basket/or
     FurnitureConfiguringModalComponent,
     BasketComponent,
     OrderedFurnituresTableComponent,
+    DetailsCatalogComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -38,6 +42,7 @@ import { OrderedFurnituresTableComponent } from './pages/sales-manager/basket/or
       { path: '', component: HomeComponent },
       { path: 'furnitures', component: FurnituresCatalogComponent},
       { path: 'basket', component: BasketComponent},
+      { path: 'details', component: DetailsCatalogComponent }
     ]),
     BrowserAnimationsModule,
     MatTableModule,

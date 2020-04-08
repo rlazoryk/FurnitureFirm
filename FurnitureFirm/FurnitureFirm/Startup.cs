@@ -26,6 +26,13 @@ namespace FurnitureFirm
                 .AddNewtonsoftJson(options =>
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
             );
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowMyOrigin",
+                builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            });
+
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
@@ -55,6 +62,8 @@ namespace FurnitureFirm
             {
                 app.UseSpaStaticFiles();
             }
+
+            app.UseCors("AllowMyOrigin");
 
             app.UseRouting();
 

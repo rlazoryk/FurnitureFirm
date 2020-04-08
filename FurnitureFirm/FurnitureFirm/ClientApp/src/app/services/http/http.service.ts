@@ -6,8 +6,9 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HttpService {
 
-  private baseUrl = "api/";
+  private baseUrl = "https://localhost:5001/api/";
   private furnitureUrl = this.baseUrl + "furnitures/"
+  private detailUrl = this.baseUrl + "details";
   private orderUrl = this.baseUrl + "orders/"
 
   constructor(private httpClient: HttpClient) { }
@@ -30,5 +31,9 @@ export class HttpService {
 
   getAdditionalDetails(furnitureId: number){
     return this.httpClient.get(this.furnitureUrl + "additional/" + furnitureId);
+  }
+
+  getDetails() {
+    return this.httpClient.get(this.detailUrl);
   }
 }

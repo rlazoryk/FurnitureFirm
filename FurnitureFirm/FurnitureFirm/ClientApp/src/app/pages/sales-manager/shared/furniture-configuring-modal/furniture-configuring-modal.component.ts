@@ -38,7 +38,9 @@ export class FurnitureConfiguringModalComponent implements OnInit {
     if(this.alreadyOrdered)
     {
       this.orderedFurniture.count = this.alreadyOrdered.count;
-      this.orderedFurniture.additionalDetails = this.alreadyOrdered.additionalDetails;
+      this.alreadyOrdered.additionalDetails.forEach(detail => {
+        this.orderedFurniture.additionalDetails.push(detail);
+      });
     }
     else
     {

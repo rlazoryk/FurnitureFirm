@@ -13,7 +13,7 @@ import { HttpService } from 'src/app/services/http/http.service';
 })
 export class OrderedFurnituresTableComponent implements OnInit {
 
-  displayedColumns : string[] = ['name', 'count', 'price', 'config', 'remove'];
+  displayedColumns : string[] = ['name', 'count', 'price', 'buttons'];
   furnitures : Furniture[];
   loaded = false;
 
