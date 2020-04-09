@@ -4,6 +4,7 @@ using FurnitureFirm.DTOs;
 using FurnitureFirm.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -40,6 +41,31 @@ namespace FurnitureFirm.Controllers
                 .ToListAsync();
         }
 
+        // GET: api/Details/1
+        [HttpGet("{id}")]
+        public async Task<ActionResult<DetailDto>> GetDetailById(int id)
+        {
+            var mapperConfig = new MapperConfiguration(cfg =>
+            {
+                cfg.CreateMap<Details, DetailDto>()
+                    .ForMember(d => d.ColorName, opt => opt.MapFrom(d => d.Color.Name))
+                    .ForMember(d => d.MaterialName, opt => opt.MapFrom(d => d.Material.Name))
+                    .ForMember(d => d.Description, opt => opt.MapFrom(d => d.Description))
+                    .ForMember(d => d.DetailId, opt => opt.MapFrom(d => d.DetailId))
+                    .ForMember(d => d.Name, opt => opt.MapFrom(d => d.Name))
+                    .ForMember(d => d.Price, opt => opt.MapFrom(d => Math.Round(d.Price - d.Price * 0.2, 1)))
+                    .ForMember(d => d.ProducerName, opt => opt.MapFrom(d => d.Producer.Name));
+            });
+
+            return await _context.Details
+                .Where(d => d.DetailId == id)
+                .Include(d => d.Material)
+                .Include(d => d.Color)
+                .Include(d => d.Producer)
+                .ProjectTo<DetailDto>(mapperConfig)
+                .FirstOrDefaultAsync();
+        }
+
         // GET: api/Details
         [HttpGet]
         public async Task<ActionResult<IEnumerable<DetailDto>>> GetDetails()
@@ -52,7 +78,7 @@ namespace FurnitureFirm.Controllers
                     .ForMember(d => d.Description, opt => opt.MapFrom(d => d.Description))
                     .ForMember(d => d.DetailId, opt => opt.MapFrom(d => d.DetailId))
                     .ForMember(d => d.Name, opt => opt.MapFrom(d => d.Name))
-                    .ForMember(d => d.Price, opt => opt.MapFrom(d => d.Price - d.Price*0.2))
+                    .ForMember(d => d.Price, opt => opt.MapFrom(d => Math.Round(d.Price - d.Price*0.2, 1)))
                     .ForMember(d => d.ProducerName, opt => opt.MapFrom(d => d.Producer.Name));
             });
 

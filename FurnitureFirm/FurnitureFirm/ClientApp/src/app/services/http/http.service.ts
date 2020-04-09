@@ -8,7 +8,7 @@ export class HttpService {
 
   private baseUrl = "https://localhost:5001/api/";
   private furnitureUrl = this.baseUrl + "furnitures/"
-  private detailUrl = this.baseUrl + "details";
+  private detailUrl = this.baseUrl + "details/";
   private orderUrl = this.baseUrl + "orders/"
 
   constructor(private httpClient: HttpClient) { }
@@ -25,15 +25,19 @@ export class HttpService {
     return this.httpClient.get(this.furnitureUrl + id);
   }
 
-  getFurnituresByCategory(categoryName: string){
+  getFurnituresByCategory(categoryName: string) {
     return this.httpClient.get(this.furnitureUrl + "category/" + categoryName);
   }
 
-  getAdditionalDetails(furnitureId: number){
+  getAdditionalDetails(furnitureId: number) {
     return this.httpClient.get(this.furnitureUrl + "additional/" + furnitureId);
   }
 
   getDetails() {
     return this.httpClient.get(this.detailUrl);
+  }
+
+  getDetailByid(id: number) {
+    return this.httpClient.get(this.detailUrl + id);
   }
 }

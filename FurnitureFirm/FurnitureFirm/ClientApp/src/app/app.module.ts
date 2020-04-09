@@ -17,6 +17,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { BasketComponent } from './pages/sales-manager/basket/basket.component';
 import { OrderedFurnituresTableComponent } from './pages/sales-manager/basket/ordered-furnitures-table/ordered-furnitures-table.component';
 import { DetailsCatalogComponent } from './pages/provide-manager/details-catalog/details-catalog.component';
+import { DetailConfigureModalComponent } from './pages/provide-manager/modals/detail-configure-modal/detail-configure-modal.component';
+import { OrderedDetailsTableComponent } from './pages/provide-manager/basket/ordered-details-table/ordered-details-table.component';
+import { DetailBasketComponent } from './pages/provide-manager/basket/basket.component';
 
 
 
@@ -32,6 +35,9 @@ import { DetailsCatalogComponent } from './pages/provide-manager/details-catalog
     BasketComponent,
     OrderedFurnituresTableComponent,
     DetailsCatalogComponent,
+    DetailConfigureModalComponent,
+    OrderedDetailsTableComponent,
+    DetailBasketComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -39,8 +45,9 @@ import { DetailsCatalogComponent } from './pages/provide-manager/details-catalog
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
-      { path: 'furnitures', component: FurnituresCatalogComponent},
-      { path: 'basket', component: BasketComponent},
+      { path: 'furnitures', component: FurnituresCatalogComponent },
+      { path: 'furniture/basket', component: BasketComponent },
+      { path: 'details/basket', component: DetailBasketComponent },
       { path: 'details', component: DetailsCatalogComponent }
     ]),
     BrowserAnimationsModule,
