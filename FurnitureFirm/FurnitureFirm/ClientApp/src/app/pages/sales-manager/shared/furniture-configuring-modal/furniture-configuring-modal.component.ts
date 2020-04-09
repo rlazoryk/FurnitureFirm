@@ -1,5 +1,5 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA, MatDialog } from '@angular/material';
+import { MAT_DIALOG_DATA, MatDialog, MatDialogRef, MatSnackBar } from '@angular/material';
 import { Furniture } from 'src/app/models/furniture';
 import { HttpService } from 'src/app/services/http/http.service';
 import { Detail } from 'src/app/models/detail';
@@ -24,9 +24,11 @@ export class FurnitureConfiguringModalComponent implements OnInit {
   orderedFurniture: OrderedFurniture = new OrderedFurniture();
   alreadyOrdered: OrderedFurniture;
 
-  constructor(@Inject(MAT_DIALOG_DATA) public furniture: Furniture,
+  constructor(public dialogRef: MatDialogRef<FurnitureConfiguringModalComponent>,
+    @Inject(MAT_DIALOG_DATA) public furniture: Furniture,
     private httpService: HttpService,
     private orderService: OrderService,
+    private snackBar: MatSnackBar,
     private dialog: MatDialog) { }
 
   ngOnInit() {
@@ -139,8 +141,11 @@ export class FurnitureConfiguringModalComponent implements OnInit {
       this.orderService.addFurniture(this.orderedFurniture);
     }
     
-    //close modal
-    //open notification
+    this.snackBar.open('Додано в корзину', null, {
+      duration: 2000,
+      panelClass: ['accent-color']
+    });
+    this.dialogRef.close();
   }
 
   getNormalizedPrice(price){

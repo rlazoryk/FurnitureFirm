@@ -10,7 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { FurnituresCatalogComponent } from './pages/sales-manager/furnitures-catalog/furnitures-catalog.component';
 import { FurnitureTableComponent } from './pages/sales-manager/furnitures-catalog/furniture-table/furniture-table.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatTableModule, MatIconModule, MatButtonModule, MatDialogModule, MatSortModule, MatTab, MatTabsModule, MatCardModule, MatExpansionModule, MatFormFieldModule, MatSelectModule, MatInputModule } from '@angular/material';
+import { MatTableModule, MatIconModule, MatButtonModule, MatDialogModule, MatSortModule, MatTab, MatTabsModule, MatCardModule, MatExpansionModule, MatFormFieldModule, MatSelectModule, MatInputModule, MatDialogRef, MatSnackBar, MatSnackBarModule, MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material';
 import { DescriptionModalComponent } from './pages/shared/description-modal/description-modal.component';
 import { FurnitureConfiguringModalComponent } from './pages/sales-manager/shared/furniture-configuring-modal/furniture-configuring-modal.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -59,8 +59,9 @@ import { DetailsCatalogComponent } from './pages/provide-manager/details-catalog
     MatInputModule,
     ReactiveFormsModule,
     FormsModule,
+    MatSnackBarModule,
   ],
-  providers: [],
+  providers: [{provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: {duration: 2500}}],
   bootstrap: [AppComponent],
   entryComponents: [
     DescriptionModalComponent,
