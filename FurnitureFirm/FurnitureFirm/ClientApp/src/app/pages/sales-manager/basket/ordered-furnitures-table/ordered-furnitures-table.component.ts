@@ -48,7 +48,6 @@ export class OrderedFurnituresTableComponent implements OnInit {
   }
 
   getOrderedCount(furniture: Furniture) {
-    console.log("Ordered count" + furniture)
     return this.orderService.currentOrder.orderedFurnitures.filter(f=>f.furnitureId == furniture.furnitureId)[0].count;
   }
 

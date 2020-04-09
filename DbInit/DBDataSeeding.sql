@@ -1,3 +1,4 @@
+USE FurnitureFirm
 
 --Countries TABLE
 INSERT INTO Countries(Name) VALUES('Україна')

@@ -5,10 +5,14 @@ namespace FurnitureFirm.Models
 {
     public partial class Profits
     {
+        public Profits()
+        {
+            Orders = new HashSet<Orders>();
+        }
+
         public int ProfitId { get; set; }
         public int? Money { get; set; }
-        public int? OrderId { get; set; }
 
-        public virtual Orders Order { get; set; }
+        public virtual ICollection<Orders> Orders { get; set; }
     }
 }

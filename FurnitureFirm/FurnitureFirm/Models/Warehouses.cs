@@ -7,6 +7,7 @@ namespace FurnitureFirm.Models
     {
         public Warehouses()
         {
+            Productions = new HashSet<Productions>();
             WarehouseDetails = new HashSet<WarehouseDetails>();
         }
 
@@ -16,6 +17,7 @@ namespace FurnitureFirm.Models
         public int CityId { get; set; }
 
         public virtual Cities City { get; set; }
+        public virtual ICollection<Productions> Productions { get; set; }
         public virtual ICollection<WarehouseDetails> WarehouseDetails { get; set; }
     }
 }

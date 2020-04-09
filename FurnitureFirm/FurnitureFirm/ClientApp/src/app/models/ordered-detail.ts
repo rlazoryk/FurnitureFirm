@@ -1,5 +1,5 @@
 export class OrderedDetail {
-    detailId : number
+    additionalDetailId : number
     count : number
     totalPrice : number
     totalTime : number

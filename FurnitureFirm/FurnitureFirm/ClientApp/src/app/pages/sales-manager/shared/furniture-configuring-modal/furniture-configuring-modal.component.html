@@ -5,7 +5,7 @@
     <div *ngIf="this.additionalDetails.length == 0">Немає додаткових деталей</div>
     <div *ngFor="let detail of additionalDetails" class="row" fxLayout="row" fxLayoutAlign="space-around center">
         <div>{{detail.name}}</div>
-        <div>{{detail.price}} грн.</div>
+        <div>{{getNormalizedPrice(detail.price)}} грн.</div>
         <button mat-icon-button (click)="showInfo(detail)">
             <mat-icon>info</mat-icon>
             <span>Опис</span>

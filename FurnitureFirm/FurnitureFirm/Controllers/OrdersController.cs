@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using FurnitureFirm.Models;
+using FurnitureFirm.DTOs;
+using AutoMapper;
+using FurnitureFirm.Common;
 
 namespace FurnitureFirm.Controllers
 {
@@ -25,6 +28,13 @@ namespace FurnitureFirm.Controllers
         public async Task<ActionResult<IEnumerable<PaymentSystems>>> GetPaymentSystems()
         {
             return await _context.PaymentSystems.ToListAsync();
+        }
+
+        // GET: api/Orders
+        [HttpGet("cities")]
+        public async Task<ActionResult<IEnumerable<Cities>>> GetCities()
+        {
+            return await _context.Cities.Where(c => c.Country.Name == "Україна").ToListAsync();
         }
 
         // GET: api/Orders
@@ -48,48 +58,36 @@ namespace FurnitureFirm.Controllers
             return orders;
         }
 
-        // PUT: api/Orders/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://aka.ms/RazorPagesCRUD.
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutOrders(int id, Orders orders)
-        {
-            if (id != orders.OrderId)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(orders).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!OrdersExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
-        }
-
         // POST: api/Orders
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
         [HttpPost]
-        public async Task<ActionResult<Orders>> PostOrders(Orders orders)
+        public async Task<ActionResult<Orders>> PostOrders([FromBody] OrderRequestDto orderDto)
         {
-            _context.Orders.Add(orders);
-            await _context.SaveChangesAsync();
+            var mapper = new MapperConfiguration(cfg =>
+            {
+                cfg.CreateMap<DeliveryInfoDto, DeliveryInfos>();
 
-            return CreatedAtAction("GetOrders", new { id = orders.OrderId }, orders);
+                cfg.CreateMap<CustomerDto, Customers>();
+
+                cfg.CreateMap<AdditionalDetailsOrderedDto, AdditionalDetailsOrdered>();
+
+                cfg.CreateMap<FurnitureOrderRowDto, FurnitureOrderRows>();
+
+                cfg.CreateMap<OrderRequestDto, Orders>()
+                    .ForMember(o => o.OrderDate, opt => opt.MapFrom(_ => DateTime.Now))
+                    .ForMember(o => o.Status, opt => opt.MapFrom(_ => OrderStatus.Accepted))
+                    .ForMember(o => o.FurnitureOrderRows, opt => opt.MapFrom(o => o.OrderedFurnitures))
+                    .ForMember(o => o.Profit.Money, opt => opt.MapFrom(o => o.OrderedFurnitures
+                           .Sum(of => of.TotalFurniturePrice / 6)));
+            }).CreateMapper();
+
+            var order = mapper.Map<Orders>(orderDto);
+
+            _context.Orders.Add(order);
+
+            await _context.SaveChangesAsync();
+            return CreatedAtAction("GetOrders", new { id = order.OrderId }, order);
         }
 
         // DELETE: api/Orders/5

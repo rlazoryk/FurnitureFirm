@@ -52,7 +52,7 @@ namespace FurnitureFirm.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=localhost;Database=FurnitureFirm;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=DESKTOP-CCJQSRQ;Database=FurnitureFirm;Trusted_Connection=True;");
             }
         }
 
@@ -240,7 +240,7 @@ namespace FurnitureFirm.Models
 
                 entity.Property(e => e.DeliveryInfoId).HasColumnName("DeliveryInfoID");
 
-                entity.Property(e => e.Bulding)
+                entity.Property(e => e.Building)
                     .HasMaxLength(20)
                     .IsUnicode(false);
 
@@ -249,8 +249,6 @@ namespace FurnitureFirm.Models
                 entity.Property(e => e.DeliveryFinished).HasColumnType("datetime");
 
                 entity.Property(e => e.DeliveryStarted).HasColumnType("datetime");
-
-                entity.Property(e => e.OrderId).HasColumnName("OrderID");
 
                 entity.Property(e => e.Street)
                     .HasMaxLength(20)
@@ -261,12 +259,6 @@ namespace FurnitureFirm.Models
                     .HasForeignKey(d => d.CityId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("R_30");
-
-                entity.HasOne(d => d.Order)
-                    .WithMany(p => p.DeliveryInfos)
-                    .HasForeignKey(d => d.OrderId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("R_31");
             });
 
             modelBuilder.Entity<DetailOrderRows>(entity =>
@@ -454,9 +446,13 @@ namespace FurnitureFirm.Models
 
                 entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
 
+                entity.Property(e => e.DeliveryInfoId).HasColumnName("DeliveryInfoID");
+
                 entity.Property(e => e.OrderDate).HasColumnType("datetime");
 
                 entity.Property(e => e.PaymentSystemId).HasColumnName("PaymentSystemID");
+
+                entity.Property(e => e.ProfitId).HasColumnName("ProfitID");
 
                 entity.Property(e => e.Status)
                     .HasMaxLength(20)
@@ -470,11 +466,23 @@ namespace FurnitureFirm.Models
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("R_28");
 
+                entity.HasOne(d => d.DeliveryInfo)
+                    .WithMany(p => p.Orders)
+                    .HasForeignKey(d => d.DeliveryInfoId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("R_29");
+
                 entity.HasOne(d => d.PaymentSystem)
                     .WithMany(p => p.Orders)
                     .HasForeignKey(d => d.PaymentSystemId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("R_27");
+
+                entity.HasOne(d => d.Profit)
+                    .WithMany(p => p.Orders)
+                    .HasForeignKey(d => d.ProfitId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("R_261");
 
                 entity.HasOne(d => d.Worker)
                     .WithMany(p => p.Orders)
@@ -548,6 +556,11 @@ namespace FurnitureFirm.Models
                     .WithMany(p => p.Productions)
                     .HasForeignKey(d => d.FurnitureOrderRowId)
                     .HasConstraintName("R_197");
+
+                entity.HasOne(d => d.Warehouse)
+                    .WithMany(p => p.Productions)
+                    .HasForeignKey(d => d.WarehouseId)
+                    .HasConstraintName("R_198");
             });
 
             modelBuilder.Entity<Profits>(entity =>
@@ -556,13 +569,6 @@ namespace FurnitureFirm.Models
                     .HasName("XPKProfits");
 
                 entity.Property(e => e.ProfitId).HasColumnName("ProfitID");
-
-                entity.Property(e => e.OrderId).HasColumnName("OrderID");
-
-                entity.HasOne(d => d.Order)
-                    .WithMany(p => p.Profits)
-                    .HasForeignKey(d => d.OrderId)
-                    .HasConstraintName("R_199");
             });
 
             modelBuilder.Entity<ProviderProducer>(entity =>

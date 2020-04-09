@@ -4,6 +4,7 @@ import { Furniture } from 'src/app/models/furniture';
 import { MatDialog, MatSort, MatTableDataSource } from '@angular/material';
 import { DescriptionModalComponent } from 'src/app/pages/shared/description-modal/description-modal.component';
 import { FurnitureConfiguringModalComponent } from '../../shared/furniture-configuring-modal/furniture-configuring-modal.component';
+import { Constants } from 'src/app/pages/shared/constants';
 
 
 
@@ -49,5 +50,9 @@ export class FurnitureTableComponent implements OnInit {
         width: '600px',
         data: furniture
     })
+  }
+
+  getFurniturePrice(furniture: Furniture) {
+    return furniture.price * Constants.furniturePriceCoef;
   }
 }

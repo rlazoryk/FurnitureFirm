@@ -17,6 +17,10 @@ export class HttpService {
     return this.httpClient.get(this.furnitureUrl + "categories");
   }
 
+  getCities() {
+    return this.httpClient.get(this.orderUrl + "cities");
+  }
+
   getPaymentSystems(){
     return this.httpClient.get(this.orderUrl + "paymentSystems");
   }
@@ -31,6 +35,12 @@ export class HttpService {
 
   getAdditionalDetails(furnitureId: number){
     return this.httpClient.get(this.furnitureUrl + "additional/" + furnitureId);
+  }
+
+  createFurnitureOrder(order){
+    console.log("TO server ")
+    console.log(order)
+    return this.httpClient.post(this.orderUrl, order)
   }
 
   getDetails() {

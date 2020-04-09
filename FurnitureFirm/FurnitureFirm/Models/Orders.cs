@@ -7,9 +7,7 @@ namespace FurnitureFirm.Models
     {
         public Orders()
         {
-            DeliveryInfos = new HashSet<DeliveryInfos>();
             FurnitureOrderRows = new HashSet<FurnitureOrderRows>();
-            Profits = new HashSet<Profits>();
         }
 
         public int OrderId { get; set; }
@@ -18,13 +16,15 @@ namespace FurnitureFirm.Models
         public int WorkerId { get; set; }
         public int PaymentSystemId { get; set; }
         public int CustomerId { get; set; }
+        public int DeliveryInfoId { get; set; }
+        public int ProfitId { get; set; }
         public string Status { get; set; }
 
         public virtual Customers Customer { get; set; }
+        public virtual DeliveryInfos DeliveryInfo { get; set; }
         public virtual PaymentSystems PaymentSystem { get; set; }
+        public virtual Profits Profit { get; set; }
         public virtual Workers Worker { get; set; }
-        public virtual ICollection<DeliveryInfos> DeliveryInfos { get; set; }
         public virtual ICollection<FurnitureOrderRows> FurnitureOrderRows { get; set; }
-        public virtual ICollection<Profits> Profits { get; set; }
     }
 }

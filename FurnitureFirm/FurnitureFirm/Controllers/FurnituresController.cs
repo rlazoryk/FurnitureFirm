@@ -45,7 +45,7 @@ namespace FurnitureFirm.Controllers
             });
 
             return await _context.Furnitures
-                .Where(f=>f.FurnitureId == id)
+                .Where(f => f.FurnitureId == id)
                 .Include(f => f.Collection)
                 .ThenInclude(c => c.Style)
                 .ProjectTo<FurnitureDto>(mapperConfig)
@@ -73,25 +73,26 @@ namespace FurnitureFirm.Controllers
 
         // GET: api/Furnitures/additional/id
         [HttpGet("additional/{id}")]
-        public async Task<ActionResult<IEnumerable<DetailDto>>> GetAdditionalDetails(int id)
+        public async Task<ActionResult<IEnumerable<AdditionalDetailDto>>> GetAdditionalDetails(int id)
         {
             var mapperConfig = new MapperConfiguration(cfg =>
             {
-                cfg.CreateMap<DetailsInFurnitures, DetailDto>()
+                cfg.CreateMap<DetailsInFurnitures, AdditionalDetailDto>()
                     .ForMember(d => d.ColorName, opt => opt.MapFrom(d => d.Detail.Color.Name))
                     .ForMember(d => d.MaterialName, opt => opt.MapFrom(d => d.Detail.Material.Name))
                     .ForMember(d => d.Description, opt => opt.MapFrom(d => d.Detail.Description))
-                    .ForMember(d => d.DetailId, opt => opt.MapFrom(d => d.Detail.DetailId))
+                    .ForMember(d => d.AdditionalDetailId, opt => opt.MapFrom(d => d.DetailInFurnitureId))
                     .ForMember(d => d.Name, opt => opt.MapFrom(d => d.Detail.Name))
                     .ForMember(d => d.Price, opt => opt.MapFrom(d => d.Detail.Price))
-                    .ForMember(d => d.ProducerName, opt => opt.MapFrom(d => d.Detail.Producer.Name));
+                    .ForMember(d => d.ProducerName, opt => opt.MapFrom(d => d.Detail.Producer.Name))
+                    .ForMember(d => d.MaxCount, opt => opt.MapFrom(d => d.Count));
             });
 
             return await _context.DetailsInFurnitures
                 .Where(d => d.FurnitureId == id)
                 .Where(d => d.IsAdditional == 1)
                 .Include(d => d.Detail)
-                .ProjectTo<DetailDto>(mapperConfig)
+                .ProjectTo<AdditionalDetailDto>(mapperConfig)
                 .ToListAsync();
         }
 

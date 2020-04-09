@@ -62,7 +62,7 @@ namespace FurnitureFirm.Controllers
                 .Include(d => d.Producer)
                 .ProjectTo<DetailDto>(mapperConfig)
                 .ToListAsync();
-        }              
+        }
 
         // PUT: api/Details/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
@@ -71,7 +71,7 @@ namespace FurnitureFirm.Controllers
         public async Task<ActionResult<Details>> PutDetails(Details details)
         {
             var detail = await _context.Details.FirstOrDefaultAsync(d => d.DetailId == details.DetailId);
-            
+
             if (detail == null)
             {
                 return NotFound();
@@ -79,7 +79,7 @@ namespace FurnitureFirm.Controllers
 
             _context.Entry(detail).State = EntityState.Modified;
 
-            await _context.SaveChangesAsync();            
+            await _context.SaveChangesAsync();
 
             return Ok(detail);
         }
@@ -113,6 +113,6 @@ namespace FurnitureFirm.Controllers
             await _context.SaveChangesAsync();
 
             return NoContent();
-        }        
+        }
     }
 }
