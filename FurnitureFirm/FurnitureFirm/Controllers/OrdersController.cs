@@ -41,21 +41,14 @@ namespace FurnitureFirm.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Orders>>> GetOrders()
         {
-            return await _context.Orders.ToListAsync();
-        }
-
-        // GET: api/Orders/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Orders>> GetOrders(int id)
-        {
-            var orders = await _context.Orders.FindAsync(id);
-
-            if (orders == null)
-            {
-                return NotFound();
-            }
-
-            return orders;
+            return await _context.Orders
+                .Include(o => o.Customer)
+                .Include(o => o.DeliveryInfo)
+                .ThenInclude(d => d.City)
+                .Include(o => o.Profit)
+                .Include(o => o.FurnitureOrderRows)
+                .ThenInclude(f => f.Furniture)
+                .ToListAsync();
         }
 
         // POST: api/Orders
@@ -78,8 +71,7 @@ namespace FurnitureFirm.Controllers
                     .ForMember(o => o.OrderDate, opt => opt.MapFrom(_ => DateTime.Now))
                     .ForMember(o => o.Status, opt => opt.MapFrom(_ => OrderStatus.Accepted))
                     .ForMember(o => o.FurnitureOrderRows, opt => opt.MapFrom(o => o.OrderedFurnitures))
-                    .ForMember(o => o.Profit.Money, opt => opt.MapFrom(o => o.OrderedFurnitures
-                           .Sum(of => of.TotalFurniturePrice / 6)));
+                    .ForPath(o => o.Profit.Money, opt => opt.MapFrom(o => o.TotalPrice / 6));
             }).CreateMapper();
 
             var order = mapper.Map<Orders>(orderDto);
@@ -92,23 +84,19 @@ namespace FurnitureFirm.Controllers
 
         // DELETE: api/Orders/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Orders>> DeleteOrders(int id)
+        public async Task<ActionResult<Orders>> CancelOrder(int id)
         {
-            var orders = await _context.Orders.FindAsync(id);
-            if (orders == null)
+            var order = await _context.Orders.FindAsync(id);
+            if (order == null)
             {
                 return NotFound();
             }
 
-            _context.Orders.Remove(orders);
+            order.Status = OrderStatus.Canceled;
+            _context.Orders.Update(order);
             await _context.SaveChangesAsync();
 
-            return orders;
-        }
-
-        private bool OrdersExists(int id)
-        {
-            return _context.Orders.Any(e => e.OrderId == id);
+            return order;
         }
     }
 }

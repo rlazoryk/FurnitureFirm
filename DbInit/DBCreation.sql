@@ -155,7 +155,7 @@ CREATE TABLE DeliveryInfos
 	DeliveryInfoID       integer IDENTITY(1, 1)  NOT NULL ,
 	DeliveryPrice        integer  NULL ,
 	Street               varchar(20)  NULL ,
-	Building             varchar(20)  NULL ,
+	Building             integer  NULL ,
 	CityID               integer  NOT NULL ,
 	DeliveryStarted      datetime  NULL ,
 	DeliveryFinished     datetime  NULL 
@@ -214,7 +214,7 @@ CREATE TABLE Details
 	ColorID              integer  NOT NULL ,
 	MaterialID           integer  NOT NULL ,
 	ProducerID           integer  NOT NULL ,
-	Description          varchar(20)  NULL 
+	Description          nvarchar(4000)  NULL 
 )
 go
 
@@ -268,7 +268,7 @@ CREATE TABLE Furnitures
 ( 
 	FurnitureID          integer IDENTITY(1, 1) NOT NULL ,
 	Name                 varchar(20)  NOT NULL ,
-	Description          varchar(20)  NULL ,
+	Description          nvarchar(4000)  NULL ,
 	TimeToBuild          integer  NULL ,
 	CategoryID           integer  NULL ,
 	Height               integer  NULL ,
@@ -342,7 +342,7 @@ go
 CREATE TABLE Posts
 ( 
 	PostID               integer IDENTITY(1, 1) NOT NULL ,
-	Name                 varchar(20)  NOT NULL ,
+	Name                 varchar(50)  NOT NULL ,
 	Salary               integer  NULL 
 )
 go
@@ -426,7 +426,7 @@ CREATE TABLE Providers
 	PhoneNumber          varchar(20)  NULL ,
 	CityID               integer  NOT NULL ,
 	Street               varchar(20)  NULL ,
-	Building             varchar(20)  NULL 
+	Building             integer  NULL 
 )
 go
 

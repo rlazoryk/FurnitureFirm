@@ -1,0 +1,54 @@
+<table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="date">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Дата </th>
+        <td mat-cell *matCellDef="let element"> {{element.orderDate | date:'dd.MM.yyyy HH:mm'}} </td>
+    </ng-container>
+
+    <!-- Sizes Column -->
+    <ng-container matColumnDef="price">
+        <th mat-header-cell *matHeaderCellDef> Загальна сума </th>
+        <td mat-cell *matCellDef="let element"> {{element.totalPrice}} грн. </td>
+    </ng-container>
+
+    <!-- Sizes Column -->
+    <ng-container matColumnDef="profit">
+        <th mat-header-cell *matHeaderCellDef> Прибуток </th>
+        <td mat-cell *matCellDef="let element"> {{element.profit.money}} грн. </td>
+    </ng-container>
+
+    <!-- Sizes Column -->
+    <ng-container matColumnDef="worker">
+        <th mat-header-cell *matHeaderCellDef> ID Менеджера </th>
+        <td mat-cell *matCellDef="let element"> {{element.workerId}} </td>
+    </ng-container>
+
+    <!-- Sizes Column -->
+    <ng-container matColumnDef="status">
+        <th mat-header-cell *matHeaderCellDef> Статус </th>
+        <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="buttons">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let element">
+            <div fxLayout="row" fxLayoutAlign="space-evenly start">
+                <button mat-flat-button color="primary" (click)="showDetails(element)">
+                    <mat-icon>info</mat-icon>
+                    <span>Деталі</span>
+                </button>
+                <button *ngIf="!isCanceled(element)" mat-flat-button color="warn" (click)="cancelOrder(element)">
+                    <span>Скасувати</span>
+                </button>
+            </div>
+        </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

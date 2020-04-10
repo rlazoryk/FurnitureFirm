@@ -17,6 +17,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { BasketComponent } from './pages/sales-manager/basket/basket.component';
 import { OrderedFurnituresTableComponent } from './pages/sales-manager/basket/ordered-furnitures-table/ordered-furnitures-table.component';
 import { DetailsCatalogComponent } from './pages/provide-manager/details-catalog/details-catalog.component';
+import { OrdersTableComponent } from './pages/sales-manager/orders/orders-table/orders-table.component';
+import { OrderDetailsComponent } from './pages/sales-manager/orders/order-details/order-details.component';
 
 
 
@@ -33,6 +35,8 @@ import { DetailsCatalogComponent } from './pages/provide-manager/details-catalog
     BasketComponent,
     OrderedFurnituresTableComponent,
     DetailsCatalogComponent,
+    OrdersTableComponent,
+    OrderDetailsComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -42,6 +46,7 @@ import { DetailsCatalogComponent } from './pages/provide-manager/details-catalog
       { path: '', component: HomeComponent },
       { path: 'furnitures', component: FurnituresCatalogComponent},
       { path: 'basket', component: BasketComponent},
+      { path: 'orders', component: OrdersTableComponent},
       { path: 'details', component: DetailsCatalogComponent }
     ]),
     BrowserAnimationsModule,

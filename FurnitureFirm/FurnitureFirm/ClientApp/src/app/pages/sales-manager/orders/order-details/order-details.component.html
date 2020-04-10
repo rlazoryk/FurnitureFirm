@@ -1,0 +1,62 @@
+<div>
+    <h2>Деталі замовлення</h2>
+    <div class="subtitle">{{order.orderDate | date:'dd.MM.yyyy HH:mm'}}</div>
+    <div class="space"></div>
+
+    <div fxLayout="column" fxLayoutAlign="space-evenly stretch">
+        <div>
+            <div class="title">Інформація про доставку</div>
+            <div style="height: 15px"></div>
+            <div fxLayout="row" fxLayoutAlign="start start">
+                <strong>Ім'я клієнта:</strong>
+                <div class="space-vertical"></div>
+                <div>{{order.customer.name}}</div>
+                <div class="space-vertical"></div>
+                <strong>Номер телефону:</strong>
+                <div class="space-vertical"></div>
+                <div>{{order.customer.phoneNumber}}</div>
+            </div>
+            <div style="height: 15px"></div>
+            <div fxLayout="row" fxLayoutAlign="start start">
+                <strong>Місто:</strong>
+                <div class="space-vertical"></div>
+                <div>{{order.deliveryInfo.city.name}}</div>
+                <div class="space-vertical"></div>
+                <strong>Вулиця:</strong>
+                <div class="space-vertical"></div>
+                <div>{{order.deliveryInfo.street}}</div>
+                <div class="space-vertical"></div>
+                <strong>Будинок:</strong>
+                <div>{{order.deliveryInfo.building}}</div>
+            </div>
+        </div>
+
+        <div class="space"></div>
+        <div class="title">Список замовлених меблів</div>
+        <table mat-table [dataSource]="order.furnitureOrderRows">
+
+            <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef> Назва </th>
+                <td mat-cell *matCellDef="let element"> {{element.furniture.name}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="count">
+                <th mat-header-cell *matHeaderCellDef> Кількість </th>
+                <td mat-cell *matCellDef="let element"> {{element.count}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="additionalCount">
+                <th mat-header-cell *matHeaderCellDef> К-сть додаткових деталей </th>
+                <td mat-cell *matCellDef="let element"> {{element.additionalDetailsOrdered.length}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="totalPrice">
+                <th mat-header-cell *matHeaderCellDef> Загальна ціна </th>
+                <td mat-cell *matCellDef="let element"> {{element.totalFurniturePrice}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </div>
+</div>

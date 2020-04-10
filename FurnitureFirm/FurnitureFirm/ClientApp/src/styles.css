@@ -22,3 +22,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   background-color: green;
   color: white;
 }
+
+.subtitle {
+  color: rgba(128, 128, 128, 0.5);
+}
