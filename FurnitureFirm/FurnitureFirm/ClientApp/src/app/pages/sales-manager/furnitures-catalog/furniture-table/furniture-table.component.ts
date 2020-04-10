@@ -30,6 +30,9 @@ export class FurnitureTableComponent implements OnInit {
     this.httpService.getFurnituresByCategory(this.category)
       .subscribe(response => {
         this.furnitures = response as Furniture[]
+        this.furnitures.forEach(element => {
+          element.price = Math.round(element.price * Constants.furniturePriceCoef);
+        });
         this.dataSource  = new MatTableDataSource(this.furnitures)
         this.dataSource.sort = this.sort;
       })
@@ -50,9 +53,5 @@ export class FurnitureTableComponent implements OnInit {
         width: '600px',
         data: furniture
     })
-  }
-
-  getFurniturePrice(furniture: Furniture) {
-    return furniture.price * Constants.furniturePriceCoef;
   }
 }

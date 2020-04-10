@@ -30,7 +30,7 @@
     <!-- Sizes Column -->
     <ng-container matColumnDef="price">
       <th mat-header-cell *matHeaderCellDef  mat-sort-header> Ціна </th>
-      <td mat-cell *matCellDef="let element"> {{getFurniturePrice(element)}} грн.</td>
+      <td mat-cell *matCellDef="let element"> {{element.price}} грн.</td>
     </ng-container>
 
      <!-- Symbol Column -->

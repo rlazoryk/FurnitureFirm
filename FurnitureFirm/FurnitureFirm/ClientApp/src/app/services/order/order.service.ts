@@ -30,8 +30,7 @@ export class OrderService {
     this.currentOrder.orderedFurnitures.forEach(furniture => {
       this.currentOrder.totalPrice += furniture.totalPrice;
     });
-
-    this.currentOrder.totalPrice *= Constants.furniturePriceCoef;
+    
     return this.currentOrder.totalPrice;
   }
 

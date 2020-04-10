@@ -5,6 +5,7 @@ import { PaymentSystem } from 'src/app/models/payment-system';
 import { FormBuilder } from '@angular/forms';
 import { Constants } from '../../shared/constants';
 import { City } from 'src/app/models/city';
+import { MatSnackBar } from '@angular/material';
 
 @Component({
   selector: 'app-basket',
@@ -17,8 +18,10 @@ export class BasketComponent implements OnInit {
   cities: City[];
   orderForm;
 
+  //TODO: Validation
   constructor(public orderService: OrderService,
     private httpService: HttpService,
+    private snackBar: MatSnackBar,
     private formBuilder: FormBuilder, ) {
     this.orderForm = this.formBuilder.group({
       totalPrice: '',
@@ -71,11 +74,13 @@ export class BasketComponent implements OnInit {
 
     this.httpService.createFurnitureOrder(orderData)
       .subscribe(response => {
-        console.log("Order created")
+        this.orderService.clearOrder();
+        this.orderForm.reset();
+        this.snackBar.open('Замовлення успішно створено. Дякуємо!', null, {
+          duration: 4000,
+          panelClass: ['accent-color']
+        });
       });
-
-    //this.orderService.clearOrder();
-    //this.orderForm.reset();
   }
 
   mapOrderedFurnitures() {

@@ -54,6 +54,9 @@ export class FurnitureConfiguringModalComponent implements OnInit {
     this.httpService.getAdditionalDetails(this.furniture.furnitureId)
       .subscribe(response => {
         this.additionalDetails = response as AdditionalDetail[];
+        this.additionalDetails.forEach(element => {
+          element.price = Math.round(element.price * Constants.furniturePriceCoef);
+        });
       });
   }
 
@@ -74,7 +77,8 @@ export class FurnitureConfiguringModalComponent implements OnInit {
       });
     }
     this.orderedFurniture.totalPrice *= this.orderedFurniture.count;
-    return this.getNormalizedPrice(this.orderedFurniture.totalPrice);
+    
+    return this.orderedFurniture.totalPrice;
   }
 
   getTotalTime() {
@@ -146,9 +150,5 @@ export class FurnitureConfiguringModalComponent implements OnInit {
       panelClass: ['accent-color']
     });
     this.dialogRef.close();
-  }
-
-  getNormalizedPrice(price){
-    return price * Constants.furniturePriceCoef;
   }
 }

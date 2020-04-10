@@ -9,7 +9,7 @@
     </div>
 
     <ng-template #basket>
-        <form id="orderForm" [formGroup]="orderForm" (ngSubmit)="onSubmit(orderForm.value)">
+        <form id="orderForm" [formGroup]="orderForm">
             <mat-card-content fxLayout="column" fxLayoutAlign="start stretch">
                 
                 <div>
@@ -105,7 +105,7 @@
             
             <mat-card-actions fxLayout="row" fxLayoutAlign="end center">
                 <div>
-                    <button mat-flat-button type="submit" color="accent" class="order-button">
+                    <button mat-flat-button type="submit" color="accent" class="order-button" (click)=onSubmit(orderForm.value)>
                         Оформити замовлення
                     </button>
                 </div>
