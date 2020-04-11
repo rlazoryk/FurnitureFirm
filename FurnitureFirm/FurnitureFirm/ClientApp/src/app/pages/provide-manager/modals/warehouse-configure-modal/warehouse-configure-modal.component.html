@@ -1,0 +1,18 @@
+<h2 fxLayout="row" fxLayoutAlign="center center">Виберіть склад</h2>
+
+<div class="row" fxLayout="row" fxLayoutAlign="space-around center">
+  <mat-form-field>
+    <mat-label>Склад</mat-label>
+    <mat-select [(value)]="selectedWarehouse" required>
+        <mat-option *ngFor="let wh of warehouses" [value]="wh.warehouseId">
+            Склад {{wh.warehouseId}}({{wh.street}})
+        </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div fxLayout="row" fxLayoutAlign="space-around center" style="margin-top: 10px;">
+  <button mat-flat-button color="accent" (click)="ConfirmOrder()">
+    <span>Замовити</span>
+  </button>
+</div>

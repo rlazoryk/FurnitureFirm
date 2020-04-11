@@ -1,0 +1,25 @@
+<h2 fxLayout="row" fxLayoutAlign="center center">Конфігурація</h2>
+
+<div class="row" fxLayout="row" fxLayoutAlign="space-around center">
+  <div>{{this.detail.name}}</div>
+
+  <div>{{this.totalPrice.toFixed(1)}} грн.</div>
+
+  <div fxLayout="row" fxLayoutAlign="end center">
+        <button mat-icon-button (click)="removeDetail()">
+            <mat-icon>remove</mat-icon>
+        </button>
+
+        <span>{{this.orderedDetail.count}}</span>
+
+        <button mat-icon-button (click)="addDetail()">
+            <mat-icon>add</mat-icon>
+        </button>
+  </div>
+</div>
+
+<div fxLayout="row" fxLayoutAlign="space-around center" style="margin-top: 10px;">
+  <button mat-flat-button color="accent" (click)="addToOrder()">
+    <span>Додати в корзину</span>
+  </button>
+</div>

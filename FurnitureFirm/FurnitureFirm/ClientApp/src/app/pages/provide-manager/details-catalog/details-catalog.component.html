@@ -1,3 +1,4 @@
+<h1 *ngIf='isLoading'>Loading...</h1>
 <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
 
   <!--- Note that these columns can be defined in any order.
@@ -34,16 +35,15 @@
   </ng-container>
 
    <!-- Symbol Column -->
-   <ng-container matColumnDef="description">
+  <ng-container matColumnDef="description">
     <th mat-header-cell *matHeaderCellDef></th>
     <td mat-cell *matCellDef="let element"><button mat-icon-button (click)="showInfo(element)"><mat-icon>info</mat-icon></button></td>
   </ng-container>
 
-  <!-- Symbol Column -->
   <ng-container matColumnDef="buy">
     <th mat-header-cell *matHeaderCellDef></th>
     <td mat-cell *matCellDef="let element">
-      <button mat-flat-button color="accent" (click)="addToBasket(element)">
+      <button mat-flat-button color="accent" (click)="showDetailConfiguring(element)">
         <mat-icon>add</mat-icon>
         <span>Додати в корзину</span>
       </button>

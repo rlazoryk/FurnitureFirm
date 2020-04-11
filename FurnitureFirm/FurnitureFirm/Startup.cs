@@ -1,3 +1,4 @@
+using AutoMapper;
 using FurnitureFirm.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -26,6 +27,8 @@ namespace FurnitureFirm
                 .AddNewtonsoftJson(options =>
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
             );
+
+            services.AddAutoMapper(typeof(AutoMapperConfig));
 
             services.AddCors(options =>
             {

@@ -8,6 +8,8 @@ import { Constants } from 'src/app/pages/shared/constants';
 
 
 
+
+
 @Component({
   selector: 'app-furniture-table',
   templateUrl: './furniture-table.component.html',

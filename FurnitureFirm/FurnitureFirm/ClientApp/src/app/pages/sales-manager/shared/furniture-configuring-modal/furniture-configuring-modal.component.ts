@@ -73,7 +73,6 @@ export class FurnitureConfiguringModalComponent implements OnInit {
     this.orderedFurniture.totalPrice = this.furniture.price;
     if (this.orderedFurniture.additionalDetails) {
       this.orderedFurniture.additionalDetails.forEach(detail => {
-        this.orderedFurniture.totalPrice += detail.totalPrice;
       });
     }
     this.orderedFurniture.totalPrice *= this.orderedFurniture.count;
@@ -85,7 +84,6 @@ export class FurnitureConfiguringModalComponent implements OnInit {
     this.orderedFurniture.totalTime = this.furniture.timeToBuild;
     if (this.orderedFurniture.additionalDetails) {
       this.orderedFurniture.additionalDetails.forEach(detail => {
-        this.orderedFurniture.totalTime += detail.totalTime;
       });
     }
     this.orderedFurniture.totalTime *= this.orderedFurniture.count;
@@ -115,8 +113,6 @@ export class FurnitureConfiguringModalComponent implements OnInit {
     let orderedDetail = this.orderedFurniture.additionalDetails.filter(d => d.additionalDetailId == detail.additionalDetailId)[0];
     if (orderedDetail.count > 0) {
       orderedDetail.count--;
-      orderedDetail.totalPrice -= detail.price;
-      orderedDetail.totalTime -= detail.timeToIntegrate;
     }
   }
 

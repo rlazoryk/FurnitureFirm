@@ -11,7 +11,7 @@ export class OrderService {
   currentOrder = new OrderRequest();
 
   constructor() {
-   }
+  }
 
   clearOrder() {
     this.currentOrder = new OrderRequest();
@@ -39,7 +39,7 @@ export class OrderService {
     this.currentOrder.orderedFurnitures.forEach(furniture => {
       totalTime += furniture.totalTime;
     });
-    
+
     //total hours amount / (hours per day / hours per working day) (this is amount of working days)
     totalTime = totalTime / (24 / 8);
     return totalTime;

@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using AutoMapper.QueryableExtensions;
 using FurnitureFirm.DTOs;
 using FurnitureFirm.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -16,9 +15,13 @@ namespace FurnitureFirm.Controllers
     {
         private readonly FurnitureFirmContext _context;
 
-        public DetailsController(FurnitureFirmContext context)
+        private readonly IMapper _mapper;
+
+        public DetailsController(FurnitureFirmContext context, IMapper mapper)
         {
             _context = context;
+
+            _mapper = mapper;
         }
 
 
@@ -40,29 +43,31 @@ namespace FurnitureFirm.Controllers
                 .ToListAsync();
         }
 
+        // GET: api/Details/1
+        [HttpGet("{id}")]
+        public async Task<ActionResult<DetailDto>> GetDetailById(int id)
+        {
+            var result = await _context.Details
+                .Where(d => d.DetailId == id)
+                .Include(d => d.Material)
+                .Include(d => d.Color)
+                .Include(d => d.Producer)
+                .FirstOrDefaultAsync();
+
+            return _mapper.Map<DetailDto>(result);
+        }
+
         // GET: api/Details
         [HttpGet]
         public async Task<ActionResult<IEnumerable<DetailDto>>> GetDetails()
-        {
-            var mapperConfig = new MapperConfiguration(cfg =>
-            {
-                cfg.CreateMap<Details, DetailDto>()
-                    .ForMember(d => d.ColorName, opt => opt.MapFrom(d => d.Color.Name))
-                    .ForMember(d => d.MaterialName, opt => opt.MapFrom(d => d.Material.Name))
-                    .ForMember(d => d.Description, opt => opt.MapFrom(d => d.Description))
-                    .ForMember(d => d.DetailId, opt => opt.MapFrom(d => d.DetailId))
-                    .ForMember(d => d.Name, opt => opt.MapFrom(d => d.Name))
-                    .ForMember(d => d.Price, opt => opt.MapFrom(d => d.Price))
-                    .ForMember(d => d.ProducerName, opt => opt.MapFrom(d => d.Producer.Name));
-            });
-
+        {            
             return await _context.Details
                 .Include(d => d.Material)
                 .Include(d => d.Color)
                 .Include(d => d.Producer)
-                .ProjectTo<DetailDto>(mapperConfig)
-                .ToListAsync();
-        }
+                .Select(d => _mapper.Map<DetailDto>(d))
+                .ToListAsync();            
+        }              
 
         // PUT: api/Details/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
@@ -71,7 +76,7 @@ namespace FurnitureFirm.Controllers
         public async Task<ActionResult<Details>> PutDetails(Details details)
         {
             var detail = await _context.Details.FirstOrDefaultAsync(d => d.DetailId == details.DetailId);
-
+            
             if (detail == null)
             {
                 return NotFound();
@@ -79,7 +84,7 @@ namespace FurnitureFirm.Controllers
 
             _context.Entry(detail).State = EntityState.Modified;
 
-            await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();            
 
             return Ok(detail);
         }
@@ -113,6 +118,6 @@ namespace FurnitureFirm.Controllers
             await _context.SaveChangesAsync();
 
             return NoContent();
-        }
+        }        
     }
 }
