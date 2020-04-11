@@ -90,8 +90,12 @@ namespace FurnitureFirm.Controllers
 
                 Date = DateTime.UtcNow,
 
-                WorkerId = movementDto.WorkerId               
+                WorkerId = movementDto.WorkerId
+                
+                // Count = movementDto.Count
             });
+
+            await _context.SaveChangesAsync();
 
             return NoContent();
         }

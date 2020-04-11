@@ -53,6 +53,8 @@ export class TransportConfiguringModalComponent implements OnInit {
     this.http.putWarehouseDetail(transportate).subscribe(response => {
       console.log(response);
     });
+
+    this.dialog.closeAll();
   }
 
   closeModal() {

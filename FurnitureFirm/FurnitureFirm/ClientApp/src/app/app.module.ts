@@ -30,6 +30,7 @@ import { ComingsComponent } from './pages/warehouse-manager/comings/comings.comp
 import { ConsumptionsComponent } from './pages/warehouse-manager/consumptions/consumptions.component';
 import { WarehoseTableComponent } from './pages/warehouse-manager/warehouse/warehose-table/warehose-table.component';
 import { TransportConfiguringModalComponent } from './pages/warehouse-manager/modals/transport-configuring-modal/transport-configuring-modal.component';
+import { ComingsTableComponent } from './pages/warehouse-manager/comings/comings-table/comings-table.component';
 
 
 
@@ -57,7 +58,8 @@ import { TransportConfiguringModalComponent } from './pages/warehouse-manager/mo
     ComingsComponent,
     ConsumptionsComponent,
     WarehoseTableComponent,
-    TransportConfiguringModalComponent
+    TransportConfiguringModalComponent,
+    ComingsTableComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
