@@ -1,0 +1,38 @@
+<mat-card class="mat-elevation-z8">
+  <mat-card-header>
+      <mat-card-title>Корзина</mat-card-title>
+  </mat-card-header>
+
+  <div *ngIf="detailOrderService.order.orderRows.length == 0 else basket" fxLayout="row"
+      fxLayoutAlign="center center">
+      <h3>Корзина пуста :(</h3>
+  </div>
+
+  <ng-template #basket>
+      <mat-card-content fxLayout="column" fxLayoutAlign="start stretch">
+          <div>
+              <app-ordered-details-table></app-ordered-details-table>
+          </div>
+
+          <div class="space"></div>
+
+          <div fxLayout="column" fxLayoutAlign="space-between stretch">
+              <div fxLayout="row" fxLayoutAlign="end start">
+                  <div fxLayout="column" fxLayoutAlign="end end">
+                      <span class="total">Загальна ціна замовлення:</span>
+                  </div>
+
+                  <span fxFlex="15" fxLayoutAlign="end center" class="total">
+                      {{this.detailOrderService.calcTotalPrice().toFixed(1)}} грн.
+                  </span>
+              </div>
+          </div>
+      </mat-card-content>
+
+      <mat-card-actions fxLayout="row" fxLayoutAlign="end center">
+          <div>
+              <button mat-flat-button color="accent" (click)="showProviderDialog()">Оформити замовлення</button>
+          </div>
+      </mat-card-actions>
+  </ng-template>
+</mat-card>

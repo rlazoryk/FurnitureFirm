@@ -1,0 +1,9 @@
+<mat-tab-group>
+  <mat-tab label='Неприйняті замовлення'>
+    <app-orders-table [isClosed]="false"></app-orders-table>
+  </mat-tab>
+
+  <mat-tab label='Історія замовлень'>
+    <app-orders-table [isClosed]="true"></app-orders-table>
+  </mat-tab>
+</mat-tab-group>

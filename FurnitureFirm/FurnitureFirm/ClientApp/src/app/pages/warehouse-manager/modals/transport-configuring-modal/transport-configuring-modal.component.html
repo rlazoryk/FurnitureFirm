@@ -1,0 +1,35 @@
+<div fxLayout="row" fxLayoutAlign="space-between center" class="btn">
+  <h2>Переміщення</h2>
+  <button mat-flat-button (click)="closeModal()">
+      <mat-icon>highlight_off</mat-icon>
+  </button>
+</div>
+
+
+<div class="row" fxLayout="row" fxLayoutAlign="space-around center">
+  <div fxLayout="row" fxLayoutAlign="end center">
+    <button mat-icon-button (click)="removeDetail()">
+        <mat-icon>remove</mat-icon>
+    </button>
+
+    <span>{{transportCount}}</span>
+
+    <button mat-icon-button (click)="addDetail()">
+        <mat-icon>add</mat-icon>
+    </button>
+</div>
+  <mat-form-field>
+    <mat-label>Склад</mat-label>
+    <mat-select [(value)]="selectedWarehouse" required>
+        <mat-option *ngFor="let wh of warehouses" [value]="wh.warehouseId">
+            Склад {{wh.warehouseId}}({{wh.street}})
+        </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div fxLayout="row" fxLayoutAlign="space-around center" style="margin-top: 10px;">
+  <button mat-flat-button color="accent" (click)="Transportate()">
+    <span>Замовити</span>
+  </button>
+</div>

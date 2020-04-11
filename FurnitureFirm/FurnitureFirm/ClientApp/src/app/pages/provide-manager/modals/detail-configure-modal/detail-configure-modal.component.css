@@ -1,0 +1,19 @@
+table {
+  width: 100%;
+}
+
+.row {
+  margin: 0, 30px;
+}
+
+h2, h5 {
+  margin-bottom: 30px;
+}
+
+.space {
+  height: 30px;
+}
+
+.mat-flat-button {
+  width: 30%;
+}
