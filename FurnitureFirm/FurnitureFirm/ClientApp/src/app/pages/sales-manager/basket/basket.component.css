@@ -11,9 +11,18 @@ mat-card-actions {
 }
 
 .space {
-    height: 30px;
+    height: 20px;
 }
 
-.subtitle {
-    color: rgba(128, 128, 128, 0.5);
+.space-horizontal {
+    width: 30px;
+}
+
+mat-form-field {
+    width : 200px;
+}
+
+.order-button {
+    font-size: 20px;
+    height: 50px !important;
 }

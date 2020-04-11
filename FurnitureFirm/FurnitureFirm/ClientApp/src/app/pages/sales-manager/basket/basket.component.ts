@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { OrderRequest } from 'src/app/models/order-request';
 import { OrderService } from 'src/app/services/order/order.service';
 import { HttpService } from 'src/app/services/http/http.service';
 import { PaymentSystem } from 'src/app/models/payment-system';
+import { FormBuilder } from '@angular/forms';
+import { Constants } from '../../shared/constants';
+import { City } from 'src/app/models/city';
+import { MatSnackBar } from '@angular/material';
 
 @Component({
   selector: 'app-basket',
@@ -11,17 +14,97 @@ import { PaymentSystem } from 'src/app/models/payment-system';
 })
 export class BasketComponent implements OnInit {
 
-  order : OrderRequest;
   paymentSystems: PaymentSystem[];
+  cities: City[];
+  orderForm;
 
+  //TODO: Validation
   constructor(public orderService: OrderService,
-    private httpService : HttpService) { }
+    private httpService: HttpService,
+    private snackBar: MatSnackBar,
+    private formBuilder: FormBuilder, ) {
+    this.orderForm = this.formBuilder.group({
+      totalPrice: '',
+      workerId: '',
+      paymentSystemId: '',
+      customer: this.formBuilder.group({
+        name: '',
+        phoneNumber: ''
+      }),
+      deliveryInfo: this.formBuilder.group({
+        deliveryPrice: '',
+        cityId: '',
+        street: '',
+        building: '',
+      }),
+      orderedFurnitures: this.formBuilder.array([
+        this.formBuilder.group({
+          count: '',
+          totalFurniturePrice: '',
+          furnitureId: '',
+          additionalDetailsOrdered: this.formBuilder.array([
+            this.formBuilder.group({
+              count: '',
+              detailInFurnitureId: ''
+            })
+          ])
+        })
+      ])
+    });
+  }
 
   ngOnInit(): void {
-    this.order = this.orderService.currentOrder;
     this.httpService.getPaymentSystems()
       .subscribe(response => {
-      this.paymentSystems = response as PaymentSystem[]
+        this.paymentSystems = response as PaymentSystem[]
+      });
+
+    this.httpService.getCities()
+      .subscribe(response => {
+        this.cities = response as City[]
+      });
+  }
+
+  onSubmit(orderData) {
+    //TODO: when roles and login will be implemented
+    orderData.workerId = 1;
+    orderData.deliveryInfo.deliveryPrice = Constants.deliveryPrice;
+    orderData.totalPrice = this.orderService.currentOrder.totalPrice;
+    orderData.orderedFurnitures = this.mapOrderedFurnitures();
+
+    this.httpService.createFurnitureOrder(orderData)
+      .subscribe(response => {
+        this.orderService.clearOrder();
+        this.orderForm.reset();
+        this.snackBar.open('Замовлення успішно створено. Дякуємо!', null, {
+          duration: 4000,
+          panelClass: ['accent-color']
+        });
+      });
+  }
+
+  mapOrderedFurnitures() {
+    let orderedFurnitures = [];
+    this.orderService.currentOrder.orderedFurnitures.forEach(furniture => {
+      let furnitureDto = {
+        count: furniture.count,
+        totalFurniturePrice: furniture.totalPrice,
+        furnitureId: furniture.furnitureId,
+        additionalDetailsOrdered: []
+      };
+
+      furniture.additionalDetails.forEach(detail => {
+        let detailDto = {
+          detailInFurnitureId: detail.additionalDetailId,
+          count: detail.count
+        };
+
+        furnitureDto.additionalDetailsOrdered.push(detailDto);
+      });
+
+      orderedFurnitures.push(furnitureDto);
     });
+
+    return orderedFurnitures;
   }
 }

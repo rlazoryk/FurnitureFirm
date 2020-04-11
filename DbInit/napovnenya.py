@@ -68,6 +68,30 @@ names = ['Олександр', 'Роман', 'Андрій', 'Петро', 'Се
          'Михайло', 'Ігор', 'Олег', 'Володимир', 'Назар']
 surnames = ['Петренко', 'Зібайло', 'Кіпіш', 'Размук', 'Брітвін',
             'Захватка', 'Бухів', 'Мазурик', 'Нечай', 'Холодний']
+furnitureDescription = """Меблі (від лат. mobile — рухомий через фр. meuble) — рухлядь, рухоме майно, 
+тобто та частина майна, яку на відміну від нерухомого, можливо переміщувати. 
+У вузькому розумінні це лише вбудовані чи розташовані окремо предмети житла, 
+призначені для зберігання різних предметів використання людини, комфорту. 
+Існує також давньоруський відповідник поняття «меблі» і «рухоме майно». Це — «рухлядь».
+У зв"язку з тим, що «рухоме майно» як правило має менший термін використання ніж нерухоме, 
+це слово стало також вживатись у значенні «речі, зокрема предмети одягу і оздоблення, 
+які швидко тліють, або вже зотліли», в якому і вживається в наш час.
+"""
+
+detailDescription = """Фурнітура (фр. fourniture від fournir — «доставляти», «постачати») — допоміжні частини та деталі, 
+необхідні для виготовлення якогось цільного предмета.
+
+Види
+Меблева фурнітура — засувки, ручки, петлі
+Галантерейна фурнітура — пряжки, шнурки, блискавки
+Будівельна фурнітура — замки, коннектори
+Віконна фурнітура — ручки, петлі тощо.
+Також до фурнітури відносять частини вогнепальної зброї, які традиційно виготовлялися з дерева — ложа, 
+приклад, пістолетна рукоятка, цівка.
+
+Фурнітура, як правило, виготовляється окремо від виробництва основних складових виробу, тому що, 
+здебільшого вимагає іншого технологічного процесу.
+"""
 
 # Countries TABLE
 f.write(GetComment("Countries"))
@@ -132,8 +156,8 @@ for name in detailNames:
     colorId = random.randrange(1, len(colorNames) + 1)
     producerId = random.randrange(1, len(producerNames) + 1)
     price = random.randrange(100, 1000)
-    insertStr = GetInsertStr("Details", "MaterialId, ColorId, ProducerId, Name, Price",
-                             f'{materialId}, {colorId}, {producerId}, \'{name}\', {price}')
+    insertStr = GetInsertStr("Details", "MaterialId, ColorId, ProducerId, Name, Price, Description",
+                             f'{materialId}, {colorId}, {producerId}, \'{name}\', {price}, \'{detailDescription}\'')
     f.write(insertStr)
 
 # Warehouses TABLE
@@ -197,7 +221,7 @@ f.write(GetComment("Collections"))
 collectionNums = np.arange(1, 11)
 collectionNames = []
 for collection in collectionNums:
-    collectionNames.append("COLLECTION  " + str(collection))
+    collectionNames.append("Колекція  " + str(collection))
 for name in collectionNames:
     styleId = random.randrange(1, len(styleNames) + 1)
     insertStr = GetInsertStr("Collections", "Name, StyleId",
@@ -206,7 +230,7 @@ for name in collectionNames:
 
 # Furnitures TABLE
 f.write(GetComment("Furnitures"))
-furnitureCount = 30
+furnitureCount = 80
 furnitureNums = np.arange(1, furnitureCount + 1)
 furnitureNames = []
 for furniture in furnitureNums:
@@ -220,22 +244,22 @@ for name in furnitureNames:
     collectionId = random.randrange(1, len(collectionNames) + 1)
     price = random.randrange(100, 1000, 1)
     styleId = random.randrange(1, len(styleNames) + 1)
-    insertStr = GetInsertStr("Furnitures", "Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price",
-                             f'\'{name}\', {timeToBuild}, {categoryId}, {heigth}, {width}, {depth}, {collectionId}, {price}')
+    insertStr = GetInsertStr("Furnitures", "Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description",
+                             f'\'{name}\', {timeToBuild}, {categoryId}, {heigth}, {width}, {depth}, {collectionId}, {price}, \'{furnitureDescription}\'')
     f.write(insertStr)
 
 # DetailInFurniture TABLE
 f.write(GetComment("DetailsInFurnitures"))
-i = 0
+i = 1
 while i <= furnitureCount:
-    detailsPerFurniture = random.randrange(1, 6)
+    detailsPerFurniture = random.randrange(4, 16)
     j = 0
     while j <= detailsPerFurniture:
         furnitureId = i
         detailId = random.randrange(1, len(detailNames) + 1)
-        count = random.randrange(1, 21)
+        count = random.randrange(1, 11)
         isAdditional = random.choice([1, 0, 0, 0])
-        timeToIntegrate = random.randrange(1, 10)
+        timeToIntegrate = 0
         if isAdditional:
             timeToIntegrate = random.randrange(1, 11, 1)
         insertStr = GetInsertStr("DetailsInFurnitures", "DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate",

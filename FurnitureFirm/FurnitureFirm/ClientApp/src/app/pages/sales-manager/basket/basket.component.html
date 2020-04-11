@@ -9,57 +9,107 @@
     </div>
 
     <ng-template #basket>
-        <mat-card-content fxLayout="column" fxLayoutAlign="start stretch">
-            <div>
-                <app-ordered-furnitures-table></app-ordered-furnitures-table>
-            </div>
-            <div class="space"></div>
-            <div>
-                <mat-expansion-panel>
-                    <mat-expansion-panel-header>
-                        Інформація про доставку
-                    </mat-expansion-panel-header>
-                    <button mat-button>Click me</button>
-                </mat-expansion-panel>
-            </div>
-            <div class="space"></div>
-            <div fxLayout="row" fxLayoutAlign="start end">
-                <p>Оберіть тип оплати:</p>
-                <div fxFlex="5"></div>
-                <mat-form-field>
-                    <mat-label>Тип оплати</mat-label>
-                    <mat-select>
-                        <mat-option *ngFor="let ps of paymentSystems" [value]="ps.name">
-                            {{ps.name}}
-                        </mat-option>
-                    </mat-select>
-                </mat-form-field>
-            </div>
-            <div class="space"></div>
-            <div fxLayout="column" fxLayoutAlign="space-between stretch">
-                <div fxLayout="row" fxLayoutAlign="end start">
-                    <div fxLayout="column" fxLayoutAlign="end end">
-                        <span class="total">Очікуваний час виробництва:</span>
-                        <span class="subtitle">(Час розраховано для одноєї людини на виробництві) </span>
-                    </div>
-                    <span fxFlex="15" fxLayoutAlign="end start"
-                        class="total">{{this.orderService.calcTotalTime() | number:'1.0-0'}} днів</span>
+        <form id="orderForm" [formGroup]="orderForm">
+            <mat-card-content fxLayout="column" fxLayoutAlign="start stretch">
+                
+                <div>
+                    <app-ordered-furnitures-table></app-ordered-furnitures-table>
                 </div>
-                <div fxLayout="row" fxLayoutAlign="end start">
-                    <div fxLayout="column" fxLayoutAlign="end end">
-                        <span class="total">Загальна ціна замовлення:</span>
-                        <span class="subtitle">(Ціна вказана із урахуванням доставки 50 грн.) </span>
-                    </div>
-                    <span fxFlex="15" fxLayoutAlign="end center" class="total">
-                        {{this.orderService.calcTotalPrice()}} грн.
-                    </span>
+
+                <div class="space"></div>
+                
+                <div>
+                    <mat-expansion-panel class="mat-elevation-z1">
+                        <mat-expansion-panel-header>
+                            Інформація про доставку
+                        </mat-expansion-panel-header>
+                        <div fxLayout="column" fxLayoutAlign="start start">
+                            <div formGroupName="customer" fxLayout="column" fxLayoutAlign="start start">
+                                <mat-form-field>
+                                    <mat-label>Ім'я клієнта</mat-label>
+                                    <input matInput  formControlName="name">
+                                </mat-form-field>
+                                <mat-form-field >
+                                    <mat-label>Номер телефону</mat-label>
+                                    <span matPrefix>+380 &nbsp;</span>
+                                    <input matInput type="tel" formControlName="phoneNumber">
+                                </mat-form-field>
+                            </div>
+                            
+                            <div class="space"></div>
+                            
+                            <div formGroupName="deliveryInfo" fxLayout="row">
+                                <mat-form-field>
+                                    <mat-label>Місто</mat-label>
+                                    <mat-select formControlName="cityId">
+                                        <mat-option *ngFor="let city of cities" [value]="city.cityId">
+                                            {{city.name}}
+                                        </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                                <div class="space-horizontal"></div>
+                                <mat-form-field>
+                                    <mat-label>Вулиця</mat-label>
+                                    <input matInput formControlName="street">
+                                </mat-form-field>
+                                <div class="space-horizontal"></div>
+                                <mat-form-field>
+                                    <mat-label>Будинок</mat-label>
+                                    <input matInput formControlName="building">
+                                </mat-form-field>
+                            </div>
+                            <div>
+                                <span class="subtitle">(Ціна доставки: 50 грн.)</span>
+                            </div>
+                        </div>
+                    </mat-expansion-panel>
                 </div>
-            </div>
-        </mat-card-content>
-        <mat-card-actions fxLayout="row" fxLayoutAlign="end center">
-            <div>
-                <button mat-flat-button color="accent">Оформити замовлення</button>
-            </div>
-        </mat-card-actions>
+                
+                <div class="space"></div>
+                
+                <div fxLayout="row" fxLayoutAlign="start end">
+                    <p>Оберіть тип оплати:</p>
+                    <div fxFlex="5"></div>
+                    <mat-form-field>
+                        <mat-label>Тип оплати</mat-label>
+                        <mat-select formControlName="paymentSystemId">
+                            <mat-option *ngFor="let ps of paymentSystems" [value]="ps.paymentSystemId">
+                                {{ps.name}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                
+                <div class="space"></div>
+                
+                <div fxLayout="column" fxLayoutAlign="space-between stretch">
+                    <div fxLayout="row" fxLayoutAlign="end start">
+                        <div fxLayout="column" fxLayoutAlign="end end">
+                            <span class="total">Очікуваний час виробництва:</span>
+                            <span class="subtitle">(Час розраховано для одноєї людини на виробництві) </span>
+                        </div>
+                        <span fxFlex="15" fxLayoutAlign="end start"
+                            class="total">{{this.orderService.calcTotalTime() | number:'1.0-0'}} днів</span>
+                    </div>
+                    <div fxLayout="row" fxLayoutAlign="end start">
+                        <div fxLayout="column" fxLayoutAlign="end end">
+                            <span class="total">Загальна ціна замовлення:</span>
+                            <span class="subtitle">(Ціна вказана із урахуванням ціни доставки 50 грн.) </span>
+                        </div>
+                        <span fxFlex="15" fxLayoutAlign="end center" class="total">
+                            {{this.orderService.calcTotalPrice()}} грн.
+                        </span>
+                    </div>
+                </div>
+            </mat-card-content>
+            
+            <mat-card-actions fxLayout="row" fxLayoutAlign="end center">
+                <div>
+                    <button mat-flat-button type="submit" color="accent" class="order-button" (click)=onSubmit(orderForm.value)>
+                        Оформити замовлення
+                    </button>
+                </div>
+            </mat-card-actions>
+        </form>
     </ng-template>
 </mat-card>
