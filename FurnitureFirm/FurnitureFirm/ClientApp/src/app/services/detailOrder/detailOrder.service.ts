@@ -9,18 +9,22 @@ export class DetailOrderService {
   order = new DetailsOrderRequest();
 
   addDetail(orderedDetail: OrderedDetail) {
-    this.order.orderedDetails.push(orderedDetail);
+    this.order.orderRows.push(orderedDetail);
   }
 
   removeDetail(orderedDetail: OrderedDetail) {
-    this.order.orderedDetails = this.order.orderedDetails.filter(obj => obj !== orderedDetail);
+    this.order.orderRows = this.order.orderRows.filter(obj => obj !== orderedDetail);
   }
 
   calcTotalPrice() {
     this.order.totalPrice = 0;
-    this.order.orderedDetails.forEach(detail => {
-      this.order.totalPrice += detail.totalPrice;
+    this.order.orderRows.forEach(detail => {
+      this.order.totalPrice += detail.orderedDetailPrice * detail.count;
     });
     return this.order.totalPrice;
+  }
+
+  clear() {
+    this.order = new DetailsOrderRequest();
   }
 }

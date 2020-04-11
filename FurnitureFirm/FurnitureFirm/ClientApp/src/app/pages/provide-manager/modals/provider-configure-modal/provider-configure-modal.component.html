@@ -1,0 +1,18 @@
+<h2 fxLayout="row" fxLayoutAlign="center center">Виберіть постачальника</h2>
+
+<div class="row" fxLayout="row" fxLayoutAlign="space-around center">
+  <mat-form-field>
+    <mat-label>Постачальник</mat-label>
+    <mat-select [(value)]="selectedProvider" required>
+        <mat-option *ngFor="let pv of providers" [value]="pv.providerId">
+            {{pv.name}}
+        </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div fxLayout="row" fxLayoutAlign="space-around center" style="margin-top: 10px;">
+  <button mat-flat-button color="accent" (click)="CreateOrder()">
+    <span>Замовити</span>
+  </button>
+</div>

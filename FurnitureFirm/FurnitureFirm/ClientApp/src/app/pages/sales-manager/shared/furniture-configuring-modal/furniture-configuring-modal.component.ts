@@ -64,7 +64,6 @@ export class FurnitureConfiguringModalComponent implements OnInit {
     this.orderedFurniture.totalPrice = this.furniture.price;
     if (this.orderedFurniture.additionalDetails) {
       this.orderedFurniture.additionalDetails.forEach(detail => {
-        this.orderedFurniture.totalPrice += detail.totalPrice;
       });
     }
     this.orderedFurniture.totalPrice *= this.orderedFurniture.count;
@@ -75,7 +74,6 @@ export class FurnitureConfiguringModalComponent implements OnInit {
     this.orderedFurniture.totalTime = this.furniture.timeToBuild;
     if (this.orderedFurniture.additionalDetails) {
       this.orderedFurniture.additionalDetails.forEach(detail => {
-        this.orderedFurniture.totalTime += detail.totalTime;
       });
     }
     this.orderedFurniture.totalTime *= this.orderedFurniture.count;
@@ -87,24 +85,18 @@ export class FurnitureConfiguringModalComponent implements OnInit {
     if (!orderedDetail) {
       orderedDetail = new OrderedDetail();
       orderedDetail.detailId = detail.detailId;
-      orderedDetail.totalTime = 0;
       orderedDetail.count = 1;
-      orderedDetail.totalPrice = 0;
       this.orderedFurniture.additionalDetails.push(orderedDetail);
     }
     else{
       orderedDetail.count++;
     }
-    orderedDetail.totalPrice += detail.price;
-    orderedDetail.totalTime += detail.timeToIntegrate;
   }
 
   removeDetail(detail: Detail) {
     let orderedDetail = this.orderedFurniture.additionalDetails.filter(d => d.detailId == detail.detailId)[0];
     if (orderedDetail.count > 0) {
       orderedDetail.count--;
-      orderedDetail.totalPrice -= detail.price;
-      orderedDetail.totalTime -= detail.timeToIntegrate;
     }
   }
 

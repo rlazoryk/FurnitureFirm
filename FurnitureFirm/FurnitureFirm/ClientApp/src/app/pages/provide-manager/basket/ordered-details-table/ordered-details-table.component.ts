@@ -21,7 +21,7 @@ export class OrderedDetailsTableComponent implements OnInit {
       private httpService: HttpService) { }
 
   ngOnInit(): void {
-    this.orderService.order.orderedDetails.forEach(detail => {
+    this.orderService.order.orderRows.forEach(detail => {
       this.httpService.getDetailByid(detail.detailId)
         .subscribe(response => {
           if (!this.details) {
@@ -30,7 +30,7 @@ export class OrderedDetailsTableComponent implements OnInit {
 
           this.details.push(response as Detail);
 
-          if (this.details.length === this.orderService.order.orderedDetails.length) {
+          if (this.details.length === this.orderService.order.orderRows.length) {
             this.loaded = true;
           }
         });
@@ -46,17 +46,19 @@ export class OrderedDetailsTableComponent implements OnInit {
 
   removeFromOrder(detail: Detail) {
     this.details = this.details.filter(d => d.detailId === detail.detailId);
-    const itemToRemove = this.orderService.order.orderedDetails.filter(d => d.detailId === detail.detailId)[0];
+    const itemToRemove = this.orderService.order.orderRows.filter(d => d.detailId === detail.detailId)[0];
     this.orderService.removeDetail(itemToRemove);
   }
 
   getOrderedCount(detail: Detail) {
-    console.log("Details count:" + detail);
-    return this.orderService.order.orderedDetails.filter(d => d.detailId === detail.detailId)[0].count;
+    return this.orderService.order.orderRows.filter(d => d.detailId === detail.detailId)[0].count;
   }
 
   getTotalDetailsPrice(detail: Detail) {
-    return this.orderService.order.orderedDetails.filter(d => d.detailId === detail.detailId)[0].totalPrice;
+    const count = this.orderService.order.orderRows.filter(d => d.detailId === detail.detailId)[0].count;
+    const price = this.orderService.order.orderRows.filter(d => d.detailId === detail.detailId)[0].orderedDetailPrice;
+
+    return count * price;
   }
 }
 

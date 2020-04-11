@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
@@ -20,6 +20,11 @@ import { DetailsCatalogComponent } from './pages/provide-manager/details-catalog
 import { DetailConfigureModalComponent } from './pages/provide-manager/modals/detail-configure-modal/detail-configure-modal.component';
 import { OrderedDetailsTableComponent } from './pages/provide-manager/basket/ordered-details-table/ordered-details-table.component';
 import { DetailBasketComponent } from './pages/provide-manager/basket/basket.component';
+import { ProviderConfigureModalComponent } from './pages/provide-manager/modals/provider-configure-modal/provider-configure-modal.component';
+import { DetailOrdersComponent } from './pages/provide-manager/detail-orders/detail-orders.component';
+import { OrdersTableComponent } from './pages/provide-manager/detail-orders/orders-table/orders-table.component';
+import { OrderInfoModalComponent } from './pages/provide-manager/modals/order-info-modal/order-info-modal.component';
+import { WarehouseConfigureModalComponent } from './pages/provide-manager/modals/warehouse-configure-modal/warehouse-configure-modal.component';
 
 
 
@@ -37,7 +42,12 @@ import { DetailBasketComponent } from './pages/provide-manager/basket/basket.com
     DetailsCatalogComponent,
     DetailConfigureModalComponent,
     OrderedDetailsTableComponent,
-    DetailBasketComponent
+    DetailBasketComponent,
+    ProviderConfigureModalComponent,
+    DetailOrdersComponent,
+    OrdersTableComponent,
+    OrderInfoModalComponent,
+    WarehouseConfigureModalComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -48,7 +58,8 @@ import { DetailBasketComponent } from './pages/provide-manager/basket/basket.com
       { path: 'furnitures', component: FurnituresCatalogComponent },
       { path: 'furniture/basket', component: BasketComponent },
       { path: 'details/basket', component: DetailBasketComponent },
-      { path: 'details', component: DetailsCatalogComponent }
+      { path: 'details', component: DetailsCatalogComponent },
+      { path: 'detailOrders', component: DetailOrdersComponent}
     ]),
     BrowserAnimationsModule,
     MatTableModule,
@@ -70,5 +81,6 @@ import { DetailBasketComponent } from './pages/provide-manager/basket/basket.com
     DescriptionModalComponent,
     FurnitureConfiguringModalComponent,
   ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }

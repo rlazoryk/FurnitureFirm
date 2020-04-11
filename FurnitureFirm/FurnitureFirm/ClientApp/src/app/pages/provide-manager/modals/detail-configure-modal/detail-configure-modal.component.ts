@@ -2,7 +2,6 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { OrderedDetail } from 'src/app/models/ordered-detail';
 import { MAT_DIALOG_DATA, MatDialog } from '@angular/material';
 import { Detail } from 'src/app/models/detail';
-import { HttpService } from 'src/app/services/http/http.service';
 import { DetailOrderService } from 'src/app/services/detailOrder/detailOrder.service';
 import { DescriptionModalComponent } from 'src/app/pages/shared/description-modal/description-modal.component';
 
@@ -14,6 +13,7 @@ import { DescriptionModalComponent } from 'src/app/pages/shared/description-moda
 export class DetailConfigureModalComponent implements OnInit {
 
   orderedDetail: OrderedDetail = new OrderedDetail();
+  totalPrice: number;
   alreadyOrdered: OrderedDetail;
 
   constructor(@Inject(MAT_DIALOG_DATA) public detail: Detail,
@@ -22,14 +22,16 @@ export class DetailConfigureModalComponent implements OnInit {
 
   ngOnInit() {
     this.orderedDetail.detailId = this.detail.detailId;
-    this.orderedDetail.totalPrice = this.detail.price;
+    this.orderedDetail.orderedDetailPrice = this.detail.price;
+    this.totalPrice = this.detail.price;
 
-    this.alreadyOrdered = this.detailOrderService.order.orderedDetails
+    this.alreadyOrdered = this.detailOrderService.order.orderRows
       .filter(d => d.detailId === this.orderedDetail.detailId)[0];
 
       if (this.alreadyOrdered) {
         this.orderedDetail.count = this.alreadyOrdered.count;
-        this.orderedDetail.totalPrice = this.alreadyOrdered.totalPrice;
+        this.orderedDetail.orderedDetailPrice = this.alreadyOrdered.orderedDetailPrice;
+        this.totalPrice = this.alreadyOrdered.count * this.alreadyOrdered.orderedDetailPrice;
       } else {
         this.orderedDetail.count = 1;
       }
@@ -46,7 +48,7 @@ export class DetailConfigureModalComponent implements OnInit {
 
   addDetail() {
     this.orderedDetail.count++;
-    this.orderedDetail.totalPrice += this.detail.price;
+    this.totalPrice += this.detail.price;
   }
 
   removeDetail() {
@@ -54,14 +56,13 @@ export class DetailConfigureModalComponent implements OnInit {
       return;
     } else {
       this.orderedDetail.count--;
-      this.orderedDetail.totalPrice -= Math.round(this.detail.price);
+      this.totalPrice -= this.detail.price;
     }
   }
 
   addToOrder() {
     if (this.alreadyOrdered) {
       this.alreadyOrdered.count = this.orderedDetail.count;
-      this.alreadyOrdered.totalPrice = this.orderedDetail.totalPrice;
     } else {
       this.detailOrderService.addDetail(this.orderedDetail);
     }

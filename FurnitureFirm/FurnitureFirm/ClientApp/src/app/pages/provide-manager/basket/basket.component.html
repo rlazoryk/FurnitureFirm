@@ -3,7 +3,7 @@
       <mat-card-title>Корзина</mat-card-title>
   </mat-card-header>
 
-  <div *ngIf="detailOrderService.order.orderedDetails.length == 0 else basket" fxLayout="row"
+  <div *ngIf="detailOrderService.order.orderRows.length == 0 else basket" fxLayout="row"
       fxLayoutAlign="center center">
       <h3>Корзина пуста :(</h3>
   </div>
@@ -31,7 +31,7 @@
 
       <mat-card-actions fxLayout="row" fxLayoutAlign="end center">
           <div>
-              <button mat-flat-button color="accent">Оформити замовлення</button>
+              <button mat-flat-button color="accent" (click)="showProviderDialog()">Оформити замовлення</button>
           </div>
       </mat-card-actions>
   </ng-template>
