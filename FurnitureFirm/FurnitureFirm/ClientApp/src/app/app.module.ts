@@ -25,6 +25,11 @@ import { DetailOrdersComponent } from './pages/provide-manager/detail-orders/det
 import { OrdersTableComponent } from './pages/provide-manager/detail-orders/orders-table/orders-table.component';
 import { OrderInfoModalComponent } from './pages/provide-manager/modals/order-info-modal/order-info-modal.component';
 import { WarehouseConfigureModalComponent } from './pages/provide-manager/modals/warehouse-configure-modal/warehouse-configure-modal.component';
+import { WarehouseComponent } from './pages/warehouse-manager/warehouse/warehouse.component';
+import { ComingsComponent } from './pages/warehouse-manager/comings/comings.component';
+import { ConsumptionsComponent } from './pages/warehouse-manager/consumptions/consumptions.component';
+import { WarehoseTableComponent } from './pages/warehouse-manager/warehouse/warehose-table/warehose-table.component';
+import { TransportConfiguringModalComponent } from './pages/warehouse-manager/modals/transport-configuring-modal/transport-configuring-modal.component';
 
 
 
@@ -47,7 +52,12 @@ import { WarehouseConfigureModalComponent } from './pages/provide-manager/modals
     DetailOrdersComponent,
     OrdersTableComponent,
     OrderInfoModalComponent,
-    WarehouseConfigureModalComponent
+    WarehouseConfigureModalComponent,
+    WarehouseComponent,
+    ComingsComponent,
+    ConsumptionsComponent,
+    WarehoseTableComponent,
+    TransportConfiguringModalComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -59,7 +69,8 @@ import { WarehouseConfigureModalComponent } from './pages/provide-manager/modals
       { path: 'furniture/basket', component: BasketComponent },
       { path: 'details/basket', component: DetailBasketComponent },
       { path: 'details', component: DetailsCatalogComponent },
-      { path: 'detailOrders', component: DetailOrdersComponent}
+      { path: 'detailOrders', component: DetailOrdersComponent },
+      { path: 'warehouses', component: WarehouseComponent }
     ]),
     BrowserAnimationsModule,
     MatTableModule,

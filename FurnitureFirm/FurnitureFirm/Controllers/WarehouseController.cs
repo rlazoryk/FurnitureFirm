@@ -25,7 +25,7 @@ namespace FurnitureFirm.Controllers
             _mapper = mapper;
         }
 
-        //Get api/warehouse/names
+        //GET api/warehouse/names
         [HttpGet("names")]
         public async Task<IEnumerable<WarehouseNamesDto>> GetWarehouseInfo()
         {
@@ -34,7 +34,69 @@ namespace FurnitureFirm.Controllers
                 .ToListAsync();
         }
 
-        //Post api/warehouse
+        //GET api/warehouse/1
+        [HttpGet("{id}")]
+        public async Task<ActionResult<IEnumerable<WarehouseDetailDto>>> GetWarehouseDetails(int id)
+        {
+            var result = await _context.WarehouseDetails
+                .Include(wd => wd.Detail)
+                .ThenInclude(d => d.Color)
+                .Include(wd => wd.Detail)
+                .ThenInclude(d => d.Material)
+                .Include(wd => wd.Detail)
+                .ThenInclude(d => d.Producer)
+                .Where(wd => wd.WarehouseId == id)
+                .Select(wd => _mapper.Map<WarehouseDetailDto>(wd))
+                .ToListAsync();
+
+            return result;
+        }
+
+        //PUT api/details
+        [HttpPut]
+        public async Task<IActionResult> PutWarehouseDetails([FromBody]MovementDto movementDto)
+        {
+            var fromWarehouseDetail = await _context.WarehouseDetails.FirstOrDefaultAsync(wd => wd.WarehouseDetailId == movementDto.FromWarehouseDetailId);
+
+            fromWarehouseDetail.Count -= movementDto.Count;
+
+            var toWarehouseDetail = await _context.WarehouseDetails
+                .Where(wd => wd.WarehouseId == movementDto.ToWarehouseId)
+                .FirstOrDefaultAsync(wd => wd.DetailId == movementDto.DetailId);
+
+            if(toWarehouseDetail == null)
+            {
+                toWarehouseDetail = new WarehouseDetails()
+                {
+                    DetailId = movementDto.DetailId,
+
+                    WarehouseId = movementDto.ToWarehouseId,
+
+                    Count = movementDto.Count
+                };
+
+                await _context.WarehouseDetails.AddAsync(toWarehouseDetail);
+            }
+            else
+            {
+                toWarehouseDetail.Count += movementDto.Count;
+            }
+
+            await _context.WarehouseMovements.AddAsync(new WarehouseMovements()
+            {
+                FromWarehouseDetailId = fromWarehouseDetail.WarehouseDetailId,
+
+                ToWarehouseDetailId = toWarehouseDetail.WarehouseDetailId,
+
+                Date = DateTime.UtcNow,
+
+                WorkerId = movementDto.WorkerId               
+            });
+
+            return NoContent();
+        }
+
+        //POST api/warehouse
         [HttpPost]
         public async Task<IActionResult> AcceptDetailsToWarehouse([FromBody]ConfirmOrderDto confirmOrderDto)
         {

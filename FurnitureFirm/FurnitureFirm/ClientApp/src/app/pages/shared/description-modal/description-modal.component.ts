@@ -16,7 +16,6 @@ export class DescriptionModalComponent implements OnInit {
   constructor(@Inject(MAT_DIALOG_DATA) public data: DialogData) { }
 
   ngOnInit() {
-    console.log(this.data);
   }
 
 }

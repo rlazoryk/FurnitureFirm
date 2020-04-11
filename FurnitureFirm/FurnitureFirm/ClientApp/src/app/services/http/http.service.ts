@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { DetailsOrderRequest } from 'src/app/models/detailOrder-request';
 import { ConfirmOrder } from 'src/app/models/confirm-order';
+import { Movement } from 'src/app/models/detail-movement';
 
 @Injectable({
   providedIn: 'root'
@@ -71,5 +72,13 @@ export class HttpService {
 
   confirmOrder(order: ConfirmOrder) {
     return this.httpClient.post(this.warehouseUrl, order);
+  }
+
+  getWarehouseDetails(warehouseId: number) {
+    return this.httpClient.get(this.warehouseUrl + warehouseId);
+  }
+
+  putWarehouseDetail(movement: Movement) {
+    return this.httpClient.put(this.warehouseUrl, movement);
   }
 }
