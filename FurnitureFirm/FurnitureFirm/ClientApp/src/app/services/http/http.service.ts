@@ -19,11 +19,15 @@ export class HttpService {
   constructor(private httpClient: HttpClient) { }
 
   getCategories() {
-    return this.httpClient.get(this.furnitureUrl + 'categories');
+    return this.httpClient.get(this.furnitureUrl + "categories");
+  }
+
+  getCities() {
+    return this.httpClient.get(this.orderUrl + "cities");
   }
 
   getPaymentSystems() {
-    return this.httpClient.get(this.orderUrl + 'paymentSystems');
+    return this.httpClient.get(this.orderUrl + "paymentSystems");
   }
 
   getFurnituresById(id: number) {
@@ -31,7 +35,7 @@ export class HttpService {
   }
 
   getFurnituresByCategory(categoryName: string) {
-    return this.httpClient.get(this.furnitureUrl + 'category/' + categoryName);
+    return this.httpClient.get(this.furnitureUrl + "category/" + categoryName);
   }
 
   getAdditionalDetails(furnitureId: number) {
@@ -80,5 +84,17 @@ export class HttpService {
 
   putWarehouseDetail(movement: Movement) {
     return this.httpClient.put(this.warehouseUrl, movement);
+  }
+
+  createFurnitureOrder(order) {
+    return this.httpClient.post(this.orderUrl, order)
+  }
+
+  getFurnitureOrders() {
+    return this.httpClient.get(this.orderUrl);
+  }
+
+  cancelFurnitureOrder(id: number) {
+    return this.httpClient.delete(this.orderUrl + id);
   }
 }

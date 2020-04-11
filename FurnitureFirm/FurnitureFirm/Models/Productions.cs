@@ -18,6 +18,7 @@ namespace FurnitureFirm.Models
         public DateTime? DateFinished { get; set; }
 
         public virtual FurnitureOrderRows FurnitureOrderRow { get; set; }
+        public virtual Warehouses Warehouse { get; set; }
         public virtual ICollection<Consumptions> Consumptions { get; set; }
         public virtual ICollection<WorkerProduction> WorkerProduction { get; set; }
     }

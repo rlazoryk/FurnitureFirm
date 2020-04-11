@@ -155,9 +155,8 @@ CREATE TABLE DeliveryInfos
 	DeliveryInfoID       integer IDENTITY(1, 1)  NOT NULL ,
 	DeliveryPrice        integer  NULL ,
 	Street               varchar(20)  NULL ,
-	Bulding              varchar(20)  NULL ,
+	Building             integer  NULL ,
 	CityID               integer  NOT NULL ,
-	OrderID              integer  NOT NULL ,
 	DeliveryStarted      datetime  NULL ,
 	DeliveryFinished     datetime  NULL 
 )
@@ -215,7 +214,7 @@ CREATE TABLE Details
 	ColorID              integer  NOT NULL ,
 	MaterialID           integer  NOT NULL ,
 	ProducerID           integer  NOT NULL ,
-	Description          varchar(20)  NULL 
+	Description          nvarchar(4000)  NULL 
 )
 go
 
@@ -269,7 +268,7 @@ CREATE TABLE Furnitures
 ( 
 	FurnitureID          integer IDENTITY(1, 1) NOT NULL ,
 	Name                 varchar(20)  NOT NULL ,
-	Description          varchar(20)  NULL ,
+	Description          nvarchar(4000)  NULL ,
 	TimeToBuild          integer  NULL ,
 	CategoryID           integer  NULL ,
 	Height               integer  NULL ,
@@ -311,6 +310,8 @@ CREATE TABLE Orders
 	WorkerID             integer  NOT NULL ,
 	PaymentSystemID      integer  NOT NULL ,
 	CustomerID           integer  NOT NULL ,
+	DeliveryInfoID		 integer NOT NULL ,
+	ProfitID			 integer NOT NULL,
 	Status               varchar(20)  NULL 
 )
 go
@@ -341,7 +342,7 @@ go
 CREATE TABLE Posts
 ( 
 	PostID               integer IDENTITY(1, 1) NOT NULL ,
-	Name                 varchar(20)  NOT NULL ,
+	Name                 varchar(50)  NOT NULL ,
 	Salary               integer  NULL 
 )
 go
@@ -391,8 +392,7 @@ go
 CREATE TABLE Profits
 ( 
 	ProfitID             integer IDENTITY(1, 1) NOT NULL ,
-	Money                integer  NULL ,
-	OrderID              integer  NULL 
+	Money                integer  NULL
 )
 go
 
@@ -426,7 +426,7 @@ CREATE TABLE Providers
 	PhoneNumber          varchar(20)  NULL ,
 	CityID               integer  NOT NULL ,
 	Street               varchar(20)  NULL ,
-	Building             varchar(20)  NULL 
+	Building             integer  NULL 
 )
 go
 
@@ -632,15 +632,6 @@ go
 
 
 
-ALTER TABLE DeliveryInfos
-	ADD CONSTRAINT R_31 FOREIGN KEY (OrderID) REFERENCES Orders(OrderID)
-		ON DELETE NO ACTION
-		ON UPDATE NO ACTION
-go
-
-
-
-
 ALTER TABLE DetailOrderRows
 	ADD CONSTRAINT R_191 FOREIGN KEY (DetailID) REFERENCES Details(DetailID)
 		ON DELETE NO ACTION
@@ -784,6 +775,20 @@ go
 
 
 
+ALTER TABLE Orders
+	ADD CONSTRAINT R_29 FOREIGN KEY (DeliveryInfoID) REFERENCES DeliveryInfos(DeliveryInfoID)
+		ON DELETE NO ACTION
+		ON UPDATE NO ACTION
+go
+
+
+
+ALTER TABLE Orders
+	ADD CONSTRAINT R_261 FOREIGN KEY (ProfitID) REFERENCES Profits(ProfitID)
+		ON DELETE NO ACTION
+		ON UPDATE NO ACTION
+go
+
 
 ALTER TABLE Producers
 	ADD CONSTRAINT R_170 FOREIGN KEY (CountryID) REFERENCES Countries(CountryID)
@@ -802,15 +807,7 @@ go
 
 
 ALTER TABLE Productions
-	ADD CONSTRAINT R_197 FOREIGN KEY (WarehouseID) REFERENCES Warehouses(WarehouseID)
-		ON DELETE NO ACTION
-		ON UPDATE NO ACTION
-go
-
-
-
-ALTER TABLE Profits
-	ADD CONSTRAINT R_199 FOREIGN KEY (OrderID) REFERENCES Orders(OrderID)
+	ADD CONSTRAINT R_198 FOREIGN KEY (WarehouseID) REFERENCES Warehouses(WarehouseID)
 		ON DELETE NO ACTION
 		ON UPDATE NO ACTION
 go

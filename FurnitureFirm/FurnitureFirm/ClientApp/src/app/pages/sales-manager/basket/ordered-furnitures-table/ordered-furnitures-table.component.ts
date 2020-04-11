@@ -3,7 +3,7 @@ import { OrderService } from 'src/app/services/order/order.service';
 import { OrderedFurniture } from 'src/app/models/ordered-furniture';
 import { Furniture } from 'src/app/models/furniture';
 import { FurnitureConfiguringModalComponent } from '../../shared/furniture-configuring-modal/furniture-configuring-modal.component';
-import { MatDialog, MatTableDataSource } from '@angular/material';
+import { MatDialog, MatTableDataSource, MatSnackBar } from '@angular/material';
 import { HttpService } from 'src/app/services/http/http.service';
 
 @Component({
@@ -13,7 +13,7 @@ import { HttpService } from 'src/app/services/http/http.service';
 })
 export class OrderedFurnituresTableComponent implements OnInit {
 
-  displayedColumns : string[] = ['name', 'count', 'price', 'config', 'remove'];
+  displayedColumns : string[] = ['name', 'count', 'price', 'buttons'];
   furnitures : Furniture[];
   loaded = false;
 
@@ -36,7 +36,7 @@ export class OrderedFurnituresTableComponent implements OnInit {
   }
 
   showFurnitureConfiguring(furniture: Furniture){
-    this.dialog.open(FurnitureConfiguringModalComponent, {
+    const dialogRef = this.dialog.open(FurnitureConfiguringModalComponent, {
         width: '600px',
         data: furniture
     })
@@ -48,7 +48,6 @@ export class OrderedFurnituresTableComponent implements OnInit {
   }
 
   getOrderedCount(furniture: Furniture) {
-    console.log("Ordered count" + furniture)
     return this.orderService.currentOrder.orderedFurnitures.filter(f=>f.furnitureId == furniture.furnitureId)[0].count;
   }
 

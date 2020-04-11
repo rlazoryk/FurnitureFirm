@@ -1,9 +1,12 @@
 import { Component, OnInit, Input, ViewChild } from '@angular/core';
 import { HttpService } from 'src/app/services/http/http.service';
 import { Furniture } from 'src/app/models/furniture';
-import { MatDialog, MatSort, MatTableDataSource } from '@angular/material';
+import { MatDialog, MatSort, MatTableDataSource, MatSnackBar } from '@angular/material';
 import { DescriptionModalComponent } from 'src/app/pages/shared/description-modal/description-modal.component';
 import { FurnitureConfiguringModalComponent } from '../../shared/furniture-configuring-modal/furniture-configuring-modal.component';
+import { Constants } from 'src/app/pages/shared/constants';
+
+
 
 
 
@@ -29,6 +32,9 @@ export class FurnitureTableComponent implements OnInit {
     this.httpService.getFurnituresByCategory(this.category)
       .subscribe(response => {
         this.furnitures = response as Furniture[]
+        this.furnitures.forEach(element => {
+          element.price = Math.round(element.price * Constants.furniturePriceCoef);
+        });
         this.dataSource  = new MatTableDataSource(this.furnitures)
         this.dataSource.sort = this.sort;
       })
@@ -45,7 +51,7 @@ export class FurnitureTableComponent implements OnInit {
   }
 
   showFurnitureConfiguring(furniture: Furniture){
-    this.dialog.open(FurnitureConfiguringModalComponent, {
+    const dialogRef = this.dialog.open(FurnitureConfiguringModalComponent, {
         width: '600px',
         data: furniture
     })

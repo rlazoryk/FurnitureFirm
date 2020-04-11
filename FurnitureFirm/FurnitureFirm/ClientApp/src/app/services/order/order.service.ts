@@ -13,6 +13,10 @@ export class OrderService {
   constructor() {
   }
 
+  clearOrder() {
+    this.currentOrder = new OrderRequest();
+  }
+
   addFurniture(orderedFurniture : OrderedFurniture) {
     this.currentOrder.orderedFurnitures.push(orderedFurniture);
   }
@@ -26,7 +30,7 @@ export class OrderService {
     this.currentOrder.orderedFurnitures.forEach(furniture => {
       this.currentOrder.totalPrice += furniture.totalPrice;
     });
-
+    
     return this.currentOrder.totalPrice;
   }
 
