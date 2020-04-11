@@ -6,7 +6,7 @@ import { Detail } from 'src/app/models/detail';
 import { OrderedFurniture } from 'src/app/models/ordered-furniture';
 import { OrderService } from 'src/app/services/order/order.service';
 import { DescriptionModalComponent } from 'src/app/pages/shared/description-modal/description-modal.component';
-import { OrderedDetail } from 'src/app/models/ordered-detail';
+import { OrderedDetail, OrderedAdditionalDetail } from 'src/app/models/ordered-detail';
 import { AdditionalDetail } from 'src/app/models/additional-detail';
 import { Constants } from 'src/app/pages/shared/constants';
 
@@ -93,7 +93,7 @@ export class FurnitureConfiguringModalComponent implements OnInit {
   addDetail(detail: AdditionalDetail) {
     let orderedDetail = this.orderedFurniture.additionalDetails.filter(d => d.additionalDetailId == detail.additionalDetailId)[0];
     if (!orderedDetail) {
-      orderedDetail = new OrderedDetail();
+      orderedDetail = new OrderedAdditionalDetail();
       orderedDetail.additionalDetailId = detail.additionalDetailId;
       orderedDetail.totalTime = detail.timeToIntegrate;
       orderedDetail.count = 1;
