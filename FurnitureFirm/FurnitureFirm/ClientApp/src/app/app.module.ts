@@ -19,6 +19,10 @@ import { OrderedFurnituresTableComponent } from './pages/sales-manager/basket/or
 import { DetailsCatalogComponent } from './pages/provide-manager/details-catalog/details-catalog.component';
 import { OrdersTableComponent } from './pages/sales-manager/orders/orders-table/orders-table.component';
 import { OrderDetailsComponent } from './pages/sales-manager/orders/order-details/order-details.component';
+import { WarehousesDetailsComponent } from './pages/production-worker/warehouses-details/warehouses-details.component';
+import { DetailsTableComponent } from './pages/production-worker/warehouses-details/details-table/details-table.component';
+import { ProductionsComponent } from './pages/production-worker/productions/productions.component';
+import { ProductionsTableComponent } from './pages/production-worker/productions/productions-table/productions-table.component';
 
 
 
@@ -37,6 +41,10 @@ import { OrderDetailsComponent } from './pages/sales-manager/orders/order-detail
     DetailsCatalogComponent,
     OrdersTableComponent,
     OrderDetailsComponent,
+    WarehousesDetailsComponent,
+    DetailsTableComponent,
+    ProductionsComponent,
+    ProductionsTableComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -47,6 +55,7 @@ import { OrderDetailsComponent } from './pages/sales-manager/orders/order-detail
       { path: 'furnitures', component: FurnituresCatalogComponent},
       { path: 'basket', component: BasketComponent},
       { path: 'orders', component: OrdersTableComponent},
+      { path: 'warehouses-details', component: WarehousesDetailsComponent},
       { path: 'details', component: DetailsCatalogComponent }
     ]),
     BrowserAnimationsModule,
