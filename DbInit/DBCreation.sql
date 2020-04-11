@@ -403,22 +403,6 @@ ALTER TABLE Profits
 go
 
 
-
-CREATE TABLE Provider_Producer
-( 
-	ProviderID           integer  NOT NULL ,
-	ProducerID           integer  NOT NULL 
-)
-go
-
-
-
-ALTER TABLE Provider_Producer
-	ADD CONSTRAINT XPKProvider_Producer PRIMARY KEY  CLUSTERED (ProviderID ASC,ProducerID ASC)
-go
-
-
-
 CREATE TABLE Providers
 ( 
 	ProviderID           integer IDENTITY(1, 1) NOT NULL ,
@@ -476,7 +460,8 @@ CREATE TABLE WarehouseMovements
 	Date                 datetime  NOT NULL ,
 	FromWarehouseDetailID integer  NOT NULL ,
 	ToWarehouseDetailID  integer  NOT NULL ,
-	WorkerID             integer  NULL 
+	WorkerID             integer  NULL,
+	Count				 integer NOT NULL
 )
 go
 
@@ -808,24 +793,6 @@ go
 
 ALTER TABLE Productions
 	ADD CONSTRAINT R_198 FOREIGN KEY (WarehouseID) REFERENCES Warehouses(WarehouseID)
-		ON DELETE NO ACTION
-		ON UPDATE NO ACTION
-go
-
-
-
-
-ALTER TABLE Provider_Producer
-	ADD CONSTRAINT R_171 FOREIGN KEY (ProviderID) REFERENCES Providers(ProviderID)
-		ON DELETE NO ACTION
-		ON UPDATE NO ACTION
-go
-
-
-
-
-ALTER TABLE Provider_Producer
-	ADD CONSTRAINT R_173 FOREIGN KEY (ProducerID) REFERENCES Producers(ProducerID)
 		ON DELETE NO ACTION
 		ON UPDATE NO ACTION
 go

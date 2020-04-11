@@ -13,7 +13,7 @@ namespace FurnitureFirm.Models
         public int DeliveryInfoId { get; set; }
         public int? DeliveryPrice { get; set; }
         public string Street { get; set; }
-        public string Building { get; set; }
+        public int? Building { get; set; }
         public int CityId { get; set; }
         public DateTime? DeliveryStarted { get; set; }
         public DateTime? DeliveryFinished { get; set; }

@@ -74,8 +74,6 @@ namespace FurnitureFirm.Controllers
 
                     Count = movementDto.Count
                 };
-
-                await _context.WarehouseDetails.AddAsync(toWarehouseDetail);
             }
             else
             {
@@ -86,13 +84,13 @@ namespace FurnitureFirm.Controllers
             {
                 FromWarehouseDetailId = fromWarehouseDetail.WarehouseDetailId,
 
-                ToWarehouseDetailId = toWarehouseDetail.WarehouseDetailId,
+                ToWarehouseDetail = toWarehouseDetail,
 
                 Date = DateTime.UtcNow,
 
-                WorkerId = movementDto.WorkerId
+                WorkerId = movementDto.WorkerId,
                 
-                // Count = movementDto.Count
+                Count = movementDto.Count
             });
 
             await _context.SaveChangesAsync();
