@@ -1,5 +1,6 @@
+<h1 *ngIf='isLoading'>Loading...</h1>
 <mat-tab-group>
-  <mat-tab *ngFor="let wh of warehouses" [label]="'Склад ' + wh.warehouseId + '(' + wh.street + ')'">
-    <app-warehose-table [warehouseId]="wh.warehouseId"></app-warehose-table>
+  <mat-tab *ngFor="let wh of warehouseComings" [label]="'Склад ' + wh.warehouse.warehouseId + '(' + wh.warehouse.street + ')'">
+    <app-comings-table [comings]="wh.comings"></app-comings-table>
   </mat-tab>
 </mat-tab-group>

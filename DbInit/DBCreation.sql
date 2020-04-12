@@ -107,7 +107,8 @@ CREATE TABLE Consumptions
 	ConsumptionID        integer IDENTITY(1, 1) NOT NULL ,
 	Date                 datetime  NOT NULL ,
 	ProductionID         integer  NOT NULL ,
-	WarehouseDetailID    integer  NOT NULL 
+	WarehouseDetailID    integer  NOT NULL,
+	Count				 integer NOT NULL
 )
 go
 

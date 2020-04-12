@@ -9,6 +9,7 @@ namespace FurnitureFirm.Models
         public DateTime Date { get; set; }
         public int ProductionId { get; set; }
         public int WarehouseDetailId { get; set; }
+        public int Count { get; set; }
 
         public virtual Productions Production { get; set; }
         public virtual WarehouseDetails WarehouseDetail { get; set; }

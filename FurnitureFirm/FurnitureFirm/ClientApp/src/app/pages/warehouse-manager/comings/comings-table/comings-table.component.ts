@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Coming } from 'src/app/models/coming';
+import { HttpService } from 'src/app/services/http/http.service';
 
 @Component({
   selector: 'app-comings-table',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComingsTableComponent implements OnInit {
 
+  @Input()comings: Coming[];
+  displayedColumns: string[] = ['date', 'order', 'name', 'count', 'worker'];
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
-
 }

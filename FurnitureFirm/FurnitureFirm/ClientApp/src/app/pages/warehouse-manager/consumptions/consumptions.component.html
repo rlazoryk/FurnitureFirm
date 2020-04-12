@@ -1,1 +1,6 @@
-<p>consumptions works!</p>
+<h1 *ngIf='isLoading'>Loading...</h1>
+<mat-tab-group>
+  <mat-tab *ngFor="let wh of warehouseConsumptions" [label]="'Склад ' + wh.warehouse.warehouseId + '(' + wh.warehouse.street + ')'">
+    <app-constumtioms-table [consumptions]="wh.consumptions"></app-constumtioms-table>
+  </mat-tab>
+</mat-tab-group>

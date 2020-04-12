@@ -41,6 +41,15 @@ namespace FurnitureFirm
             CreateMap<WarehouseDetails, WarehouseDetailDto>()
                 .ForMember(wd => wd.Count, opt => opt.MapFrom(wd => wd.Count.Value))
                 .ForMember(wd => wd.WarehouseId, opt => opt.MapFrom(wd => wd.WarehouseId.Value));
+
+            CreateMap<Comings, ComingDto>()
+                .ForMember(c => c.DetailName, opt => opt.MapFrom(c => c.DetailOrderRow.Detail.Name))
+                .ForMember(c => c.Count, opt => opt.MapFrom(c => c.DetailOrderRow.Count))
+                .ForMember(c => c.OrderId, opt => opt.MapFrom(c => c.DetailOrderRow.DetailOrderId))
+                .ForMember(c => c.WorkerName, opt => opt.MapFrom(c => c.Worker.Name));
+
+            CreateMap<Consumptions, ConsumptionDto>()
+                .ForMember(c => c.DetailName, opt => opt.MapFrom(c => c.WarehouseDetail.Detail.Name));
         }
     }
 }

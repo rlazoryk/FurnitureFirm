@@ -37,6 +37,7 @@ import { ConsumptionsComponent } from './pages/warehouse-manager/consumptions/co
 import { WarehoseTableComponent } from './pages/warehouse-manager/warehouse/warehose-table/warehose-table.component';
 import { TransportConfiguringModalComponent } from './pages/warehouse-manager/modals/transport-configuring-modal/transport-configuring-modal.component';
 import { ComingsTableComponent } from './pages/warehouse-manager/comings/comings-table/comings-table.component';
+import { ConstumtiomsTableComponent } from './pages/warehouse-manager/consumptions/constumtioms-table/constumtioms-table.component';
 
 
 
@@ -70,7 +71,8 @@ import { ComingsTableComponent } from './pages/warehouse-manager/comings/comings
     ConsumptionsComponent,
     WarehoseTableComponent,
     TransportConfiguringModalComponent,
-    ComingsTableComponent
+    ComingsTableComponent,
+    ConstumtiomsTableComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -86,7 +88,9 @@ import { ComingsTableComponent } from './pages/warehouse-manager/comings/comings
       { path: 'details/basket', component: DetailBasketComponent },
       { path: 'details', component: DetailsCatalogComponent },
       { path: 'detailOrders', component: DetailOrdersComponent },
-      { path: 'warehouses', component: WarehouseComponent }
+      { path: 'warehouses', component: WarehouseComponent },
+      { path: 'warehouses/comings', component: ComingsComponent },
+      { path: 'warehouses/consumptions', component: ConsumptionsComponent }
     ]),
     BrowserAnimationsModule,
     MatTableModule,

@@ -52,6 +52,65 @@ namespace FurnitureFirm.Controllers
             return result;
         }
 
+        //GET api/warehouse/comings
+        [HttpGet("comings")]
+        public async Task<ActionResult<IEnumerable<WarehouseComingDto>>> GetComings()
+        {
+            var warehouses = await _context.Warehouses.ToListAsync();
+
+            var warehousesIds = warehouses.Select(w => w.WarehouseId).ToList();
+
+            List<WarehouseComingDto> warehouseComingDtos = new List<WarehouseComingDto>();
+
+            foreach(var w in warehousesIds)
+            { 
+                warehouseComingDtos.Add(new WarehouseComingDto()
+                {
+                    Warehouse = _mapper.Map<WarehouseNamesDto>(warehouses.FirstOrDefault(wr => wr.WarehouseId == w)),
+                        
+                    Comings = await _context.Comings
+                        .Include(c => c.DetailOrderRow)
+                        .Include(c => c.DetailOrderRow)
+                        .ThenInclude(or => or.Detail)
+                        .Include(c => c.Worker)
+                        .Include(c => c.WarehouseDetail)
+                        .Where(c => c.WarehouseDetail.WarehouseId == w)
+                        .Select(c => _mapper.Map<ComingDto>(c))
+                        .ToListAsync()               
+                });
+            }
+
+            return warehouseComingDtos;
+        }
+
+        //GET api/warehouse/consumptions
+        [HttpGet("consumptions")]
+        public async Task<ActionResult<IEnumerable<WarehouseConsumptionDto>>> GetConsumptions(int warehouseId)
+        {
+            var warehouses = await _context.Warehouses.ToListAsync();
+
+            var warehousesIds = warehouses.Select(w => w.WarehouseId).ToList();
+
+            List<WarehouseConsumptionDto> warehouseConsumptionDtos = new List<WarehouseConsumptionDto>();
+
+            foreach (var w in warehousesIds)
+            {
+                warehouseConsumptionDtos.Add(new WarehouseConsumptionDto()
+                {
+                    Warehouse = _mapper.Map<WarehouseNamesDto>(warehouses.FirstOrDefault(wr => wr.WarehouseId == w)),
+
+                    Consumptions = await _context.Consumptions
+                        .Include(c => c.WarehouseDetail)
+                        .ThenInclude(c => c.Detail)
+                        .Where(c => c.WarehouseDetail.WarehouseId.Value == warehouseId)
+                        .Select(c => _mapper.Map<ConsumptionDto>(c))
+                        .ToListAsync()
+                });
+            }
+
+            return warehouseConsumptionDtos;
+        }
+
         //PUT api/details
         [HttpPut]
         public async Task<IActionResult> PutWarehouseDetails([FromBody]MovementDto movementDto)
@@ -117,41 +176,32 @@ namespace FurnitureFirm.Controllers
             {
                 var warehouseDetail = warehouseDetails.FirstOrDefault(wd => wd.DetailId == row.DetailId);
 
-                if(warehouseDetail == null)
+                if (warehouseDetail == null)
                 {
-                    _context.Comings.Add(new Comings
+                    warehouseDetail = new WarehouseDetails()
                     {
-                        Date = DateTime.UtcNow,
+                        WarehouseId = confirmOrderDto.WarehouseId,
 
-                        DetailOrderRowId = row.DetailOrderRowId,
+                        DetailId = row.DetailId.Value,
 
-                        WarehouseDetail = new WarehouseDetails()
-                        {
-                            WarehouseId = confirmOrderDto.WarehouseId,
-
-                            DetailId = row.DetailId.Value,
-
-                            Count = row.Count
-                        },
-
-                        WorkerId = confirmOrderDto.WorkerId
-                    });
+                        Count = row.Count
+                    };
                 }
                 else
                 {
                     warehouseDetail.Count += row.Count;
-
-                    _context.Comings.Add(new Comings
-                    {
-                        Date = DateTime.UtcNow,
-
-                        DetailOrderRowId = row.DetailOrderRowId,
-
-                        WarehouseDetailId = warehouseDetail.WarehouseDetailId,
-
-                        WorkerId = confirmOrderDto.WorkerId
-                    });
                 }
+
+                await _context.Comings.AddAsync(new Comings
+                {
+                    Date = DateTime.UtcNow,
+
+                    DetailOrderRowId = row.DetailOrderRowId,
+
+                    WarehouseDetail = warehouseDetail,
+
+                    WorkerId = confirmOrderDto.WorkerId
+                });                              
             }
 
             await _context.SaveChangesAsync();

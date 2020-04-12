@@ -97,4 +97,12 @@ export class HttpService {
   cancelFurnitureOrder(id: number) {
     return this.httpClient.delete(this.orderUrl + id);
   }
+
+  getWarehouseComings() {
+    return this.httpClient.get(this.warehouseUrl + 'comings');
+  }
+
+  getWarehouseConsumptions() {
+    return this.httpClient.get(this.warehouseUrl + 'consumptions');
+  }
 }

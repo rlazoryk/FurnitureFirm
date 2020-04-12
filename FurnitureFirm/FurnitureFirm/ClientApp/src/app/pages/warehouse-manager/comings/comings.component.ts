@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Warehouse } from 'src/app/models/warehouse';
 import { HttpService } from 'src/app/services/http/http.service';
+import { Coming } from 'src/app/models/coming';
 
 @Component({
   selector: 'app-comings',
@@ -9,13 +10,16 @@ import { HttpService } from 'src/app/services/http/http.service';
 })
 export class ComingsComponent implements OnInit {
 
-  warehouses: Warehouse[];
+  warehouseComings: { warehouse: Warehouse; comings: Coming[] }[];
+  isLoading = false;
 
   constructor(private http: HttpService) { }
 
   ngOnInit(): void {
-    this.http.getWarehouses().subscribe(response => {
-      this.warehouses = response as Warehouse[];
+    this.isLoading = true;
+    this.http.getWarehouseComings().subscribe(response => {
+      this.isLoading = false;
+      this.warehouseComings = response as any;
     });
   }
 }
