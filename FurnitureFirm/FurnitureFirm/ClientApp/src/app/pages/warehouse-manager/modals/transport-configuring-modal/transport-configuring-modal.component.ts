@@ -4,6 +4,7 @@ import { MAT_DIALOG_DATA, MatDialog } from '@angular/material';
 import { HttpService } from 'src/app/services/http/http.service';
 import { WarehouseDetail } from 'src/app/models/warehouse-detail';
 import { Movement } from 'src/app/models/detail-movement';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-transport-configuring-modal',
@@ -18,7 +19,8 @@ export class TransportConfiguringModalComponent implements OnInit {
 
   constructor(@Inject(MAT_DIALOG_DATA) public detail: WarehouseDetail,
     private http: HttpService,
-    private dialog: MatDialog) { }
+    private dialog: MatDialog,
+    private auth: AuthService) { }
 
   ngOnInit(): void {
     this.http.getWarehouses().subscribe(response => {
@@ -45,7 +47,7 @@ export class TransportConfiguringModalComponent implements OnInit {
     transportate.toWarehouseId = this.selectedWarehouse;
     transportate.count = this.transportCount;
     transportate.detailId = this.detail.detail.detailId;
-    transportate.workerId = 2;
+    transportate.workerId = this.auth.worker.workerId;
 
     this.detail.count -= this.transportCount;
 

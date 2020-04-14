@@ -1,0 +1,22 @@
+.warn-color {
+  background-color: maroon;
+  color: #fff;
+  width: 20%;
+  height: 20%;
+}
+
+.container {
+  width: 80%;
+  margin: 50px;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.submitBtn {
+  width: 80%;
+  margin: 20px 0;
+  height: 50px;
+  font-size: 20px;
+}

@@ -1,0 +1,56 @@
+<h2 fxLayout="row" fxLayoutAlign="center center">Новий працівник</h2>
+
+<div class="row" fxLayout="row" fxLayoutAlign="space-around center">
+  <form [formGroup]="workerForm" (ngSubmit)="addWorker()" fxLayout="column" fxLayoutAlign="center center" style="width: 80%;">
+    <mat-form-field class="example-full-width">
+      <mat-label>Name</mat-label>
+
+      <input matInput
+             formControlName="name">
+
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Surname</mat-label>
+
+      <input matInput
+             formControlName="surname">
+
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width"
+                    placeholder="Ex. pat@example.com">
+      <mat-label>Email</mat-label>
+
+      <input matInput
+             formControlName="email">
+
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Password</mat-label>
+
+      <input matInput
+             formControlName="pass">
+
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Phone number</mat-label>
+
+      <input matInput
+             formControlName="phone">
+
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Посада</mat-label>
+      <mat-select formControlName="post">
+          <mat-option *ngFor="let p of posts" [value]="p">
+              {{p}}
+          </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button mat-flat-button color="primary" class="submitBtn">Додати</button>
+  </form>
+</div>

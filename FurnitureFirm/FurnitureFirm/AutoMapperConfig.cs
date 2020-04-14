@@ -50,6 +50,11 @@ namespace FurnitureFirm
 
             CreateMap<Consumptions, ConsumptionDto>()
                 .ForMember(c => c.DetailName, opt => opt.MapFrom(c => c.WarehouseDetail.Detail.Name));
+
+            CreateMap<Workers, OutWorkerDto>()
+                .ForMember(w => w.PostName, opt => opt.MapFrom(w => w.Post.Name));
+
+            CreateMap<InWorkerDto, Workers>();
         }
     }
 }
