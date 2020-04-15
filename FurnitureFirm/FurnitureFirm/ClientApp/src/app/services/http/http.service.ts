@@ -94,6 +94,10 @@ export class HttpService {
     return this.httpClient.get(this.orderUrl);
   }
 
+  getFurnitureOrdersWithStatus(status: string) {
+    return this.httpClient.get(this.orderUrl + status);
+  }
+
   cancelFurnitureOrder(id: number) {
     return this.httpClient.delete(this.orderUrl + id);
   }

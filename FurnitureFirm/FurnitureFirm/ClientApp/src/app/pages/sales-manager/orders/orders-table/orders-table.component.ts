@@ -5,11 +5,11 @@ import { HttpService } from 'src/app/services/http/http.service';
 import { OrderDetailsComponent } from '../order-details/order-details.component';
 
 @Component({
-  selector: 'app-orders-table',
+  selector: 'app-furniture-orders-table',
   templateUrl: './orders-table.component.html',
   styleUrls: ['./orders-table.component.css']
 })
-export class OrdersTableComponent implements OnInit {
+export class FurnitureOrdersTableComponent implements OnInit {
 
   orders: Order[];
   dataSource: MatTableDataSource<Order>;

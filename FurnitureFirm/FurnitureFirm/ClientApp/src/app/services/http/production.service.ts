@@ -12,26 +12,26 @@ export class ProductionService {
   constructor(private httpClient: HttpClient) { }
 
   getWorkersOnProductionCount(orderId: number) {
-    this.httpClient.get(this.productionsUrl + "workers/" + orderId);
+    return this.httpClient.get(this.productionsUrl + "workers/" + orderId);
   }
 
   isAttachedToProduction(orderId: number, workerId: number) {
-    this.httpClient.get(this.productionsUrl + `attached/orderId=${orderId}&workerId=${workerId}`);
+    return this.httpClient.get(this.productionsUrl + `orderId=${orderId}&workerId=${workerId}`);
   }
 
-  startProduction(orderId: number, workerId: number) {
-    this.httpClient.put(this.productionsUrl, { orderId : orderId, workerId : workerId });
+  startProduction(orderId: number) {
+    return this.httpClient.put(this.productionsUrl + "start", orderId);
   }
 
   attachToProduction(orderId: number, workerId: number) {
-    this.httpClient.put(this.productionsUrl, { orderId : orderId, workerId : workerId });
+    return this.httpClient.put(this.productionsUrl + "attach", { orderId: orderId, workerId: workerId });
   }
 
-  finishProduction(orderId: number, workerId: number) {
-    //this.httpClient.put(this.productionsUrl, { orderId : orderId, workerId : workerId });
+  finishProduction(orderId: number) {
+    return this.httpClient.put(this.productionsUrl + "finish", orderId);
   }
 
   finishDelivery(orderId: number) {
-    this.httpClient.put(this.productionsUrl, { orderId : orderId });
+    return this.httpClient.put(this.productionsUrl + "delivery/finish", orderId);
   }
 }

@@ -18,6 +18,7 @@ import { BasketComponent } from './pages/sales-manager/basket/basket.component';
 import { OrderedFurnituresTableComponent } from './pages/sales-manager/basket/ordered-furnitures-table/ordered-furnitures-table.component';
 import { DetailsCatalogComponent } from './pages/provide-manager/details-catalog/details-catalog.component';
 import { OrderDetailsComponent } from './pages/sales-manager/orders/order-details/order-details.component';
+import { FurnitureOrdersTableComponent } from './pages/sales-manager/orders/orders-table/orders-table.component';
 import { WarehousesDetailsComponent } from './pages/production-worker/warehouses-details/warehouses-details.component';
 import { DetailsTableComponent } from './pages/production-worker/warehouses-details/details-table/details-table.component';
 import { ProductionsComponent } from './pages/production-worker/productions/productions.component';
@@ -70,7 +71,8 @@ import { ComingsTableComponent } from './pages/warehouse-manager/comings/comings
     ConsumptionsComponent,
     WarehoseTableComponent,
     TransportConfiguringModalComponent,
-    ComingsTableComponent
+    ComingsTableComponent,
+    FurnitureOrdersTableComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -79,8 +81,9 @@ import { ComingsTableComponent } from './pages/warehouse-manager/comings/comings
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'furnitures', component: FurnituresCatalogComponent},
-      { path: 'orders', component: OrdersTableComponent},
+      { path: 'orders', component: FurnitureOrdersTableComponent},
       { path: 'warehouses-details', component: WarehousesDetailsComponent},
+      { path: 'productions', component: ProductionsComponent},
       { path: 'furnitures', component: FurnituresCatalogComponent },
       { path: 'furniture/basket', component: BasketComponent },
       { path: 'details/basket', component: DetailBasketComponent },
