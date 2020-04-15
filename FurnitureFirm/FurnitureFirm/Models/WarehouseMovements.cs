@@ -10,6 +10,7 @@ namespace FurnitureFirm.Models
         public int FromWarehouseDetailId { get; set; }
         public int ToWarehouseDetailId { get; set; }
         public int? WorkerId { get; set; }
+        public int Count { get; set; }
 
         public virtual WarehouseDetails FromWarehouseDetail { get; set; }
         public virtual WarehouseDetails ToWarehouseDetail { get; set; }

@@ -8,7 +8,6 @@ namespace FurnitureFirm.Models
         public Providers()
         {
             DetailOrders = new HashSet<DetailOrders>();
-            ProviderProducer = new HashSet<ProviderProducer>();
         }
 
         public int ProviderId { get; set; }
@@ -16,10 +15,9 @@ namespace FurnitureFirm.Models
         public string PhoneNumber { get; set; }
         public int CityId { get; set; }
         public string Street { get; set; }
-        public string Building { get; set; }
+        public int? Building { get; set; }
 
         public virtual Cities City { get; set; }
         public virtual ICollection<DetailOrders> DetailOrders { get; set; }
-        public virtual ICollection<ProviderProducer> ProviderProducer { get; set; }
     }
 }

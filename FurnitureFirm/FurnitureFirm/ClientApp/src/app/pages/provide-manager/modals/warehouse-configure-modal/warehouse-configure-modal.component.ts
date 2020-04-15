@@ -3,6 +3,7 @@ import { Warehouse } from 'src/app/models/warehouse';
 import { MAT_DIALOG_DATA, MatDialog } from '@angular/material';
 import { HttpService } from 'src/app/services/http/http.service';
 import { ConfirmOrder } from 'src/app/models/confirm-order';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-warehouse-configure-modal',
@@ -16,7 +17,7 @@ export class WarehouseConfigureModalComponent implements OnInit {
 
   constructor(@Inject(MAT_DIALOG_DATA) public orderId: number,
     private http: HttpService,
-    private dialog: MatDialog) { }
+    private auth: AuthService) { }
 
   ngOnInit(): void {
     this.http.getWarehouses().subscribe(response => {
@@ -28,10 +29,9 @@ export class WarehouseConfigureModalComponent implements OnInit {
     const confirmOrder = new ConfirmOrder();
     confirmOrder.detailOrderId = this.orderId;
     confirmOrder.warehouseId = this.selectedWarehouse;
-    confirmOrder.workerId = 2;
+    confirmOrder.workerId = this.auth.worker.workerId;
 
     this.http.confirmOrder(confirmOrder).subscribe(response => {
-      console.log(response);
     });
 
     window.location.reload();

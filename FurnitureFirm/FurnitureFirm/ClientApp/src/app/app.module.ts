@@ -3,6 +3,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { CookieService } from 'ngx-cookie-service';
 
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
@@ -38,6 +39,11 @@ import { ConsumptionsComponent } from './pages/warehouse-manager/consumptions/co
 import { WarehoseTableComponent } from './pages/warehouse-manager/warehouse/warehose-table/warehose-table.component';
 import { TransportConfiguringModalComponent } from './pages/warehouse-manager/modals/transport-configuring-modal/transport-configuring-modal.component';
 import { ComingsTableComponent } from './pages/warehouse-manager/comings/comings-table/comings-table.component';
+import { ConstumtiomsTableComponent } from './pages/warehouse-manager/consumptions/constumtioms-table/constumtioms-table.component';
+import { LoginComponent } from './pages/login/login.component';
+import { UsersPageComponent } from './pages/administrator/users-page/users-page.component';
+import { AuthGuard } from './services/auth-guard.service';
+import { WorkerConfiguringComponent } from './pages/administrator/worker-configuring/worker-configuring.component';
 
 
 
@@ -73,23 +79,32 @@ import { ComingsTableComponent } from './pages/warehouse-manager/comings/comings
     TransportConfiguringModalComponent,
     ComingsTableComponent,
     FurnitureOrdersTableComponent,
+    ConstumtiomsTableComponent,
+    LoginComponent,
+    UsersPageComponent,
+    WorkerConfiguringComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent },
-      { path: 'furnitures', component: FurnituresCatalogComponent},
-      { path: 'orders', component: FurnitureOrdersTableComponent},
-      { path: 'warehouses-details', component: WarehousesDetailsComponent},
-      { path: 'productions', component: ProductionsComponent},
-      { path: 'furnitures', component: FurnituresCatalogComponent },
-      { path: 'furniture/basket', component: BasketComponent },
-      { path: 'details/basket', component: DetailBasketComponent },
-      { path: 'details', component: DetailsCatalogComponent },
-      { path: 'detailOrders', component: DetailOrdersComponent },
-      { path: 'warehouses', component: WarehouseComponent }
+      { path: '', component: HomeComponent, canActivate: [AuthGuard] },
+      { path: 'furnitures', component: FurnituresCatalogComponent, canActivate: [AuthGuard]},
+      { path: 'orders', component: OrdersTableComponent, canActivate: [AuthGuard]},
+      { path: 'warehouses-details', component: WarehousesDetailsComponent, canActivate: [AuthGuard]},
+      { path: 'furnitures', component: FurnituresCatalogComponent, canActivate: [AuthGuard] },
+      { path: 'productions', component: ProductionsComponent, canActivate: [AuthGuard]},
+      { path: 'furniture/basket', component: BasketComponent, canActivate: [AuthGuard] },
+      { path: 'details/basket', component: DetailBasketComponent, canActivate: [AuthGuard] },
+      { path: 'details', component: DetailsCatalogComponent, canActivate: [AuthGuard] },
+      { path: 'detailOrders', component: DetailOrdersComponent, canActivate: [AuthGuard] },
+      { path: 'warehouses', component: WarehouseComponent, canActivate: [AuthGuard] },
+      { path: 'warehouses/comings', component: ComingsComponent, canActivate: [AuthGuard] },
+      { path: 'warehouses/consumptions', component: ConsumptionsComponent, canActivate: [AuthGuard] },
+      { path: 'login', component: LoginComponent },
+      { path: 'workers', component: UsersPageComponent, canActivate: [AuthGuard] }
     ]),
     BrowserAnimationsModule,
     MatTableModule,
@@ -108,7 +123,7 @@ import { ComingsTableComponent } from './pages/warehouse-manager/comings/comings
     FormsModule,
     MatSnackBarModule,
   ],
-  providers: [{provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: {duration: 2500}}],
+  providers: [{provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: {duration: 2500}}, CookieService],
   bootstrap: [AppComponent],
   entryComponents: [
     DescriptionModalComponent,

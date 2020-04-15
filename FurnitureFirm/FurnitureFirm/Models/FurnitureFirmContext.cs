@@ -38,7 +38,6 @@ namespace FurnitureFirm.Models
         public virtual DbSet<Producers> Producers { get; set; }
         public virtual DbSet<Productions> Productions { get; set; }
         public virtual DbSet<Profits> Profits { get; set; }
-        public virtual DbSet<ProviderProducer> ProviderProducer { get; set; }
         public virtual DbSet<Providers> Providers { get; set; }
         public virtual DbSet<Styles> Styles { get; set; }
         public virtual DbSet<WarehouseDetails> WarehouseDetails { get; set; }
@@ -240,10 +239,6 @@ namespace FurnitureFirm.Models
 
                 entity.Property(e => e.DeliveryInfoId).HasColumnName("DeliveryInfoID");
 
-                entity.Property(e => e.Building)
-                    .HasMaxLength(20)
-                    .IsUnicode(false);
-
                 entity.Property(e => e.CityId).HasColumnName("CityID");
 
                 entity.Property(e => e.DeliveryFinished).HasColumnType("datetime");
@@ -317,9 +312,7 @@ namespace FurnitureFirm.Models
 
                 entity.Property(e => e.ColorId).HasColumnName("ColorID");
 
-                entity.Property(e => e.Description)
-                    .HasMaxLength(20)
-                    .IsUnicode(false);
+                entity.Property(e => e.Description).HasMaxLength(4000);
 
                 entity.Property(e => e.MaterialId).HasColumnName("MaterialID");
 
@@ -404,9 +397,7 @@ namespace FurnitureFirm.Models
 
                 entity.Property(e => e.CollectionId).HasColumnName("CollectionID");
 
-                entity.Property(e => e.Description)
-                    .HasMaxLength(20)
-                    .IsUnicode(false);
+                entity.Property(e => e.Description).HasMaxLength(4000);
 
                 entity.Property(e => e.Name)
                     .IsRequired()
@@ -513,7 +504,7 @@ namespace FurnitureFirm.Models
 
                 entity.Property(e => e.Name)
                     .IsRequired()
-                    .HasMaxLength(20)
+                    .HasMaxLength(50)
                     .IsUnicode(false);
             });
 
@@ -571,40 +562,12 @@ namespace FurnitureFirm.Models
                 entity.Property(e => e.ProfitId).HasColumnName("ProfitID");
             });
 
-            modelBuilder.Entity<ProviderProducer>(entity =>
-            {
-                entity.HasKey(e => new { e.ProviderId, e.ProducerId })
-                    .HasName("XPKProvider_Producer");
-
-                entity.ToTable("Provider_Producer");
-
-                entity.Property(e => e.ProviderId).HasColumnName("ProviderID");
-
-                entity.Property(e => e.ProducerId).HasColumnName("ProducerID");
-
-                entity.HasOne(d => d.Producer)
-                    .WithMany(p => p.ProviderProducer)
-                    .HasForeignKey(d => d.ProducerId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("R_173");
-
-                entity.HasOne(d => d.Provider)
-                    .WithMany(p => p.ProviderProducer)
-                    .HasForeignKey(d => d.ProviderId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("R_171");
-            });
-
             modelBuilder.Entity<Providers>(entity =>
             {
                 entity.HasKey(e => e.ProviderId)
                     .HasName("XPKProviders");
 
                 entity.Property(e => e.ProviderId).HasColumnName("ProviderID");
-
-                entity.Property(e => e.Building)
-                    .HasMaxLength(20)
-                    .IsUnicode(false);
 
                 entity.Property(e => e.CityId).HasColumnName("CityID");
 

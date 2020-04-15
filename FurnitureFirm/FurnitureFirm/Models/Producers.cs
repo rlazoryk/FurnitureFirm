@@ -8,7 +8,6 @@ namespace FurnitureFirm.Models
         public Producers()
         {
             Details = new HashSet<Details>();
-            ProviderProducer = new HashSet<ProviderProducer>();
         }
 
         public int ProducerId { get; set; }
@@ -17,6 +16,5 @@ namespace FurnitureFirm.Models
 
         public virtual Countries Country { get; set; }
         public virtual ICollection<Details> Details { get; set; }
-        public virtual ICollection<ProviderProducer> ProviderProducer { get; set; }
     }
 }
