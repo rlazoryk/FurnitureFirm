@@ -7,50 +7,62 @@
       </div>
       <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse" [ngClass]="{ show: isExpanded }">
         <ul class="navbar-nav flex-grow">
-          <li class="nav-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }" *ngIf="getUserPost() !== ''">
-            <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
+          <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="getUserPost() === 'Менеджер з поставок'">
+            <a class="nav-link text-dark" [routerLink]="['/details']">Каталог деталей</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="getUserPost() === 'Менеджер з поставок'">
-            <a class="nav-link text-dark" [routerLink]="['/details']">Details</a>
-          </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="getUserPost() === 'Менеджер з поставок'">
-            <a class="nav-link text-dark" [routerLink]="['details', 'basket']">Basket</a>
+            <a class="nav-link text-dark" [routerLink]="['details', 'basket']">
+              <mat-icon>shopping_cart</mat-icon>
+            </a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="getUserPost() === 'Менеджер з продажу'">
-            <a class="nav-link text-dark" [routerLink]="['furniture', 'basket']">Basket</a>
+            <a class="nav-link text-dark" [routerLink]="['furniture', 'basket']">
+              <mat-icon>shopping_cart</mat-icon>
+            </a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="getUserPost() === 'Менеджер з поставок'">
-            <a class="nav-link text-dark" [routerLink]="['detailOrders']">Detail Orders</a>
+            <a class="nav-link text-dark" [routerLink]="['detailOrders']">Список замовлень</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="getUserPost() === 'Працівник складу'">
-            <a class="nav-link text-dark" [routerLink]="['warehouses']">Warehouses</a>
+            <a class="nav-link text-dark" [routerLink]="['warehouses']">Склади</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="getUserPost() === 'Менеджер з продажу'">
-            <a class="nav-link text-dark" [routerLink]="['/furnitures']">Furnitures</a>
+            <a class="nav-link text-dark" [routerLink]="['/furnitures']">Каталог меблів</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']">
           <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="getUserPost() === 'Менеджер з продажу'">
-            <a class="nav-link text-dark" [routerLink]="['/orders']">Orders</a>
+            <a class="nav-link text-dark" [routerLink]="['/orders']">Список замовлень</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="getUserPost() === 'Фахівець з виробництва'">
-            <a class="nav-link text-dark" [routerLink]="['/warehouses-details']">Warehouses Details</a>
+            <a class="nav-link text-dark" [routerLink]="['/warehouses-details']">Деталі на складах</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="getUserPost() === 'Фахівець з виробництва'">
-            <a class="nav-link text-dark" [routerLink]="['/productions']" >Productions</a>
+            <a class="nav-link text-dark" [routerLink]="['/productions']">Виробництва</a>
           <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="getUserPost() === 'Працівник складу'">
-            <a class="nav-link text-dark" [routerLink]="['warehouses', 'comings']">Warehouses Comings</a>
+            <a class="nav-link text-dark" [routerLink]="['warehouses', 'comings']">Прибуття</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="getUserPost() === 'Працівник складу'">
-            <a class="nav-link text-dark" [routerLink]="['warehouses', 'consumptions']">Warehouses Consumptions</a>
+            <a class="nav-link text-dark" [routerLink]="['warehouses', 'consumptions']">Розходи</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="getUserPost() === 'Адмін'">
-            <a class="nav-link text-dark" [routerLink]="['workers']">Workers</a>
+            <a class="nav-link text-dark" [routerLink]="['workers']">Працівники</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="!this.isLoggedIn()">
-            <a class="nav-link text-dark" [routerLink]="['login']">Login</a>
+            <a class="nav-link text-dark" [routerLink]="['login']">
+              <div fxLayout="row">
+                <mat-icon style="margin-right: 5px;">exit_to_app</mat-icon>
+                Вхід
+              </div>
+            </a>
           </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="this.isLoggedIn()">
-            <button mat-button class="nav-link text-dark" (click)="Logout()">Logout</button>
+          <li class="nav-item" style="margin-left: 50px;" [routerLinkActive]="['link-active']"
+            *ngIf="this.isLoggedIn()">
+            <a class="nav-link text-dark" (click)="Logout()">
+              <div fxLayout="row">
+                Вихід
+                <mat-icon style="margin-left: 5px;">exit_to_app</mat-icon>
+              </div>
+            </a>
           </li>
         </ul>
       </div>
