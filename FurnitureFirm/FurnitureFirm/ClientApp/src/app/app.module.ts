@@ -44,6 +44,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { UsersPageComponent } from './pages/administrator/users-page/users-page.component';
 import { AuthGuard } from './services/auth-guard.service';
 import { WorkerConfiguringComponent } from './pages/administrator/worker-configuring/worker-configuring.component';
+import { ChooseWarehouseComponent } from './pages/production-worker/productions/productions-table/choose-warehouse/choose-warehouse.component';
 
 
 
@@ -82,7 +83,8 @@ import { WorkerConfiguringComponent } from './pages/administrator/worker-configu
     ConstumtiomsTableComponent,
     LoginComponent,
     UsersPageComponent,
-    WorkerConfiguringComponent
+    WorkerConfiguringComponent,
+    ChooseWarehouseComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -92,7 +94,7 @@ import { WorkerConfiguringComponent } from './pages/administrator/worker-configu
     RouterModule.forRoot([
       { path: '', component: HomeComponent, canActivate: [AuthGuard] },
       { path: 'furnitures', component: FurnituresCatalogComponent, canActivate: [AuthGuard]},
-      { path: 'orders', component: OrdersTableComponent, canActivate: [AuthGuard]},
+      { path: 'orders', component: FurnitureOrdersTableComponent, canActivate: [AuthGuard]},
       { path: 'warehouses-details', component: WarehousesDetailsComponent, canActivate: [AuthGuard]},
       { path: 'furnitures', component: FurnituresCatalogComponent, canActivate: [AuthGuard] },
       { path: 'productions', component: ProductionsComponent, canActivate: [AuthGuard]},

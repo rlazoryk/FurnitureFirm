@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class ProductionService {
 
   private baseUrl = "https://localhost:5001/api/";
-  private productionsUrl = this.baseUrl = "orders/productions/"
+  private productionsUrl = this.baseUrl + "productions/"
 
   constructor(private httpClient: HttpClient) { }
 
@@ -15,23 +15,27 @@ export class ProductionService {
     return this.httpClient.get(this.productionsUrl + "workers/" + orderId);
   }
 
-  isAttachedToProduction(orderId: number, workerId: number) {
-    return this.httpClient.get(this.productionsUrl + `orderId=${orderId}&workerId=${workerId}`);
+  getWorkerProductions(workerId: number) {
+    return this.httpClient.get(this.productionsUrl + workerId);
   }
 
-  startProduction(orderId: number) {
-    return this.httpClient.put(this.productionsUrl + "start", orderId);
+  startProduction(orderId: number, warehouseId: number) {
+    return this.httpClient.get(this.productionsUrl + "start/" + orderId + "/" + warehouseId);
   }
 
   attachToProduction(orderId: number, workerId: number) {
-    return this.httpClient.put(this.productionsUrl + "attach", { orderId: orderId, workerId: workerId });
+    return this.httpClient.get(this.productionsUrl + "attach/" + orderId + "/" + workerId);
   }
 
   finishProduction(orderId: number) {
-    return this.httpClient.put(this.productionsUrl + "finish", orderId);
+    return this.httpClient.get(this.productionsUrl + "finish/" + orderId);
+  }
+
+  startDelivery(orderId: number) {
+    return this.httpClient.get(this.productionsUrl + "delivery/start/" + orderId);
   }
 
   finishDelivery(orderId: number) {
-    return this.httpClient.put(this.productionsUrl + "delivery/finish", orderId);
+    return this.httpClient.get(this.productionsUrl + "delivery/finish/" + orderId);
   }
 }
