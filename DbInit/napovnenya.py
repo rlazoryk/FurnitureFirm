@@ -175,16 +175,24 @@ while i <= warehouseCount:
 
 # WarehouseDetails TABLE
 f.write(GetComment("WarehouseDetails"))
-warehouseDetailsCount = 100
-i = 0
-while i <= warehouseDetailsCount:
-    warehouseId = random.randrange(1, warehouseCount + 1)
-    detailId = random.randrange(1, len(detailNames) + 1)
-    count = random.randrange(1, 21)
-    insertStr = GetInsertStr("WarehouseDetails", "DetailId, Count, WarehouseId",
+warehouseDetailsCount = 55
+i = 1
+while i <= warehouseCount:
+    warehouseId = i
+    j = 0
+    usedDetails = []
+    while j < warehouseDetailsCount:
+        while True:
+            detailId = random.randrange(1, len(detailNames) + 1)
+            if not (detailId in usedDetails):
+                usedDetails.append(detailId)
+                break
+        count = random.randrange(100, 1000)
+        insertStr = GetInsertStr("WarehouseDetails", "DetailId, Count, WarehouseId",
                              f'{detailId}, {count}, {warehouseId}')
-    f.write(insertStr)
-    i = i + 1
+        f.write(insertStr)
+        j = j + 1
+    i += 1
 
 # Categories TABLE
 # f.write(GetComment("Categories"))
@@ -252,11 +260,15 @@ for name in furnitureNames:
 f.write(GetComment("DetailsInFurnitures"))
 i = 1
 while i <= furnitureCount:
-    detailsPerFurniture = random.randrange(4, 16)
+    detailsPerFurniture = random.randrange(4, 10)
     j = 0
-    while j <= detailsPerFurniture:
+    usedDetails = []
+    while j < detailsPerFurniture:
         furnitureId = i
         detailId = random.randrange(1, len(detailNames) + 1)
+        while detailId in usedDetails:
+            detailId = random.randrange(1, len(detailNames) + 1)
+        usedDetails.append(detailId)
         count = random.randrange(1, 11)
         isAdditional = random.choice([1, 0, 0, 0])
         timeToIntegrate = 0

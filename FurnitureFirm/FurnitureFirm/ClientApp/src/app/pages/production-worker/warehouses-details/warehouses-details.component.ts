@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from 'src/app/services/http/http.service';
+import { Warehouse } from 'src/app/models/warehouse';
 
 @Component({
   selector: 'app-warehouses-details',
@@ -7,11 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WarehousesDetailsComponent implements OnInit {
 
-  warehouses = ['1', '2']
+  warehouses : Warehouse[];
 
-  constructor() { }
+  constructor(private httpService : HttpService) { }
 
   ngOnInit(): void {
+    this.httpService.getWarehouses()
+      .subscribe(response => {
+        this.warehouses = response as Warehouse[];
+      });
   }
 
 }

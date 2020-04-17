@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../services/auth.service';
 import { Router } from '@angular/router';
+import { OrderService } from '../services/order/order.service';
+import { DetailOrderService } from '../services/detailOrder/detailOrder.service';
 
 @Component({
   selector: 'app-nav-menu',
@@ -11,6 +13,8 @@ export class NavMenuComponent {
   isExpanded = false;
 
   constructor(private auth: AuthService,
+    private orderService: OrderService,
+    private detailService : DetailOrderService,
     private router: Router) {
   }
 
@@ -37,5 +41,13 @@ export class NavMenuComponent {
   Logout() {
     this.auth.logout();
     this.router.navigate(['login']);
+  }
+
+  getFurnitureBasketSize(){
+    return this.orderService.currentOrder.orderedFurnitures.length;
+  }
+
+  getDetailBasketSize(){
+    return this.detailService.order.orderRows.length;
   }
 }

@@ -19,6 +19,7 @@ import { BasketComponent } from './pages/sales-manager/basket/basket.component';
 import { OrderedFurnituresTableComponent } from './pages/sales-manager/basket/ordered-furnitures-table/ordered-furnitures-table.component';
 import { DetailsCatalogComponent } from './pages/provide-manager/details-catalog/details-catalog.component';
 import { OrderDetailsComponent } from './pages/sales-manager/orders/order-details/order-details.component';
+import { FurnitureOrdersTableComponent } from './pages/sales-manager/orders/orders-table/orders-table.component';
 import { WarehousesDetailsComponent } from './pages/production-worker/warehouses-details/warehouses-details.component';
 import { DetailsTableComponent } from './pages/production-worker/warehouses-details/details-table/details-table.component';
 import { ProductionsComponent } from './pages/production-worker/productions/productions.component';
@@ -43,6 +44,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { UsersPageComponent } from './pages/administrator/users-page/users-page.component';
 import { AuthGuard } from './services/auth-guard.service';
 import { WorkerConfiguringComponent } from './pages/administrator/worker-configuring/worker-configuring.component';
+import { ChooseWarehouseComponent } from './pages/production-worker/productions/productions-table/choose-warehouse/choose-warehouse.component';
 
 
 
@@ -77,10 +79,12 @@ import { WorkerConfiguringComponent } from './pages/administrator/worker-configu
     WarehoseTableComponent,
     TransportConfiguringModalComponent,
     ComingsTableComponent,
+    FurnitureOrdersTableComponent,
     ConstumtiomsTableComponent,
     LoginComponent,
     UsersPageComponent,
-    WorkerConfiguringComponent
+    WorkerConfiguringComponent,
+    ChooseWarehouseComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -90,9 +94,10 @@ import { WorkerConfiguringComponent } from './pages/administrator/worker-configu
     RouterModule.forRoot([
       { path: '', component: HomeComponent, canActivate: [AuthGuard] },
       { path: 'furnitures', component: FurnituresCatalogComponent, canActivate: [AuthGuard]},
-      { path: 'orders', component: OrdersTableComponent, canActivate: [AuthGuard]},
+      { path: 'orders', component: FurnitureOrdersTableComponent, canActivate: [AuthGuard]},
       { path: 'warehouses-details', component: WarehousesDetailsComponent, canActivate: [AuthGuard]},
       { path: 'furnitures', component: FurnituresCatalogComponent, canActivate: [AuthGuard] },
+      { path: 'productions', component: ProductionsComponent, canActivate: [AuthGuard]},
       { path: 'furniture/basket', component: BasketComponent, canActivate: [AuthGuard] },
       { path: 'details/basket', component: DetailBasketComponent, canActivate: [AuthGuard] },
       { path: 'details', component: DetailsCatalogComponent, canActivate: [AuthGuard] },

@@ -42,19 +42,19 @@ INSERT INTO Materials(Name) VALUES('—таль')
 INSERT INTO Materials(Name) VALUES('ѕластик')
 
 --Producers TABLE
-INSERT INTO Producers(Name, CountryId) VALUES('Materials Inc', 10)
-INSERT INTO Producers(Name, CountryId) VALUES('BestMat', 3)
-INSERT INTO Producers(Name, CountryId) VALUES('Mat4U', 11)
+INSERT INTO Producers(Name, CountryId) VALUES('Materials Inc', 5)
+INSERT INTO Producers(Name, CountryId) VALUES('BestMat', 9)
+INSERT INTO Producers(Name, CountryId) VALUES('Mat4U', 4)
 INSERT INTO Producers(Name, CountryId) VALUES('MatProd', 8)
 
 --Providers TABLE
-INSERT INTO Providers(Name, CityId, PhoneNumber, Street, Building) VALUES('Fast&Furious', 2, '+380482044', ' омарова', 7)
-INSERT INTO Providers(Name, CityId, PhoneNumber, Street, Building) VALUES('BestProv', 2, '+380975431', 'Ўевченка', 15)
-INSERT INTO Providers(Name, CityId, PhoneNumber, Street, Building) VALUES('Provide4You', 7, '+380631498', 'Ѕандери', 29)
-INSERT INTO Providers(Name, CityId, PhoneNumber, Street, Building) VALUES('DetProv Inc', 8, '+380837878', 'ƒорошенка', 10)
+INSERT INTO Providers(Name, CityId, PhoneNumber, Street, Building) VALUES('Fast&Furious', 3, '+380331602', ' омарова', 15)
+INSERT INTO Providers(Name, CityId, PhoneNumber, Street, Building) VALUES('BestProv', 8, '+380109184', '√оловна', 5)
+INSERT INTO Providers(Name, CityId, PhoneNumber, Street, Building) VALUES('Provide4You', 2, '+380026222', 'Ўевченка', 16)
+INSERT INTO Providers(Name, CityId, PhoneNumber, Street, Building) VALUES('DetProv Inc', 6, '+380214558', '—вободи', 2)
 
 --Details TABLE
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(5, 4, 3, 'ƒеталь 1', 773, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(4, 5, 4, 'ƒеталь 1', 111, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -68,7 +68,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(2, 1, 4, 'ƒеталь 2', 230, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(1, 8, 2, 'ƒеталь 2', 746, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -82,7 +82,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(1, 3, 1, 'ƒеталь 3', 799, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(1, 7, 3, 'ƒеталь 3', 985, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -96,7 +96,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(4, 5, 3, 'ƒеталь 4', 214, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(6, 7, 4, 'ƒеталь 4', 528, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -110,7 +110,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(5, 8, 1, 'ƒеталь 5', 178, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(3, 2, 4, 'ƒеталь 5', 364, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -124,7 +124,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(1, 7, 3, 'ƒеталь 6', 467, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(2, 1, 2, 'ƒеталь 6', 270, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -138,7 +138,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(1, 1, 3, 'ƒеталь 7', 350, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(3, 8, 4, 'ƒеталь 7', 709, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -152,7 +152,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(7, 7, 3, 'ƒеталь 8', 184, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(7, 8, 2, 'ƒеталь 8', 746, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -166,7 +166,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(3, 8, 3, 'ƒеталь 9', 853, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(5, 1, 2, 'ƒеталь 9', 562, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -180,7 +180,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(1, 4, 1, 'ƒеталь 10', 522, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(2, 5, 3, 'ƒеталь 10', 514, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -194,7 +194,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(7, 2, 3, 'ƒеталь 11', 884, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(3, 1, 1, 'ƒеталь 11', 407, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -208,7 +208,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(7, 6, 1, 'ƒеталь 12', 760, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(2, 2, 2, 'ƒеталь 12', 431, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -222,7 +222,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(2, 5, 4, 'ƒеталь 13', 153, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(6, 8, 3, 'ƒеталь 13', 755, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -236,7 +236,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(7, 7, 1, 'ƒеталь 14', 512, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(6, 2, 1, 'ƒеталь 14', 877, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -250,7 +250,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(2, 6, 1, 'ƒеталь 15', 161, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(6, 4, 2, 'ƒеталь 15', 429, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -264,7 +264,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(1, 1, 3, 'ƒеталь 16', 761, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(2, 6, 3, 'ƒеталь 16', 890, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -278,7 +278,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(6, 2, 4, 'ƒеталь 17', 757, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(7, 7, 4, 'ƒеталь 17', 987, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -292,7 +292,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(1, 5, 3, 'ƒеталь 18', 252, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(1, 1, 4, 'ƒеталь 18', 212, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -306,7 +306,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(2, 2, 1, 'ƒеталь 19', 177, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(2, 1, 3, 'ƒеталь 19', 819, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -320,7 +320,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(4, 5, 2, 'ƒеталь 20', 976, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(4, 1, 4, 'ƒеталь 20', 924, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -334,7 +334,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(3, 8, 2, 'ƒеталь 21', 363, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(1, 5, 4, 'ƒеталь 21', 202, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -348,7 +348,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(1, 1, 1, 'ƒеталь 22', 528, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(5, 2, 4, 'ƒеталь 22', 206, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -362,7 +362,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(2, 1, 3, 'ƒеталь 23', 935, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(2, 3, 2, 'ƒеталь 23', 575, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -376,7 +376,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(6, 6, 4, 'ƒеталь 24', 467, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(6, 3, 4, 'ƒеталь 24', 295, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -390,7 +390,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(2, 4, 2, 'ƒеталь 25', 408, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(4, 4, 4, 'ƒеталь 25', 865, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -404,7 +404,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(4, 5, 4, 'ƒеталь 26', 851, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(4, 4, 1, 'ƒеталь 26', 864, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -418,7 +418,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(6, 3, 4, 'ƒеталь 27', 718, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(4, 4, 2, 'ƒеталь 27', 509, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -432,7 +432,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(7, 5, 4, 'ƒеталь 28', 477, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(6, 2, 3, 'ƒеталь 28', 365, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -446,7 +446,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(3, 4, 1, 'ƒеталь 29', 819, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(7, 4, 1, 'ƒеталь 29', 493, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -460,7 +460,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(1, 2, 2, 'ƒеталь 30', 946, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(3, 1, 2, 'ƒеталь 30', 592, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -474,7 +474,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(1, 6, 4, 'ƒеталь 31', 393, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(3, 8, 1, 'ƒеталь 31', 756, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -488,7 +488,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(2, 1, 2, 'ƒеталь 32', 834, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(4, 7, 3, 'ƒеталь 32', 417, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -502,7 +502,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(3, 2, 3, 'ƒеталь 33', 296, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(6, 7, 3, 'ƒеталь 33', 412, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -516,7 +516,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(2, 8, 2, 'ƒеталь 34', 774, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(7, 6, 1, 'ƒеталь 34', 469, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -530,7 +530,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(7, 4, 4, 'ƒеталь 35', 782, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(3, 5, 4, 'ƒеталь 35', 908, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -544,7 +544,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(6, 2, 3, 'ƒеталь 36', 560, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(2, 8, 3, 'ƒеталь 36', 614, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -558,7 +558,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(7, 7, 4, 'ƒеталь 37', 548, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(6, 2, 3, 'ƒеталь 37', 414, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -572,7 +572,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(2, 8, 4, 'ƒеталь 38', 796, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(2, 2, 4, 'ƒеталь 38', 399, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -586,7 +586,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(7, 5, 1, 'ƒеталь 39', 571, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(5, 1, 1, 'ƒеталь 39', 841, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -600,7 +600,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(1, 2, 1, 'ƒеталь 40', 811, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(1, 8, 2, 'ƒеталь 40', 293, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -614,7 +614,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(2, 8, 1, 'ƒеталь 41', 583, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(1, 5, 4, 'ƒеталь 41', 182, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -628,7 +628,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(5, 2, 2, 'ƒеталь 42', 276, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(6, 8, 3, 'ƒеталь 42', 417, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -642,7 +642,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(5, 8, 4, 'ƒеталь 43', 664, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(5, 5, 4, 'ƒеталь 43', 727, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -656,7 +656,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(6, 3, 3, 'ƒеталь 44', 590, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(6, 3, 2, 'ƒеталь 44', 210, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -670,7 +670,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(1, 1, 4, 'ƒеталь 45', 406, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(6, 3, 2, 'ƒеталь 45', 448, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -684,7 +684,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(1, 3, 1, 'ƒеталь 46', 113, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(4, 2, 4, 'ƒеталь 46', 426, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -698,7 +698,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(5, 2, 3, 'ƒеталь 47', 292, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(7, 1, 4, 'ƒеталь 47', 481, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -712,7 +712,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(2, 8, 3, 'ƒеталь 48', 384, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(2, 6, 2, 'ƒеталь 48', 896, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -726,7 +726,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(6, 5, 1, 'ƒеталь 49', 217, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(7, 2, 4, 'ƒеталь 49', 198, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -740,7 +740,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(4, 3, 1, 'ƒеталь 50', 975, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(6, 4, 3, 'ƒеталь 50', 319, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -754,7 +754,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(6, 2, 1, 'ƒеталь 51', 893, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(2, 8, 2, 'ƒеталь 51', 496, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -768,7 +768,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(7, 8, 4, 'ƒеталь 52', 755, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(2, 2, 1, 'ƒеталь 52', 360, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -782,7 +782,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(3, 6, 3, 'ƒеталь 53', 963, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(2, 2, 2, 'ƒеталь 53', 885, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -796,7 +796,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(6, 7, 4, 'ƒеталь 54', 691, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(3, 4, 1, 'ƒеталь 54', 470, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -810,7 +810,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(4, 8, 4, 'ƒеталь 55', 956, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(6, 5, 2, 'ƒеталь 55', 219, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -824,7 +824,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(3, 1, 1, 'ƒеталь 56', 888, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(5, 6, 4, 'ƒеталь 56', 105, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -838,7 +838,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(5, 2, 3, 'ƒеталь 57', 834, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(1, 8, 1, 'ƒеталь 57', 980, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -852,7 +852,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(1, 2, 2, 'ƒеталь 58', 668, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(6, 8, 4, 'ƒеталь 58', 944, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -866,7 +866,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(2, 4, 4, 'ƒеталь 59', 895, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(1, 2, 3, 'ƒеталь 59', 741, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -880,7 +880,7 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ‘урн≥тура, €к правило, виготовл€Їтьс€ окремо в≥д виробництва основних складових виробу, тому що, 
 здеб≥льшого вимагаЇ ≥ншого технолог≥чного процесу.
 ')
-INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(7, 7, 1, 'ƒеталь 60', 415, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
+INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) VALUES(1, 2, 3, 'ƒеталь 60', 229, '‘урн≥тура (фр. fourniture в≥д fournir Ч Ђдоставл€тиї, Ђпостачатиї) Ч допом≥жн≥ частини та детал≥, 
 необх≥дн≥ дл€ виготовленн€ €когось ц≥льного предмета.
 
 ¬иди
@@ -896,120 +896,569 @@ INSERT INTO Details(MaterialId, ColorId, ProducerId, Name, Price, Description) V
 ')
 
 --Warehouses TABLE
-INSERT INTO Warehouses(CityId, Street, Building) VALUES(6, 'ƒорошенка', 26)
-INSERT INTO Warehouses(CityId, Street, Building) VALUES(3, 'Ѕандери', 24)
-INSERT INTO Warehouses(CityId, Street, Building) VALUES(6, '√оловна', 13)
-INSERT INTO Warehouses(CityId, Street, Building) VALUES(1, '√оловна', 14)
-INSERT INTO Warehouses(CityId, Street, Building) VALUES(7, 'Ўевченка', 11)
-INSERT INTO Warehouses(CityId, Street, Building) VALUES(4, ' омарова', 25)
-INSERT INTO Warehouses(CityId, Street, Building) VALUES(5, '√оловна', 19)
-INSERT INTO Warehouses(CityId, Street, Building) VALUES(7, '—вободи', 21)
-INSERT INTO Warehouses(CityId, Street, Building) VALUES(3, '—вободи', 17)
-INSERT INTO Warehouses(CityId, Street, Building) VALUES(1, 'Ўевченка', 10)
-INSERT INTO Warehouses(CityId, Street, Building) VALUES(1, 'Ѕандери', 13)
+INSERT INTO Warehouses(CityId, Street, Building) VALUES(5, ' омарова', 24)
+INSERT INTO Warehouses(CityId, Street, Building) VALUES(5, 'ƒорошенка', 18)
+INSERT INTO Warehouses(CityId, Street, Building) VALUES(8, ' ињвська', 5)
+INSERT INTO Warehouses(CityId, Street, Building) VALUES(1, '√оловна', 4)
+INSERT INTO Warehouses(CityId, Street, Building) VALUES(3, 'Ўевченка', 14)
+INSERT INTO Warehouses(CityId, Street, Building) VALUES(6, 'ƒорошенка', 6)
+INSERT INTO Warehouses(CityId, Street, Building) VALUES(4, ' омарова', 2)
+INSERT INTO Warehouses(CityId, Street, Building) VALUES(4, 'Ўевченка', 8)
+INSERT INTO Warehouses(CityId, Street, Building) VALUES(7, 'Ѕандери', 25)
+INSERT INTO Warehouses(CityId, Street, Building) VALUES(4, 'ƒорошенка', 6)
+INSERT INTO Warehouses(CityId, Street, Building) VALUES(8, '√оловна', 20)
 
 --WarehouseDetails TABLE
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(14, 17, 2)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(8, 16, 10)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(51, 19, 10)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(4, 6, 2)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(5, 10, 4)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(23, 4, 9)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(22, 19, 5)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(43, 3, 9)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(7, 9, 3)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(52, 18, 3)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(55, 20, 10)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(30, 15, 9)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(53, 1, 10)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(4, 13, 10)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(29, 10, 7)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(13, 18, 2)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(43, 8, 6)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(8, 18, 6)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(24, 7, 10)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(49, 7, 7)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(18, 4, 10)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(57, 9, 4)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(59, 15, 1)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(56, 20, 2)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(32, 11, 3)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(52, 5, 5)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(57, 16, 1)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(36, 5, 7)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(49, 16, 1)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(37, 17, 7)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(8, 15, 2)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(59, 15, 5)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(39, 11, 10)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(52, 7, 10)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(50, 13, 10)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(1, 10, 5)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(40, 16, 8)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(19, 5, 9)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(38, 14, 7)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(49, 8, 10)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(35, 7, 10)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(18, 8, 8)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(48, 20, 2)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(30, 8, 7)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(47, 1, 3)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(18, 19, 2)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(7, 3, 9)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(36, 10, 3)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(52, 12, 8)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(21, 16, 4)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(53, 9, 8)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(8, 14, 2)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(16, 5, 1)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(31, 14, 7)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(27, 10, 8)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(56, 4, 1)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(48, 9, 3)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(25, 20, 9)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(25, 2, 10)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(12, 19, 4)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(60, 8, 8)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(59, 9, 2)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(8, 8, 7)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(13, 11, 10)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(20, 1, 8)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(30, 20, 5)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(28, 17, 8)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(40, 20, 1)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(9, 14, 8)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(3, 17, 7)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(9, 14, 4)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(33, 10, 7)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(15, 4, 7)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(55, 9, 3)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(45, 2, 4)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(30, 6, 4)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(42, 3, 10)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(6, 15, 7)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(30, 4, 8)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(56, 2, 4)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(17, 20, 2)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(32, 3, 3)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(57, 5, 1)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(21, 11, 4)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(11, 15, 4)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(45, 1, 3)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(21, 11, 2)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(22, 14, 7)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(10, 17, 3)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(53, 3, 10)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(2, 11, 7)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(31, 4, 1)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(14, 9, 6)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(29, 4, 6)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(37, 2, 6)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(34, 18, 8)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(46, 17, 6)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(39, 5, 5)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(24, 12, 3)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(51, 10, 8)
-INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(3, 5, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(9, 538, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(51, 367, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(37, 214, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(10, 961, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(38, 410, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(27, 526, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(32, 188, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(11, 124, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(36, 366, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(26, 940, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(14, 843, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(53, 355, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(55, 150, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(60, 526, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(16, 419, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(49, 991, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(39, 813, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(6, 746, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(21, 617, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(29, 764, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(23, 413, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(47, 397, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(1, 548, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(2, 682, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(52, 693, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(59, 847, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(22, 884, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(15, 792, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(5, 912, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(33, 927, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(12, 304, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(46, 276, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(24, 567, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(58, 941, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(18, 610, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(31, 473, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(44, 442, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(20, 785, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(34, 660, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(42, 227, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(3, 520, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(43, 557, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(54, 302, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(41, 586, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(25, 746, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(35, 540, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(28, 995, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(30, 817, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(7, 572, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(40, 194, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(50, 419, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(19, 811, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(45, 567, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(17, 193, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(4, 911, 1)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(39, 264, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(26, 577, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(12, 697, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(6, 891, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(56, 392, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(42, 830, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(27, 901, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(25, 669, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(3, 967, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(58, 599, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(59, 152, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(36, 694, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(34, 768, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(9, 938, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(8, 610, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(60, 724, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(51, 635, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(48, 630, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(11, 445, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(37, 228, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(49, 959, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(21, 908, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(35, 687, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(16, 200, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(22, 773, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(54, 206, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(46, 135, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(10, 812, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(52, 148, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(17, 775, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(5, 512, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(43, 937, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(47, 780, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(24, 384, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(20, 140, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(53, 775, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(30, 704, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(1, 701, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(57, 258, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(32, 750, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(4, 388, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(50, 793, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(2, 177, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(13, 685, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(31, 381, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(40, 277, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(29, 234, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(38, 989, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(41, 553, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(14, 637, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(45, 361, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(18, 107, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(7, 664, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(44, 947, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(23, 434, 2)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(22, 467, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(57, 798, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(43, 665, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(26, 420, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(14, 306, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(9, 125, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(31, 914, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(58, 307, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(3, 220, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(10, 917, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(45, 879, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(7, 127, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(1, 736, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(15, 823, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(5, 587, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(6, 106, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(33, 250, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(23, 869, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(13, 435, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(11, 509, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(27, 875, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(46, 903, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(19, 908, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(37, 282, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(32, 837, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(21, 512, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(48, 673, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(30, 779, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(25, 834, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(35, 808, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(55, 503, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(54, 537, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(40, 318, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(34, 201, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(56, 303, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(38, 749, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(42, 524, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(50, 754, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(53, 117, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(24, 183, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(49, 852, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(17, 956, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(51, 372, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(41, 208, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(18, 638, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(16, 584, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(28, 277, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(39, 184, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(36, 986, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(20, 894, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(2, 495, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(47, 935, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(12, 249, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(8, 929, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(44, 652, 3)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(51, 345, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(25, 488, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(36, 826, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(22, 927, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(49, 674, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(60, 375, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(56, 802, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(19, 671, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(54, 128, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(21, 864, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(15, 524, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(43, 333, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(16, 791, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(59, 173, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(26, 200, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(44, 286, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(11, 904, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(5, 162, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(46, 567, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(18, 918, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(48, 414, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(33, 626, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(23, 269, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(57, 632, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(24, 497, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(13, 460, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(47, 195, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(34, 203, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(28, 508, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(41, 144, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(9, 717, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(4, 732, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(17, 738, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(37, 773, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(14, 133, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(42, 656, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(7, 605, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(39, 105, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(38, 646, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(50, 664, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(35, 238, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(1, 375, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(12, 924, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(52, 633, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(40, 185, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(27, 194, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(8, 158, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(2, 743, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(3, 961, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(29, 832, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(58, 404, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(6, 696, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(45, 662, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(10, 236, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(31, 891, 4)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(53, 833, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(18, 388, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(7, 909, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(47, 365, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(28, 551, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(60, 485, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(29, 831, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(15, 989, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(30, 639, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(59, 483, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(19, 635, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(34, 146, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(10, 651, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(36, 361, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(23, 479, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(52, 507, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(38, 955, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(45, 830, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(5, 143, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(50, 545, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(17, 330, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(20, 331, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(40, 528, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(42, 243, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(11, 769, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(21, 365, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(12, 722, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(37, 945, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(3, 754, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(33, 138, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(44, 550, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(8, 317, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(56, 846, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(4, 654, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(25, 685, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(55, 443, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(39, 190, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(43, 407, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(35, 873, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(14, 958, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(31, 189, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(13, 141, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(48, 483, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(27, 538, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(49, 640, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(51, 160, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(58, 684, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(2, 821, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(57, 770, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(9, 942, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(32, 405, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(22, 121, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(24, 952, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(54, 113, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(16, 959, 5)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(13, 547, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(14, 186, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(60, 272, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(33, 777, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(28, 636, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(43, 469, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(40, 345, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(39, 710, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(36, 242, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(53, 564, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(32, 510, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(9, 711, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(29, 752, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(37, 758, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(15, 943, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(54, 854, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(1, 753, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(11, 926, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(38, 895, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(31, 771, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(46, 245, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(12, 364, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(34, 441, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(23, 299, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(48, 907, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(52, 133, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(10, 424, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(44, 690, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(16, 466, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(51, 219, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(19, 322, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(58, 457, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(18, 548, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(30, 213, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(17, 849, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(41, 432, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(27, 595, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(55, 223, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(49, 698, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(42, 697, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(50, 776, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(5, 350, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(57, 936, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(26, 191, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(6, 891, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(2, 334, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(45, 857, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(25, 590, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(59, 445, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(47, 463, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(22, 264, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(7, 410, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(20, 316, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(56, 554, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(4, 946, 6)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(47, 456, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(8, 609, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(30, 596, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(22, 131, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(9, 139, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(25, 473, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(18, 107, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(56, 947, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(32, 618, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(55, 955, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(14, 206, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(28, 829, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(53, 335, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(19, 392, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(40, 941, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(13, 384, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(7, 683, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(41, 977, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(11, 148, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(21, 519, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(1, 722, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(51, 185, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(20, 656, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(2, 428, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(26, 152, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(10, 773, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(49, 982, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(58, 253, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(23, 781, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(34, 561, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(54, 233, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(42, 434, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(4, 443, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(52, 816, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(44, 112, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(39, 311, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(6, 371, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(3, 398, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(35, 736, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(48, 707, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(43, 566, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(46, 918, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(38, 408, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(60, 871, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(16, 327, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(59, 317, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(33, 676, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(50, 665, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(36, 768, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(17, 892, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(29, 237, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(15, 314, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(24, 664, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(31, 543, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(5, 257, 7)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(19, 216, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(1, 562, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(31, 113, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(36, 479, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(21, 434, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(53, 791, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(16, 899, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(40, 666, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(14, 787, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(9, 240, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(33, 714, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(54, 631, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(32, 149, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(59, 560, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(52, 359, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(28, 611, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(34, 537, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(11, 608, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(22, 799, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(44, 109, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(42, 167, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(2, 626, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(10, 524, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(7, 721, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(5, 115, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(57, 802, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(58, 716, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(46, 942, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(39, 483, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(45, 928, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(51, 173, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(8, 519, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(49, 269, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(30, 154, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(37, 960, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(25, 299, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(4, 457, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(26, 525, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(3, 109, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(15, 340, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(56, 707, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(6, 333, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(29, 207, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(48, 783, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(47, 123, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(38, 127, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(24, 308, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(18, 997, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(12, 606, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(35, 698, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(41, 610, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(17, 538, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(50, 777, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(43, 301, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(55, 648, 8)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(58, 369, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(2, 989, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(55, 663, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(13, 604, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(42, 486, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(18, 595, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(46, 165, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(51, 707, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(3, 427, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(26, 502, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(20, 248, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(4, 163, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(25, 157, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(33, 874, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(6, 449, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(60, 490, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(59, 261, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(37, 333, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(23, 640, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(22, 954, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(49, 684, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(29, 226, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(8, 949, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(21, 186, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(48, 130, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(17, 207, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(50, 189, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(43, 639, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(38, 133, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(57, 370, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(34, 679, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(9, 789, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(41, 376, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(24, 986, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(28, 569, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(15, 317, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(27, 609, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(56, 230, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(39, 748, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(10, 564, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(19, 677, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(35, 653, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(12, 326, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(44, 271, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(31, 104, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(52, 622, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(30, 130, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(54, 599, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(11, 651, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(16, 986, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(36, 638, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(14, 170, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(40, 671, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(45, 325, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(5, 201, 9)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(13, 915, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(15, 344, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(43, 567, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(12, 404, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(55, 482, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(32, 652, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(25, 183, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(59, 901, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(52, 974, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(27, 321, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(9, 385, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(1, 566, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(45, 909, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(7, 780, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(58, 563, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(21, 618, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(37, 890, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(3, 311, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(10, 957, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(16, 460, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(26, 242, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(51, 912, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(49, 366, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(30, 292, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(48, 867, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(11, 628, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(46, 196, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(57, 967, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(8, 690, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(31, 757, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(33, 868, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(2, 743, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(6, 136, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(34, 867, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(42, 761, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(29, 438, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(28, 339, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(35, 835, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(36, 538, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(19, 942, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(14, 931, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(5, 878, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(47, 119, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(60, 170, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(40, 332, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(39, 967, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(20, 328, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(24, 148, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(18, 609, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(38, 184, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(17, 509, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(4, 108, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(23, 627, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(56, 828, 10)
+INSERT INTO WarehouseDetails(DetailId, Count, WarehouseId) VALUES(54, 913, 10)
 
 --Categories TABLE
 INSERT INTO Categories(Name) VALUES('–обоч≥ —толи')
@@ -1029,19 +1478,19 @@ INSERT INTO Styles(Name) VALUES('ѕерех≥дний')
 INSERT INTO Styles(Name) VALUES('ѕрем≥ум')
 
 --Collections TABLE
-INSERT INTO Collections(Name, StyleId) VALUES(' олекц≥€  1', 4)
-INSERT INTO Collections(Name, StyleId) VALUES(' олекц≥€  2', 1)
-INSERT INTO Collections(Name, StyleId) VALUES(' олекц≥€  3', 5)
+INSERT INTO Collections(Name, StyleId) VALUES(' олекц≥€  1', 2)
+INSERT INTO Collections(Name, StyleId) VALUES(' олекц≥€  2', 5)
+INSERT INTO Collections(Name, StyleId) VALUES(' олекц≥€  3', 2)
 INSERT INTO Collections(Name, StyleId) VALUES(' олекц≥€  4', 5)
-INSERT INTO Collections(Name, StyleId) VALUES(' олекц≥€  5', 4)
-INSERT INTO Collections(Name, StyleId) VALUES(' олекц≥€  6', 4)
-INSERT INTO Collections(Name, StyleId) VALUES(' олекц≥€  7', 4)
-INSERT INTO Collections(Name, StyleId) VALUES(' олекц≥€  8', 5)
-INSERT INTO Collections(Name, StyleId) VALUES(' олекц≥€  9', 3)
-INSERT INTO Collections(Name, StyleId) VALUES(' олекц≥€  10', 1)
+INSERT INTO Collections(Name, StyleId) VALUES(' олекц≥€  5', 5)
+INSERT INTO Collections(Name, StyleId) VALUES(' олекц≥€  6', 1)
+INSERT INTO Collections(Name, StyleId) VALUES(' олекц≥€  7', 2)
+INSERT INTO Collections(Name, StyleId) VALUES(' олекц≥€  8', 2)
+INSERT INTO Collections(Name, StyleId) VALUES(' олекц≥€  9', 2)
+INSERT INTO Collections(Name, StyleId) VALUES(' олекц≥€  10', 4)
 
 --Furnitures TABLE
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  1', 10, 4, 266, 496, 996, 8, 189, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  1', 9, 6, 752, 962, 327, 9, 239, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1050,7 +1499,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  2', 2, 5, 679, 114, 838, 9, 194, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  2', 9, 1, 351, 236, 906, 4, 469, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1059,7 +1508,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  3', 2, 3, 531, 276, 168, 8, 840, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  3', 5, 7, 989, 441, 349, 9, 136, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1068,7 +1517,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  4', 1, 3, 867, 990, 145, 9, 254, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  4', 3, 6, 101, 875, 189, 10, 675, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1077,7 +1526,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  5', 2, 8, 380, 788, 774, 9, 484, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  5', 5, 3, 751, 910, 663, 3, 308, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1086,7 +1535,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  6', 10, 4, 539, 613, 780, 6, 382, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  6', 10, 5, 823, 114, 707, 4, 505, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1095,7 +1544,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  7', 6, 3, 572, 482, 690, 7, 254, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  7', 7, 4, 637, 480, 526, 4, 558, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1104,7 +1553,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  8', 6, 1, 349, 497, 616, 8, 344, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  8', 1, 6, 389, 308, 350, 7, 607, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1113,7 +1562,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  9', 4, 2, 790, 205, 307, 10, 292, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  9', 8, 1, 645, 781, 301, 8, 682, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1122,7 +1571,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  10', 9, 3, 385, 564, 780, 2, 479, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  10', 9, 2, 421, 371, 553, 5, 132, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1131,7 +1580,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  11', 10, 5, 901, 350, 950, 4, 255, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  11', 4, 2, 417, 437, 691, 2, 773, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1140,7 +1589,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  12', 5, 3, 914, 898, 194, 10, 293, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  12', 3, 3, 330, 286, 167, 8, 757, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1149,7 +1598,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  13', 2, 6, 992, 154, 166, 4, 135, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  13', 7, 2, 719, 851, 422, 5, 683, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1158,7 +1607,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  14', 9, 7, 485, 287, 207, 1, 307, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  14', 9, 8, 695, 217, 179, 4, 993, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1167,7 +1616,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  15', 3, 4, 287, 876, 467, 1, 546, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  15', 2, 2, 966, 995, 774, 9, 896, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1176,7 +1625,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  16', 6, 4, 531, 869, 806, 5, 152, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  16', 8, 6, 323, 665, 549, 10, 173, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1185,7 +1634,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  17', 7, 6, 967, 611, 966, 5, 626, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  17', 6, 3, 403, 187, 253, 4, 103, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1194,7 +1643,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  18', 9, 5, 437, 950, 962, 9, 760, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  18', 10, 4, 999, 467, 711, 1, 149, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1203,7 +1652,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  19', 2, 8, 648, 452, 989, 7, 888, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  19', 4, 8, 323, 489, 436, 5, 202, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1212,7 +1661,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  20', 7, 4, 688, 410, 719, 2, 626, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  20', 2, 5, 858, 516, 311, 1, 325, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1221,7 +1670,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  21', 2, 2, 408, 336, 177, 9, 351, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  21', 2, 8, 208, 525, 704, 6, 995, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1230,7 +1679,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  22', 7, 4, 437, 608, 215, 4, 320, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  22', 6, 2, 649, 464, 586, 1, 927, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1239,7 +1688,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  23', 8, 1, 140, 805, 475, 5, 736, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  23', 6, 4, 213, 103, 997, 10, 702, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1248,7 +1697,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  24', 10, 6, 710, 462, 282, 4, 289, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  24', 7, 3, 768, 628, 101, 10, 820, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1257,7 +1706,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  25', 7, 3, 140, 302, 339, 2, 975, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  25', 5, 5, 803, 568, 479, 1, 896, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1266,7 +1715,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  26', 4, 5, 755, 813, 330, 2, 716, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  26', 1, 2, 721, 472, 775, 6, 772, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1275,7 +1724,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  27', 1, 4, 135, 319, 705, 3, 922, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  27', 8, 1, 189, 219, 566, 8, 123, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1284,7 +1733,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  28', 7, 4, 436, 807, 915, 9, 188, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  28', 7, 1, 859, 110, 671, 4, 767, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1293,7 +1742,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  29', 1, 6, 380, 496, 615, 3, 275, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  29', 4, 4, 355, 914, 743, 6, 504, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1302,7 +1751,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  30', 4, 3, 701, 956, 950, 3, 930, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  30', 4, 2, 396, 738, 186, 4, 629, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1311,7 +1760,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  31', 7, 1, 301, 523, 845, 6, 575, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  31', 10, 5, 982, 294, 890, 6, 895, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1320,7 +1769,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  32', 6, 4, 822, 602, 720, 10, 332, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  32', 4, 8, 565, 771, 354, 3, 745, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1329,7 +1778,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  33', 1, 3, 464, 679, 400, 2, 994, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  33', 5, 4, 980, 295, 397, 3, 189, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1338,7 +1787,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  34', 9, 3, 780, 673, 256, 6, 379, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  34', 9, 2, 508, 149, 109, 6, 504, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1347,7 +1796,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  35', 6, 4, 243, 191, 390, 6, 575, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  35', 2, 7, 338, 901, 158, 9, 333, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1356,7 +1805,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  36', 3, 1, 383, 228, 403, 7, 219, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  36', 10, 5, 882, 501, 591, 3, 966, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1365,7 +1814,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  37', 1, 6, 931, 763, 560, 7, 273, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  37', 4, 1, 836, 528, 660, 3, 542, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1374,7 +1823,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  38', 4, 6, 932, 373, 180, 3, 160, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  38', 5, 1, 971, 410, 997, 4, 804, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1383,7 +1832,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  39', 2, 6, 240, 334, 927, 5, 251, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  39', 1, 7, 394, 314, 408, 9, 170, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1392,7 +1841,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  40', 6, 4, 881, 777, 764, 10, 937, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  40', 7, 4, 523, 515, 707, 1, 584, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1401,7 +1850,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  41', 3, 6, 445, 441, 798, 5, 764, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  41', 2, 8, 893, 631, 331, 3, 413, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1410,7 +1859,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  42', 3, 6, 961, 814, 566, 9, 588, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  42', 1, 3, 624, 892, 556, 5, 174, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1419,7 +1868,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  43', 7, 5, 619, 244, 507, 8, 605, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  43', 2, 6, 172, 285, 694, 2, 274, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1428,7 +1877,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  44', 9, 3, 759, 498, 393, 9, 313, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  44', 4, 6, 241, 454, 987, 2, 993, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1437,7 +1886,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  45', 2, 4, 100, 636, 923, 3, 423, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  45', 5, 8, 133, 732, 540, 10, 576, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1446,7 +1895,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  46', 7, 4, 940, 428, 481, 10, 335, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  46', 7, 5, 804, 796, 100, 5, 540, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1455,7 +1904,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  47', 7, 2, 684, 553, 445, 5, 609, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  47', 7, 2, 704, 746, 733, 8, 953, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1464,7 +1913,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  48', 10, 2, 638, 807, 802, 2, 879, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  48', 3, 7, 389, 811, 641, 9, 595, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1473,7 +1922,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  49', 2, 8, 871, 815, 866, 7, 611, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  49', 9, 7, 976, 555, 595, 4, 397, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1482,7 +1931,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  50', 2, 6, 144, 518, 965, 5, 357, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  50', 4, 1, 957, 391, 350, 5, 625, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1491,7 +1940,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  51', 1, 3, 859, 532, 651, 1, 521, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  51', 3, 3, 805, 501, 180, 1, 390, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1500,7 +1949,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  52', 3, 5, 479, 679, 436, 3, 879, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  52', 2, 3, 932, 242, 613, 3, 220, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1509,7 +1958,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  53', 5, 8, 808, 780, 862, 10, 208, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  53', 8, 1, 661, 882, 724, 9, 667, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1518,7 +1967,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  54', 1, 7, 325, 593, 501, 2, 837, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  54', 10, 7, 688, 619, 729, 6, 298, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1527,7 +1976,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  55', 5, 8, 321, 964, 584, 9, 108, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  55', 10, 4, 103, 976, 342, 10, 797, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1536,7 +1985,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  56', 7, 8, 477, 947, 713, 2, 572, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  56', 5, 6, 586, 732, 810, 4, 841, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1545,7 +1994,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  57', 7, 8, 731, 669, 241, 9, 814, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  57', 1, 7, 624, 348, 945, 1, 926, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1554,7 +2003,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  58', 5, 7, 791, 151, 749, 10, 243, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  58', 2, 8, 157, 867, 104, 4, 833, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1563,7 +2012,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  59', 2, 8, 328, 506, 556, 2, 968, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  59', 1, 6, 703, 595, 491, 9, 918, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1572,7 +2021,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  60', 8, 8, 624, 871, 918, 9, 435, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  60', 3, 6, 453, 899, 672, 4, 211, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1581,7 +2030,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  61', 9, 6, 997, 403, 733, 6, 519, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  61', 7, 5, 795, 117, 423, 6, 541, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1590,7 +2039,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  62', 7, 5, 652, 736, 649, 9, 273, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  62', 8, 1, 388, 763, 755, 4, 397, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1599,7 +2048,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  63', 7, 7, 286, 199, 384, 3, 324, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  63', 5, 2, 375, 767, 703, 10, 452, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1608,7 +2057,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  64', 1, 7, 822, 946, 188, 9, 178, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  64', 8, 3, 658, 874, 217, 3, 662, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1617,7 +2066,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  65', 3, 2, 990, 621, 665, 6, 576, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  65', 6, 2, 674, 666, 377, 3, 565, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1626,7 +2075,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  66', 10, 3, 436, 957, 245, 4, 883, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  66', 6, 5, 820, 893, 157, 10, 701, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1635,7 +2084,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  67', 10, 6, 681, 290, 279, 3, 442, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  67', 2, 4, 122, 580, 571, 6, 186, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1644,7 +2093,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  68', 7, 6, 852, 501, 321, 4, 627, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  68', 7, 3, 979, 341, 961, 7, 392, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1653,7 +2102,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  69', 4, 2, 333, 955, 603, 2, 288, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  69', 9, 5, 555, 420, 462, 3, 214, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1662,7 +2111,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  70', 2, 1, 288, 431, 177, 4, 314, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  70', 3, 8, 242, 825, 949, 9, 226, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1671,7 +2120,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  71', 7, 7, 660, 606, 546, 5, 591, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  71', 7, 7, 163, 436, 137, 2, 723, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1680,7 +2129,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  72', 2, 7, 649, 720, 433, 7, 232, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  72', 5, 3, 449, 606, 921, 7, 269, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1689,7 +2138,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  73', 2, 5, 917, 622, 938, 7, 931, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  73', 1, 6, 266, 751, 335, 8, 411, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1698,7 +2147,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  74', 5, 2, 207, 841, 941, 6, 238, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  74', 4, 6, 397, 577, 226, 5, 333, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1707,7 +2156,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  75', 5, 6, 840, 982, 285, 10, 815, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  75', 6, 8, 290, 366, 329, 9, 821, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1716,7 +2165,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  76', 8, 4, 961, 973, 396, 4, 101, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  76', 3, 4, 216, 704, 211, 7, 923, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1725,7 +2174,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  77', 3, 5, 860, 890, 173, 3, 721, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  77', 2, 8, 259, 545, 305, 4, 132, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1734,7 +2183,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  78', 4, 6, 195, 799, 819, 8, 293, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  78', 9, 8, 469, 297, 405, 2, 955, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1743,7 +2192,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  79', 5, 8, 180, 515, 380, 9, 871, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  79', 4, 7, 835, 857, 859, 3, 884, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1752,7 +2201,7 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 це слово стало також вживатись у значенн≥ Ђреч≥, зокрема предмети од€гу ≥ оздобленн€, 
 €к≥ швидко тл≥ють, або вже зотл≥лиї, в €кому ≥ вживаЇтьс€ в наш час.
 ')
-INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  80', 8, 1, 845, 650, 467, 9, 424, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
+INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, CollectionId, Price, Description) VALUES('ћебель  80', 9, 6, 664, 454, 321, 4, 616, 'ћебл≥ (в≥д лат. mobile Ч рухомий через фр. meuble) Ч рухл€дь, рухоме майно, 
 тобто та частина майна, €ку на в≥дм≥ну в≥д нерухомого, можливо перем≥щувати. 
 ” вузькому розум≥нн≥ це лише вбудован≥ чи розташован≥ окремо предмети житла, 
 призначен≥ дл€ збер≥ганн€ р≥зних предмет≥в використанн€ людини, комфорту. 
@@ -1763,895 +2212,550 @@ INSERT INTO Furnitures(Name, TimeToBuild, CategoryId, Height, Width, Depth, Coll
 ')
 
 --DetailsInFurnitures TABLE
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(15, 1, 1, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(22, 5, 1, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(41, 10, 1, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(2, 3, 1, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 2, 1, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(54, 8, 1, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 6, 2, 1, 8)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 5, 2, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(14, 6, 2, 1, 1)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(40, 3, 2, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(51, 10, 2, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(16, 2, 2, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 1, 2, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(57, 3, 2, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(4, 7, 2, 1, 10)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(9, 5, 2, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(47, 8, 2, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(55, 8, 2, 1, 5)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(16, 3, 2, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(41, 7, 2, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(4, 3, 3, 1, 6)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(52, 8, 3, 1, 8)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(48, 8, 3, 1, 5)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 4, 3, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(17, 1, 3, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 8, 3, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(15, 1, 3, 1, 5)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(33, 9, 3, 1, 8)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(59, 7, 3, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(27, 4, 3, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(1, 10, 3, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(20, 6, 3, 1, 8)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(8, 10, 3, 1, 9)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 5, 3, 1, 10)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(12, 1, 3, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(24, 2, 4, 1, 3)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(36, 3, 4, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(1, 10, 4, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(30, 4, 4, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(36, 6, 4, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(54, 5, 5, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(33, 9, 5, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 4, 5, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(44, 7, 5, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(31, 10, 5, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(57, 7, 5, 1, 1)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(35, 2, 5, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(19, 5, 5, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(57, 2, 5, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 6, 6, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(17, 1, 6, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(36, 7, 6, 1, 9)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(19, 9, 6, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(42, 2, 6, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(9, 8, 6, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(42, 10, 6, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 9, 6, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 3, 6, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(36, 4, 1, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(58, 6, 1, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 9, 1, 1, 8)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(32, 6, 1, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(14, 8, 1, 1, 2)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(12, 1, 1, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(29, 8, 1, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(46, 1, 1, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 10, 2, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(49, 1, 2, 1, 10)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(46, 8, 2, 1, 4)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(5, 5, 2, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(20, 4, 2, 1, 10)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(1, 5, 3, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(34, 9, 3, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(47, 2, 3, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(51, 3, 3, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(59, 4, 3, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(5, 10, 3, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 5, 3, 1, 1)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(46, 2, 3, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(36, 6, 3, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(22, 2, 4, 1, 4)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 8, 4, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(28, 10, 4, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(2, 2, 4, 1, 9)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(47, 7, 4, 1, 9)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(4, 8, 4, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(60, 2, 4, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(5, 1, 5, 1, 7)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(41, 1, 5, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(29, 2, 5, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(22, 9, 5, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(3, 2, 5, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(35, 8, 5, 1, 1)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(20, 4, 5, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(60, 10, 5, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(59, 7, 5, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(60, 9, 6, 1, 4)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(54, 6, 6, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(12, 4, 6, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(55, 10, 6, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(15, 7, 6, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 3, 6, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(34, 3, 6, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(29, 3, 6, 1, 2)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(23, 4, 6, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(11, 8, 7, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(5, 7, 7, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(15, 2, 7, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(36, 2, 7, 1, 9)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(39, 3, 7, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 9, 7, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(59, 2, 7, 0, 0)
 INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(29, 3, 7, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(11, 1, 7, 1, 3)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(1, 8, 7, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(30, 10, 7, 1, 8)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(13, 9, 7, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(2, 8, 7, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(41, 1, 7, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(23, 10, 7, 1, 5)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(3, 5, 7, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(46, 4, 8, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(53, 9, 8, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(17, 8, 8, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 8, 8, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(55, 9, 8, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(42, 9, 8, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(33, 7, 8, 1, 10)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(57, 6, 8, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(8, 4, 8, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(55, 8, 8, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(44, 1, 9, 1, 9)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(4, 1, 9, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(33, 4, 9, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(40, 4, 9, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(11, 5, 9, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(8, 10, 10, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(53, 8, 10, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(52, 9, 10, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(14, 10, 10, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(36, 3, 10, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 10, 10, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(41, 6, 10, 1, 4)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(17, 6, 10, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(35, 7, 10, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(1, 9, 11, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(32, 3, 11, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(5, 9, 11, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(7, 1, 11, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(53, 9, 11, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(1, 3, 11, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(29, 4, 12, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(57, 7, 12, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(42, 1, 12, 1, 1)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(2, 3, 12, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(20, 5, 12, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(44, 6, 12, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(33, 8, 12, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(16, 5, 12, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(54, 7, 12, 1, 5)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(7, 5, 12, 1, 1)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(49, 1, 12, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 1, 13, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(39, 3, 13, 1, 8)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 4, 13, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(27, 9, 13, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(30, 10, 13, 1, 9)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(10, 4, 13, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 2, 13, 1, 3)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(56, 3, 13, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(13, 3, 13, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(5, 1, 13, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(20, 6, 13, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(52, 8, 13, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(31, 7, 13, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 4, 13, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(48, 2, 14, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(31, 6, 14, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(39, 5, 14, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(47, 4, 14, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(46, 6, 14, 1, 9)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(33, 3, 14, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(59, 7, 14, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(56, 9, 14, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(55, 9, 14, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(27, 7, 14, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(37, 6, 15, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(20, 7, 15, 1, 4)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(58, 6, 15, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 8, 15, 1, 2)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(51, 5, 15, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(34, 2, 15, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(20, 7, 15, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(32, 2, 15, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(29, 4, 15, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(45, 3, 16, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(9, 8, 16, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(22, 3, 16, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(18, 9, 16, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(28, 9, 16, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(42, 10, 16, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(24, 5, 16, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(31, 6, 16, 1, 9)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 8, 16, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(54, 7, 17, 1, 2)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 2, 17, 1, 8)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(23, 10, 17, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(9, 2, 17, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(5, 9, 17, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 10, 18, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(45, 2, 18, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(11, 1, 18, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(32, 4, 18, 1, 1)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(44, 5, 18, 1, 10)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 3, 19, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(45, 3, 19, 1, 8)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 6, 19, 1, 10)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(48, 8, 19, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(42, 1, 19, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(52, 4, 19, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(32, 10, 19, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(19, 4, 20, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(60, 7, 20, 1, 4)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(30, 5, 20, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(18, 1, 20, 1, 10)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(47, 2, 20, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(57, 7, 20, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(28, 9, 20, 1, 4)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(18, 5, 20, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(46, 6, 20, 1, 4)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(51, 6, 20, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(7, 8, 20, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 9, 21, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(10, 7, 21, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(56, 10, 21, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(42, 3, 21, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(49, 7, 21, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(49, 3, 21, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(33, 8, 21, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(16, 2, 21, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(12, 4, 21, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(11, 8, 21, 1, 7)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(4, 4, 21, 1, 6)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(58, 1, 21, 1, 6)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(52, 3, 21, 1, 5)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(55, 3, 22, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(3, 3, 22, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(57, 1, 22, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(36, 3, 22, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(27, 2, 22, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(34, 3, 22, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(40, 7, 22, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(11, 9, 22, 1, 1)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(18, 9, 23, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(16, 7, 23, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(59, 1, 8, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(53, 5, 8, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(49, 2, 8, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(5, 9, 8, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(20, 1, 8, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(60, 2, 8, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(11, 3, 8, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(35, 2, 8, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(32, 10, 8, 1, 9)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(33, 5, 9, 1, 8)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 9, 9, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(57, 5, 9, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(32, 7, 9, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(1, 3, 9, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(31, 7, 10, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(33, 5, 10, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 2, 10, 1, 5)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(57, 10, 10, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(5, 2, 10, 1, 8)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(45, 7, 10, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(41, 5, 11, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(48, 3, 11, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 4, 11, 1, 10)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 10, 11, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(33, 3, 11, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(10, 8, 11, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(15, 7, 11, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(31, 6, 11, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(52, 7, 11, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(46, 2, 12, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(33, 9, 12, 1, 1)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(58, 5, 12, 1, 6)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(45, 2, 12, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(5, 9, 13, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(4, 2, 13, 1, 5)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(60, 4, 13, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 1, 13, 1, 1)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 5, 13, 1, 5)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(8, 10, 13, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(30, 9, 14, 1, 10)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(10, 9, 14, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(11, 9, 14, 1, 9)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(37, 2, 14, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(32, 4, 14, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(28, 2, 14, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(39, 9, 14, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(47, 8, 14, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(22, 3, 14, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(8, 8, 15, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 6, 15, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(28, 4, 15, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(5, 10, 15, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(16, 6, 16, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(60, 1, 16, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(55, 4, 16, 1, 2)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(41, 4, 16, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(22, 5, 16, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(36, 1, 16, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 3, 16, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(2, 9, 16, 1, 1)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(27, 2, 17, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(51, 2, 17, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 7, 17, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(32, 7, 17, 1, 3)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(1, 4, 17, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(55, 1, 18, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(16, 1, 18, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(48, 9, 18, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 7, 18, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(46, 2, 18, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(18, 9, 18, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 9, 18, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(24, 6, 18, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(49, 5, 18, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(52, 6, 19, 1, 3)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(9, 8, 19, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(3, 6, 19, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(48, 2, 19, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(20, 5, 19, 1, 4)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 9, 19, 1, 4)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(12, 2, 19, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(55, 10, 19, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(49, 1, 19, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(17, 8, 20, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 7, 20, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(13, 8, 20, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(40, 2, 20, 1, 1)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(28, 5, 20, 1, 3)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(42, 7, 20, 1, 7)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(37, 2, 20, 1, 9)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(36, 4, 20, 1, 5)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 1, 21, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(23, 6, 21, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(16, 4, 21, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 8, 21, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(22, 10, 21, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(4, 10, 21, 1, 7)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(42, 7, 21, 1, 3)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 9, 22, 1, 4)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(37, 9, 22, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(56, 7, 22, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(44, 5, 22, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 2, 22, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(49, 3, 22, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(3, 6, 22, 1, 1)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 5, 22, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(59, 2, 22, 1, 1)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(37, 2, 23, 1, 8)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(9, 7, 23, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(7, 7, 23, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 8, 23, 1, 7)
 INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(2, 9, 23, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(5, 5, 23, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(15, 3, 23, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(28, 6, 23, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(57, 5, 23, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(35, 2, 23, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 7, 23, 1, 7)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 8, 23, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(12, 6, 23, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(13, 8, 23, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(51, 5, 23, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(31, 5, 23, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(23, 6, 24, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 4, 24, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(2, 5, 24, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 8, 24, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(24, 4, 24, 1, 2)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(31, 2, 25, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(36, 2, 25, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(37, 8, 25, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(44, 10, 25, 1, 6)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(8, 2, 25, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(52, 1, 25, 1, 8)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 1, 25, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(4, 4, 25, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(15, 6, 25, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 8, 25, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(28, 8, 25, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(37, 7, 25, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(14, 4, 25, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(45, 8, 25, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 5, 26, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(13, 10, 26, 1, 3)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(52, 9, 26, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 6, 26, 1, 4)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(34, 8, 26, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(30, 1, 26, 1, 3)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(19, 5, 26, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(59, 7, 26, 1, 2)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 1, 26, 1, 10)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(59, 3, 26, 1, 3)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(32, 10, 26, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(19, 6, 26, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(23, 8, 26, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(14, 2, 26, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(22, 10, 27, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(9, 2, 27, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(42, 3, 27, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(29, 8, 27, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(13, 6, 27, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(57, 10, 27, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(54, 3, 27, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(1, 6, 27, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(22, 2, 27, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(18, 5, 27, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(49, 10, 28, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(3, 9, 28, 1, 9)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(42, 7, 28, 1, 10)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(59, 3, 28, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(14, 4, 28, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(51, 7, 28, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(56, 1, 29, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 9, 29, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(53, 7, 29, 1, 3)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(35, 7, 29, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(31, 8, 29, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(2, 1, 29, 1, 10)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(9, 6, 29, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(24, 6, 29, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(16, 1, 29, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(52, 2, 29, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(22, 1, 29, 1, 9)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(44, 9, 29, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(13, 7, 29, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(60, 4, 29, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(8, 4, 29, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 9, 29, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(13, 5, 30, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(52, 2, 30, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(59, 2, 30, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(60, 7, 30, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 2, 30, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(15, 5, 30, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 8, 30, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(39, 1, 30, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(45, 1, 30, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(47, 5, 30, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(15, 10, 30, 1, 4)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(51, 9, 30, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(60, 9, 30, 1, 4)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 10, 30, 1, 7)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 2, 30, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(40, 7, 30, 1, 1)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(35, 1, 31, 1, 6)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 8, 24, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(23, 8, 24, 1, 1)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(54, 5, 24, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(51, 9, 24, 1, 2)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(36, 6, 24, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(48, 5, 24, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(35, 1, 24, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(51, 2, 25, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(15, 6, 25, 1, 10)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(22, 2, 25, 1, 3)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(11, 4, 25, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(16, 3, 25, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(30, 7, 25, 1, 8)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(31, 10, 25, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(59, 6, 25, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(60, 3, 25, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(17, 1, 26, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(37, 2, 26, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(1, 1, 26, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 2, 26, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(23, 5, 26, 1, 5)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(12, 5, 27, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(31, 6, 27, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(19, 10, 27, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(28, 1, 27, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(32, 6, 27, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(2, 6, 27, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(5, 2, 27, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(8, 2, 27, 1, 2)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 3, 28, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(46, 10, 28, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(30, 1, 28, 1, 6)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(37, 10, 28, 1, 7)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(5, 3, 28, 1, 4)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(4, 6, 29, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(8, 9, 29, 1, 10)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 5, 29, 1, 10)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(3, 2, 29, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(56, 8, 29, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(41, 6, 30, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 8, 30, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(37, 5, 30, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(23, 10, 30, 1, 8)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 8, 30, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(1, 4, 30, 1, 7)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(39, 3, 30, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(48, 7, 31, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(54, 10, 31, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(58, 6, 31, 0, 0)
 INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(10, 9, 31, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(33, 3, 31, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 5, 31, 1, 4)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(29, 5, 31, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(41, 9, 31, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(45, 9, 31, 1, 1)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 9, 31, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(35, 7, 31, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(47, 3, 31, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(47, 2, 31, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(12, 1, 31, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(18, 2, 31, 1, 8)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(44, 2, 32, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(16, 8, 32, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(22, 5, 32, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(17, 10, 32, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(45, 8, 32, 1, 3)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(19, 8, 32, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(22, 3, 32, 1, 3)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 1, 32, 1, 5)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(12, 5, 32, 1, 10)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(45, 5, 32, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(14, 9, 32, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(16, 5, 33, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(36, 9, 33, 1, 2)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(28, 10, 33, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(19, 1, 33, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(29, 5, 33, 1, 5)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(16, 10, 33, 1, 1)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(33, 10, 33, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 3, 33, 1, 4)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 6, 33, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(27, 4, 33, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(10, 8, 33, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(35, 4, 33, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(3, 7, 33, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(35, 2, 33, 1, 4)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 9, 33, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(36, 2, 34, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 8, 34, 1, 8)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(52, 5, 34, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(27, 6, 34, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(1, 4, 34, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(59, 9, 34, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(36, 3, 34, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(2, 2, 34, 1, 1)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(11, 9, 34, 1, 4)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(35, 6, 34, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(28, 10, 34, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 8, 34, 1, 1)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(7, 4, 34, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(36, 4, 34, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(39, 8, 34, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(57, 4, 34, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(52, 8, 35, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(48, 9, 35, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(4, 9, 35, 1, 10)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(52, 7, 35, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 8, 35, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(36, 3, 36, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(28, 2, 36, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(18, 8, 36, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(35, 1, 36, 1, 9)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(52, 4, 36, 1, 1)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(58, 5, 36, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(58, 9, 36, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(11, 6, 36, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(57, 1, 36, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(35, 9, 36, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 3, 36, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 4, 36, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(49, 3, 36, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(49, 2, 36, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(14, 2, 37, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(10, 4, 37, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(41, 3, 37, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(11, 1, 37, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 6, 37, 1, 8)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(35, 9, 37, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(14, 10, 37, 1, 1)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(41, 3, 37, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(13, 5, 37, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(47, 8, 37, 1, 10)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(55, 2, 37, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(24, 3, 37, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 3, 37, 1, 3)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(14, 6, 37, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(27, 4, 37, 1, 8)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(2, 3, 38, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(8, 1, 38, 1, 7)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(45, 3, 38, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(2, 2, 38, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(52, 8, 38, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(16, 4, 38, 1, 1)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(58, 3, 38, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 8, 38, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(10, 3, 38, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(5, 5, 38, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(28, 6, 38, 1, 8)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(59, 3, 38, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(29, 10, 38, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(2, 2, 38, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(60, 9, 38, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(39, 4, 39, 1, 9)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(28, 5, 39, 1, 9)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(53, 6, 39, 1, 6)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(52, 1, 39, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(53, 6, 39, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(53, 8, 39, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(47, 7, 39, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(15, 4, 39, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 9, 39, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(10, 5, 39, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(14, 1, 40, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 7, 40, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 5, 40, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(15, 8, 40, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(23, 5, 40, 1, 5)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(4, 2, 40, 1, 5)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(22, 8, 40, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(27, 5, 40, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(36, 3, 40, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(3, 9, 40, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(30, 10, 40, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 6, 40, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(59, 2, 40, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 2, 40, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(48, 8, 40, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(3, 1, 41, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(39, 2, 31, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(2, 10, 31, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(19, 4, 31, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(17, 10, 32, 1, 7)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(14, 3, 32, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(9, 10, 32, 1, 3)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(56, 1, 32, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 8, 32, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 8, 32, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(55, 5, 32, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(47, 7, 33, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(12, 3, 33, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 1, 33, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(53, 1, 33, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(56, 4, 34, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(48, 7, 34, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(40, 8, 34, 1, 5)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(32, 2, 34, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(47, 4, 34, 1, 5)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 4, 34, 1, 9)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(29, 5, 34, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(53, 8, 34, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 10, 35, 1, 9)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 1, 35, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(55, 10, 35, 1, 7)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 3, 35, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(44, 3, 35, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(52, 7, 35, 1, 3)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(3, 6, 35, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 3, 35, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(33, 4, 35, 1, 8)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(20, 7, 36, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(27, 3, 36, 1, 10)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(17, 10, 36, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 6, 36, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(46, 6, 37, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(31, 5, 37, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(45, 8, 37, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(16, 8, 37, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(22, 7, 37, 1, 5)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(42, 9, 37, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(39, 2, 37, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 7, 37, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 8, 38, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(2, 7, 38, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(53, 4, 38, 1, 6)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(23, 5, 38, 1, 2)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(45, 5, 38, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 8, 38, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(10, 7, 39, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(45, 7, 39, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(24, 8, 39, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(14, 4, 39, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(29, 6, 39, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 3, 39, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(19, 3, 39, 1, 9)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(53, 3, 39, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(29, 6, 40, 1, 7)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(59, 4, 40, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 9, 40, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(46, 5, 40, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(32, 1, 41, 1, 1)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(27, 3, 41, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(55, 6, 41, 0, 0)
 INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(51, 4, 41, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 5, 41, 1, 6)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(23, 5, 41, 1, 1)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(4, 8, 41, 1, 2)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(56, 10, 41, 1, 3)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(23, 7, 41, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(34, 9, 41, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(57, 4, 41, 1, 2)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(51, 5, 41, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(14, 6, 41, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(10, 4, 41, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(1, 7, 41, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(37, 6, 41, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(55, 7, 41, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(4, 5, 42, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 10, 42, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(48, 3, 41, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(28, 7, 42, 0, 0)
 INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(39, 4, 42, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(48, 9, 42, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(51, 9, 42, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 9, 42, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 5, 42, 1, 8)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(42, 1, 42, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(30, 5, 42, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 1, 42, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(7, 4, 42, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 2, 42, 1, 2)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 6, 42, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(37, 9, 42, 1, 2)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(15, 2, 43, 1, 7)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(4, 5, 43, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 2, 43, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(41, 6, 43, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(24, 10, 43, 1, 6)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(9, 5, 43, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(56, 9, 43, 1, 1)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(12, 3, 43, 1, 2)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 3, 43, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(20, 7, 43, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(3, 6, 43, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(20, 7, 43, 1, 2)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(19, 1, 43, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(33, 2, 43, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(34, 4, 44, 1, 5)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 10, 44, 1, 4)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(37, 7, 44, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(17, 4, 44, 1, 4)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(57, 5, 44, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(20, 4, 44, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(19, 3, 44, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(27, 6, 44, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(27, 9, 45, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(58, 5, 45, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(57, 2, 45, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 6, 45, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(14, 10, 45, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(10, 2, 45, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(11, 2, 45, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(16, 8, 45, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(35, 8, 45, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 8, 45, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(1, 10, 45, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 6, 45, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(11, 7, 45, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 7, 45, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(7, 4, 45, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 10, 45, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 6, 46, 1, 2)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(19, 9, 46, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(27, 1, 46, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(37, 10, 46, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(56, 9, 46, 1, 1)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(53, 2, 46, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(22, 8, 46, 1, 8)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 2, 46, 1, 1)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(32, 3, 46, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(7, 1, 46, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(42, 6, 46, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(23, 4, 46, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(34, 4, 46, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(16, 6, 46, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(56, 10, 47, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(18, 3, 47, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(33, 1, 47, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 6, 47, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(30, 4, 47, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(52, 2, 47, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(5, 3, 47, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 9, 47, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(55, 10, 47, 1, 1)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 5, 47, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(52, 9, 47, 1, 6)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(57, 7, 47, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(55, 8, 48, 1, 2)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(36, 7, 48, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 10, 48, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 2, 48, 1, 3)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(20, 7, 48, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(15, 1, 48, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(41, 6, 48, 1, 7)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(40, 5, 48, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(30, 7, 49, 1, 8)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 6, 49, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(1, 9, 49, 1, 4)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(49, 7, 49, 1, 3)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(11, 9, 49, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(56, 10, 50, 1, 7)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 9, 50, 1, 5)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(58, 5, 50, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 8, 50, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(27, 3, 50, 1, 10)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(53, 10, 50, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(5, 8, 50, 1, 1)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(47, 2, 50, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(56, 3, 50, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(45, 1, 50, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(14, 2, 50, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 10, 50, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(32, 1, 50, 1, 5)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(59, 7, 50, 1, 3)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(39, 4, 51, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(14, 6, 51, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 8, 51, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(24, 8, 51, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(57, 1, 51, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(57, 2, 51, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(10, 7, 51, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(42, 3, 51, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(16, 1, 51, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(45, 4, 51, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(12, 4, 51, 1, 8)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(46, 1, 51, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(53, 4, 51, 1, 8)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(36, 5, 51, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(36, 5, 51, 1, 10)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(35, 6, 52, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(18, 8, 52, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(48, 6, 52, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(46, 10, 52, 1, 3)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(58, 2, 52, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 8, 52, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(47, 4, 52, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(40, 2, 52, 1, 7)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(3, 5, 52, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(54, 10, 52, 1, 4)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(9, 9, 52, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 4, 52, 1, 8)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(51, 1, 52, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(40, 7, 52, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(47, 1, 52, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 9, 53, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(29, 5, 53, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(3, 4, 53, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(46, 10, 42, 1, 2)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(27, 8, 42, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(58, 6, 42, 1, 9)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(30, 4, 42, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(49, 7, 42, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(24, 5, 43, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 9, 43, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(52, 3, 43, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(20, 9, 43, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(46, 7, 43, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(57, 4, 43, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(9, 7, 44, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(4, 9, 44, 1, 3)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(44, 6, 44, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(59, 4, 44, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 8, 44, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 10, 44, 1, 2)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(30, 6, 44, 1, 9)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(16, 9, 44, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(14, 9, 45, 1, 9)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(3, 1, 45, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(44, 9, 45, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(2, 1, 45, 1, 1)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 10, 45, 1, 5)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(22, 1, 45, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(8, 4, 46, 1, 6)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(15, 4, 46, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(31, 10, 46, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(14, 4, 46, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(23, 10, 46, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(20, 5, 46, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(16, 1, 46, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 8, 46, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(3, 6, 47, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(35, 6, 47, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(46, 9, 47, 1, 7)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(28, 5, 47, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(2, 10, 47, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 1, 47, 1, 9)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(18, 8, 47, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 8, 48, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(22, 4, 48, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(42, 5, 48, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(51, 5, 48, 1, 6)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(52, 5, 49, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(23, 4, 49, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(24, 2, 49, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(30, 3, 49, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(22, 8, 50, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(23, 1, 50, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(11, 10, 50, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(12, 7, 50, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 7, 50, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(1, 6, 50, 1, 7)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(31, 1, 50, 1, 2)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 10, 51, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(24, 7, 51, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(57, 3, 51, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(17, 6, 51, 1, 10)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(13, 2, 51, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(15, 5, 51, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 3, 51, 1, 5)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(10, 1, 51, 1, 3)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(12, 4, 51, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(34, 7, 52, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(18, 7, 52, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(1, 7, 52, 1, 3)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(14, 5, 52, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(56, 10, 52, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(12, 9, 52, 1, 1)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(9, 5, 52, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 6, 53, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(32, 10, 53, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(27, 4, 53, 1, 8)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(58, 10, 53, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(46, 6, 53, 1, 9)
 INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(51, 9, 53, 1, 3)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(9, 7, 53, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(11, 2, 53, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(7, 10, 53, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(52, 9, 53, 1, 5)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(58, 5, 53, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(2, 2, 53, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 2, 53, 1, 10)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(17, 3, 53, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(58, 8, 53, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(35, 2, 53, 1, 6)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(13, 5, 53, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(31, 10, 53, 1, 3)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(20, 8, 54, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(45, 6, 54, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(49, 8, 54, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(19, 3, 54, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(53, 9, 54, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 5, 54, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(17, 9, 54, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(44, 7, 54, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(51, 8, 54, 1, 2)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(42, 4, 55, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(56, 3, 55, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(29, 9, 55, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 9, 55, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 2, 55, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(28, 9, 55, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(32, 3, 55, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(19, 8, 56, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(30, 9, 56, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(44, 7, 56, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(47, 4, 56, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(37, 3, 56, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(1, 1, 56, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(20, 1, 56, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 2, 57, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(34, 8, 57, 1, 3)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(60, 10, 57, 1, 8)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(34, 3, 57, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(9, 10, 57, 1, 6)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 5, 58, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(10, 5, 58, 1, 7)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(37, 6, 58, 1, 5)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(11, 9, 58, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(5, 5, 58, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(2, 8, 58, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(57, 5, 58, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(22, 4, 58, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(35, 4, 58, 1, 9)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(35, 4, 58, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(19, 4, 58, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(34, 7, 58, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(14, 7, 58, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 3, 58, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(37, 7, 58, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(27, 1, 59, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(22, 9, 59, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(14, 4, 59, 1, 7)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(34, 4, 59, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(14, 9, 59, 1, 8)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(59, 2, 59, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(41, 5, 59, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(36, 5, 59, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(40, 4, 59, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 1, 59, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 8, 60, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(49, 6, 60, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(39, 2, 60, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 9, 60, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(33, 4, 60, 1, 5)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(57, 9, 60, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 8, 60, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(46, 1, 60, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(15, 4, 60, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(8, 9, 60, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(56, 7, 60, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(45, 7, 60, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(33, 2, 60, 1, 2)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(39, 10, 60, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(14, 3, 60, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(45, 9, 61, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(54, 10, 61, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(13, 8, 53, 1, 5)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(3, 8, 53, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(49, 3, 54, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 3, 54, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(28, 6, 54, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(32, 8, 54, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(42, 5, 54, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(35, 3, 54, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(3, 3, 54, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(31, 5, 55, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(53, 8, 55, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(49, 2, 55, 1, 5)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 7, 55, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(55, 1, 55, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(37, 7, 56, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(8, 3, 56, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(57, 2, 56, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 6, 56, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(33, 6, 56, 1, 4)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(24, 4, 56, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(54, 8, 56, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(29, 10, 57, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(58, 3, 57, 1, 2)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(18, 1, 57, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 3, 57, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(30, 4, 57, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(57, 2, 57, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(46, 5, 58, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 8, 58, 1, 1)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(29, 3, 58, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(47, 7, 58, 1, 1)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(58, 9, 58, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 6, 58, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(10, 5, 58, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(4, 5, 59, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(3, 4, 59, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(36, 4, 59, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(44, 8, 59, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(20, 7, 59, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(51, 3, 59, 1, 6)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(33, 8, 60, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 8, 60, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(60, 9, 60, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(2, 4, 60, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 10, 60, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(12, 4, 60, 1, 10)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 4, 60, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 9, 61, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(55, 9, 61, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(16, 9, 61, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(58, 5, 61, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(46, 2, 61, 1, 5)
 INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(3, 5, 61, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(5, 9, 61, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(42, 5, 61, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(53, 6, 61, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(40, 10, 61, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(17, 3, 61, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(39, 10, 61, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(47, 8, 62, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 6, 62, 1, 8)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(11, 1, 62, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(45, 1, 62, 1, 1)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(33, 1, 62, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(58, 8, 63, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(7, 7, 63, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(37, 4, 63, 1, 7)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(33, 9, 63, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(36, 2, 63, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(37, 6, 63, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(11, 8, 64, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(36, 10, 64, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(36, 4, 64, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(29, 3, 64, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(11, 3, 64, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(32, 5, 64, 1, 4)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(55, 2, 64, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(13, 5, 64, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(27, 7, 64, 1, 8)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(53, 4, 64, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(12, 4, 64, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(9, 4, 64, 1, 2)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 7, 64, 1, 1)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(7, 7, 64, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(30, 3, 65, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(16, 1, 65, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(24, 6, 65, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(20, 6, 65, 1, 10)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(27, 3, 65, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(47, 8, 65, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(1, 4, 65, 1, 9)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(39, 1, 65, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 6, 65, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 9, 65, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(47, 8, 65, 1, 9)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 3, 65, 1, 5)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(47, 8, 65, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(48, 4, 65, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(55, 3, 66, 1, 1)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 6, 66, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 7, 66, 1, 5)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(4, 6, 66, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(48, 7, 66, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(17, 5, 66, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(49, 4, 66, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(1, 3, 66, 1, 4)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(60, 10, 66, 1, 8)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(19, 10, 66, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(52, 3, 66, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(57, 7, 66, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(47, 5, 66, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(52, 9, 67, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(20, 7, 67, 1, 7)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 6, 67, 1, 7)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(12, 7, 67, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(42, 7, 67, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(8, 2, 67, 1, 9)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(10, 7, 67, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(29, 3, 67, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(41, 1, 67, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 1, 67, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(28, 6, 67, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 1, 67, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(18, 7, 67, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(29, 2, 67, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 7, 67, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(33, 10, 67, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(48, 2, 68, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(40, 5, 68, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(47, 3, 68, 1, 10)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(34, 10, 68, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(53, 4, 68, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(34, 8, 68, 1, 10)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(20, 9, 68, 1, 6)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(32, 8, 69, 1, 3)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(42, 2, 69, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(54, 1, 69, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(24, 7, 69, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(18, 10, 69, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(46, 3, 69, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 6, 69, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 5, 69, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(8, 4, 69, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(33, 4, 69, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(45, 7, 69, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(29, 4, 69, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(15, 10, 69, 1, 8)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(28, 1, 69, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(59, 3, 69, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(7, 4, 70, 1, 9)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(53, 6, 70, 1, 1)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 5, 70, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(1, 3, 70, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(30, 7, 70, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 7, 70, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(52, 3, 70, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(45, 10, 61, 1, 7)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(28, 8, 61, 1, 2)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(2, 5, 61, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(60, 5, 62, 1, 3)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(10, 7, 62, 1, 2)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(41, 6, 62, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 1, 62, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 2, 62, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(5, 8, 62, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(33, 5, 63, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(22, 8, 63, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(20, 7, 63, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 9, 63, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(51, 10, 63, 1, 1)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(5, 10, 64, 1, 10)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 1, 64, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(12, 2, 64, 1, 4)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(16, 6, 64, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(34, 5, 64, 1, 4)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(60, 7, 64, 1, 5)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(13, 4, 65, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(17, 5, 65, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(59, 7, 65, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(33, 4, 65, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(23, 10, 65, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(1, 1, 65, 1, 5)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 5, 65, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(9, 4, 65, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(14, 10, 66, 1, 10)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(7, 4, 66, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(31, 9, 66, 1, 1)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(28, 8, 66, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(32, 10, 66, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(59, 8, 66, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(24, 6, 66, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(37, 9, 66, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(4, 4, 67, 1, 1)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(36, 6, 67, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(48, 2, 67, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(10, 5, 67, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(8, 2, 67, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(16, 7, 68, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(4, 6, 68, 1, 6)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(37, 3, 68, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(5, 9, 68, 1, 8)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 1, 68, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(24, 4, 68, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(42, 1, 68, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(20, 9, 69, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(57, 5, 69, 1, 10)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(49, 6, 69, 1, 7)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(22, 7, 69, 1, 7)
 INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 8, 70, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(11, 3, 70, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 3, 70, 1, 7)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(17, 8, 70, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(40, 9, 70, 1, 2)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(44, 1, 70, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(31, 9, 70, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(59, 1, 71, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 10, 71, 1, 9)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 1, 71, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(10, 9, 71, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(27, 9, 71, 1, 6)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(56, 3, 71, 1, 7)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(29, 1, 71, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(22, 7, 71, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(11, 8, 71, 1, 5)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(48, 9, 71, 1, 1)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(31, 6, 71, 1, 7)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(52, 9, 71, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 5, 71, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(48, 9, 72, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(28, 9, 72, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(12, 6, 72, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 1, 72, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(44, 4, 72, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(40, 6, 72, 1, 6)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 8, 72, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(45, 9, 72, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(30, 9, 72, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(59, 10, 72, 1, 7)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(24, 7, 72, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(10, 5, 72, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(53, 10, 72, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(47, 7, 72, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(13, 2, 72, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(27, 6, 73, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(3, 2, 73, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 1, 73, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(7, 1, 73, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(32, 3, 73, 1, 6)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(1, 2, 73, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(40, 2, 73, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(29, 3, 73, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(7, 1, 73, 1, 8)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(22, 3, 73, 1, 8)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 6, 73, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 3, 73, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(14, 3, 73, 1, 6)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(53, 8, 73, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(24, 1, 73, 1, 10)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 1, 73, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(37, 6, 74, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(28, 3, 74, 1, 4)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(56, 1, 74, 1, 5)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(18, 10, 74, 1, 10)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(8, 3, 74, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(7, 2, 74, 1, 6)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(11, 4, 74, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(45, 8, 74, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(23, 6, 74, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 5, 74, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(18, 5, 74, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(31, 7, 74, 1, 6)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(27, 6, 74, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(48, 9, 75, 1, 6)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 1, 75, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(34, 8, 75, 1, 5)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(39, 3, 75, 1, 5)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(39, 10, 75, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 10, 75, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(5, 5, 76, 1, 6)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(40, 5, 76, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(20, 2, 76, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(13, 2, 76, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(55, 9, 76, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(17, 9, 76, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(54, 1, 76, 1, 3)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(12, 2, 76, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(28, 3, 76, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(31, 10, 76, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(37, 10, 77, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(9, 3, 77, 1, 9)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 9, 77, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(5, 4, 77, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(1, 3, 77, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(27, 5, 77, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(28, 6, 77, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(60, 3, 77, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(26, 7, 77, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(15, 2, 77, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(24, 1, 77, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 10, 77, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(45, 7, 77, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(54, 7, 77, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(47, 2, 77, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(60, 8, 77, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(51, 2, 78, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(58, 7, 78, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(57, 8, 78, 1, 1)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(8, 4, 78, 1, 7)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(4, 8, 78, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(20, 4, 78, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(49, 6, 78, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(13, 5, 78, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(9, 10, 78, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(51, 7, 78, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(29, 10, 78, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(24, 7, 78, 1, 3)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 1, 78, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(35, 10, 78, 1, 6)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 5, 78, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(3, 9, 78, 1, 2)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(34, 9, 79, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(24, 2, 79, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(31, 9, 79, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(51, 9, 79, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(49, 4, 79, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(38, 7, 80, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(29, 3, 80, 1, 5)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(13, 5, 80, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 7, 80, 1, 9)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(18, 1, 80, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 9, 80, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(51, 6, 80, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(49, 9, 80, 0, 0)
-INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(56, 7, 80, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(2, 5, 70, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 6, 70, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(36, 8, 70, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(24, 2, 70, 1, 8)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(17, 5, 70, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(60, 9, 70, 1, 1)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(5, 8, 70, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 7, 71, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(11, 5, 71, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 4, 71, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(56, 9, 71, 1, 3)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(32, 7, 71, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(40, 4, 71, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(7, 1, 71, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(56, 1, 72, 1, 5)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(4, 9, 72, 1, 4)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(40, 10, 72, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 8, 72, 1, 8)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(45, 2, 72, 1, 1)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(44, 10, 72, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(29, 6, 72, 1, 5)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(39, 3, 72, 1, 7)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(3, 5, 72, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(50, 3, 73, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(31, 4, 73, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 5, 73, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(53, 1, 73, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(28, 2, 73, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(20, 9, 73, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(49, 4, 73, 1, 10)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(27, 6, 73, 1, 10)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(42, 9, 73, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(59, 2, 74, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 1, 74, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(56, 6, 74, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(37, 8, 74, 1, 9)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(43, 4, 74, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(30, 5, 74, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(4, 6, 74, 1, 5)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(53, 6, 75, 1, 1)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(2, 2, 75, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(41, 1, 75, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(30, 8, 75, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(25, 2, 75, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(59, 7, 75, 1, 3)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(1, 3, 75, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 3, 76, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(5, 3, 76, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(7, 3, 76, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(22, 4, 76, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(41, 2, 76, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 6, 77, 1, 8)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(35, 7, 77, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(4, 3, 77, 1, 9)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(11, 4, 77, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(37, 9, 77, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(2, 5, 77, 1, 3)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(39, 9, 77, 1, 7)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(34, 6, 77, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(7, 4, 78, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(60, 9, 78, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(56, 3, 78, 1, 4)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(18, 2, 78, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(59, 6, 78, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(46, 2, 78, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(41, 6, 79, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(33, 9, 79, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(46, 4, 79, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(30, 9, 79, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(18, 1, 79, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(4, 4, 80, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(21, 8, 80, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(46, 4, 80, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(51, 5, 80, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(6, 9, 80, 0, 0)
+INSERT INTO DetailsInFurnitures(DetailId, Count, FurnitureId, IsAdditional, TimeToIntegrate) VALUES(11, 1, 80, 0, 0)
 
 --PaymentSystems TABLE
 INSERT INTO PaymentSystems(Name) VALUES('PayPal')
@@ -2661,16 +2765,16 @@ INSERT INTO PaymentSystems(Name) VALUES('WebMoney')
 INSERT INTO PaymentSystems(Name) VALUES('Visa/Mastercard')
 
 --Customers TABLE
-INSERT INTO Customers(Name, PhoneNumber) VALUES('ќлександр', '+380753082')
-INSERT INTO Customers(Name, PhoneNumber) VALUES('–оман', '+380186724')
-INSERT INTO Customers(Name, PhoneNumber) VALUES('јндр≥й', '+380981718')
-INSERT INTO Customers(Name, PhoneNumber) VALUES('ѕетро', '+380298009')
-INSERT INTO Customers(Name, PhoneNumber) VALUES('—ерг≥й', '+380444077')
-INSERT INTO Customers(Name, PhoneNumber) VALUES('ћихайло', '+380034662')
-INSERT INTO Customers(Name, PhoneNumber) VALUES('≤гор', '+380076101')
-INSERT INTO Customers(Name, PhoneNumber) VALUES('ќлег', '+380227799')
-INSERT INTO Customers(Name, PhoneNumber) VALUES('¬олодимир', '+380057186')
-INSERT INTO Customers(Name, PhoneNumber) VALUES('Ќазар', '+380492257')
+INSERT INTO Customers(Name, PhoneNumber) VALUES('ќлександр', '+380981959')
+INSERT INTO Customers(Name, PhoneNumber) VALUES('–оман', '+380708987')
+INSERT INTO Customers(Name, PhoneNumber) VALUES('јндр≥й', '+380489876')
+INSERT INTO Customers(Name, PhoneNumber) VALUES('ѕетро', '+380203148')
+INSERT INTO Customers(Name, PhoneNumber) VALUES('—ерг≥й', '+380477171')
+INSERT INTO Customers(Name, PhoneNumber) VALUES('ћихайло', '+380593975')
+INSERT INTO Customers(Name, PhoneNumber) VALUES('≤гор', '+380259836')
+INSERT INTO Customers(Name, PhoneNumber) VALUES('ќлег', '+380801357')
+INSERT INTO Customers(Name, PhoneNumber) VALUES('¬олодимир', '+380942825')
+INSERT INTO Customers(Name, PhoneNumber) VALUES('Ќазар', '+380315948')
 
 --Posts TABLE
 INSERT INTO Posts(Name, Salary) VALUES('ћенеджер з продажу', 1100)
@@ -2680,13 +2784,13 @@ INSERT INTO Posts(Name, Salary) VALUES('ѕрац≥вник складу', 600)
 INSERT INTO Posts(Name, Salary) VALUES('јдм≥н', 2000)
 
 --Workers TABLE
-INSERT INTO Workers(PostID, Name, Surname, Email, PhoneNumber, Password, Status) VALUES(4, 'ќлександр', '«ахватка', 'worker0@gmail.com', '+380911608', 'pzmsmlhvaa', '¬≥льний')
-INSERT INTO Workers(PostID, Name, Surname, Email, PhoneNumber, Password, Status) VALUES(3, '–оман', 'Ѕух≥в', 'worker1@gmail.com', '+380531739', 'igevrdhviy', '¬≥льний')
-INSERT INTO Workers(PostID, Name, Surname, Email, PhoneNumber, Password, Status) VALUES(1, 'јндр≥й', 'Ѕух≥в', 'worker2@gmail.com', '+380417252', 'ljvvuctusw', '¬≥льний')
-INSERT INTO Workers(PostID, Name, Surname, Email, PhoneNumber, Password, Status) VALUES(5, 'ѕетро', 'Ѕух≥в', 'worker3@gmail.com', '+380080385', 'miwqzplrrv', '¬≥льний')
-INSERT INTO Workers(PostID, Name, Surname, Email, PhoneNumber, Password, Status) VALUES(3, '—ерг≥й', 'Ќечай', 'worker4@gmail.com', '+380964562', 'vgistniofk', '¬≥льний')
-INSERT INTO Workers(PostID, Name, Surname, Email, PhoneNumber, Password, Status) VALUES(1, 'ћихайло', '’олодний', 'worker5@gmail.com', '+380074425', 'atacoycahl', '¬≥льний')
-INSERT INTO Workers(PostID, Name, Surname, Email, PhoneNumber, Password, Status) VALUES(2, '≤гор', '«≥байло', 'worker6@gmail.com', '+380369794', 'kudhhskevl', '¬≥льний')
-INSERT INTO Workers(PostID, Name, Surname, Email, PhoneNumber, Password, Status) VALUES(1, 'ќлег', 'ѕетренко', 'worker7@gmail.com', '+380470686', 'hdjlbhgimj', '¬≥льний')
-INSERT INTO Workers(PostID, Name, Surname, Email, PhoneNumber, Password, Status) VALUES(3, '¬олодимир', '«ахватка', 'worker8@gmail.com', '+380396942', 'offbfajrak', '¬≥льний')
-INSERT INTO Workers(PostID, Name, Surname, Email, PhoneNumber, Password, Status) VALUES(2, 'Ќазар', '«ахватка', 'worker9@gmail.com', '+380118900', 'zetnezloes', '¬≥льний')
+INSERT INTO Workers(PostID, Name, Surname, Email, PhoneNumber, Password, Status) VALUES(1, 'ќлександр', '«≥байло', 'worker0@gmail.com', '+380260533', 'qmclgtswiz', '¬≥льний')
+INSERT INTO Workers(PostID, Name, Surname, Email, PhoneNumber, Password, Status) VALUES(3, '–оман', 'Ѕух≥в', 'worker1@gmail.com', '+380654134', 'metdouslbe', '¬≥льний')
+INSERT INTO Workers(PostID, Name, Surname, Email, PhoneNumber, Password, Status) VALUES(5, 'јндр≥й', 'Ќечай', 'worker2@gmail.com', '+380383951', 'emhtiunkzv', '¬≥льний')
+INSERT INTO Workers(PostID, Name, Surname, Email, PhoneNumber, Password, Status) VALUES(1, 'ѕетро', 'ћазурик', 'worker3@gmail.com', '+380357649', 'ppojcznoqi', '¬≥льний')
+INSERT INTO Workers(PostID, Name, Surname, Email, PhoneNumber, Password, Status) VALUES(5, '—ерг≥й', 'Ѕр≥тв≥н', 'worker4@gmail.com', '+380481879', 'ljeuwolvtq', '¬≥льний')
+INSERT INTO Workers(PostID, Name, Surname, Email, PhoneNumber, Password, Status) VALUES(2, 'ћихайло', '«ахватка', 'worker5@gmail.com', '+380230163', 'htjzkitoda', '¬≥льний')
+INSERT INTO Workers(PostID, Name, Surname, Email, PhoneNumber, Password, Status) VALUES(2, '≤гор', 'ћазурик', 'worker6@gmail.com', '+380089702', 'kmzdmsiacb', '¬≥льний')
+INSERT INTO Workers(PostID, Name, Surname, Email, PhoneNumber, Password, Status) VALUES(3, 'ќлег', '’олодний', 'worker7@gmail.com', '+380567768', 'aturfnudac', '¬≥льний')
+INSERT INTO Workers(PostID, Name, Surname, Email, PhoneNumber, Password, Status) VALUES(4, '¬олодимир', '–азмук', 'worker8@gmail.com', '+380322617', 'ahpphyovri', '¬≥льний')
+INSERT INTO Workers(PostID, Name, Surname, Email, PhoneNumber, Password, Status) VALUES(4, 'Ќазар', '’олодний', 'worker9@gmail.com', '+380312862', 'toctjneslz', '¬≥льний')

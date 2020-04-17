@@ -10,6 +10,7 @@ namespace FurnitureFirm.Common
         public const string Accepted = "Прийнято";
         public const string Canceled = "Скасовано";
         public const string InProduction = "Виготовляється";
+        public const string WaitForDelivery = "Очікує доставки";
         public const string Delivering = "Доставляється";
         public const string Done = "Завершено";
     }

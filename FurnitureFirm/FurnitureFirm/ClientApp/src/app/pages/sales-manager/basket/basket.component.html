@@ -27,21 +27,21 @@
                             <div formGroupName="customer" fxLayout="column" fxLayoutAlign="start start">
                                 <mat-form-field>
                                     <mat-label>Ім'я клієнта</mat-label>
-                                    <input matInput  formControlName="name">
+                                    <input matInput  formControlName="name" required>
                                 </mat-form-field>
                                 <mat-form-field >
                                     <mat-label>Номер телефону</mat-label>
                                     <span matPrefix>+380 &nbsp;</span>
-                                    <input matInput type="tel" formControlName="phoneNumber">
+                                    <input matInput type="tel" formControlName="phoneNumber" required>
                                 </mat-form-field>
                             </div>
                             
                             <div class="space"></div>
                             
                             <div formGroupName="deliveryInfo" fxLayout="row">
-                                <mat-form-field>
+                                <mat-form-field> 
                                     <mat-label>Місто</mat-label>
-                                    <mat-select formControlName="cityId">
+                                    <mat-select formControlName="cityId" required>
                                         <mat-option *ngFor="let city of cities" [value]="city.cityId">
                                             {{city.name}}
                                         </mat-option>
@@ -50,12 +50,12 @@
                                 <div class="space-horizontal"></div>
                                 <mat-form-field>
                                     <mat-label>Вулиця</mat-label>
-                                    <input matInput formControlName="street">
+                                    <input matInput formControlName="street" required>
                                 </mat-form-field>
                                 <div class="space-horizontal"></div>
                                 <mat-form-field>
                                     <mat-label>Будинок</mat-label>
-                                    <input matInput formControlName="building">
+                                    <input matInput formControlName="building" required>
                                 </mat-form-field>
                             </div>
                             <div>
@@ -72,7 +72,7 @@
                     <div fxFlex="5"></div>
                     <mat-form-field>
                         <mat-label>Тип оплати</mat-label>
-                        <mat-select formControlName="paymentSystemId">
+                        <mat-select formControlName="paymentSystemId" required>
                             <mat-option *ngFor="let ps of paymentSystems" [value]="ps.paymentSystemId">
                                 {{ps.name}}
                             </mat-option>

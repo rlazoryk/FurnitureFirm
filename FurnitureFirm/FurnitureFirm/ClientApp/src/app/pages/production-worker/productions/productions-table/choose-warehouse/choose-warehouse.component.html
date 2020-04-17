@@ -1,0 +1,16 @@
+<div fxLayout="column">
+    <div class="title">Виберіть склад</div>
+    <div class="space"></div>
+    <mat-form-field>
+        <mat-label>Склад</mat-label>
+        <mat-select [(value)]="selectedWarehouse" required>
+            <mat-option *ngFor="let wh of warehouses" [value]="wh">
+                {{'Склад ' + wh.warehouseId + '(' + wh.street + ')'}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <div class="space"></div>
+    <div>
+        <button mat-flat-button color="accent" (click)="choose()">Почати виробництво</button>
+    </div>
+</div>

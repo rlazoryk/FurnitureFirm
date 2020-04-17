@@ -29,17 +29,18 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
-    this.http.login(this.loginForm.get('userEmail').value, this.loginForm.get('userPassword').value).subscribe(response => {
-      const worker = response as Worker;
-      if (response == null) {
-        this.snackBar.open('Неправильний логін або пароль', null, {
-          duration: 2000,
-          panelClass: ['warn-color']
-        });
-      } else {
-        this.auth.login(worker);
-        this.router.navigate(['/']);
-      }
-    });
+    this.http.login(this.loginForm.get('userEmail').value, this.loginForm.get('userPassword').value)
+      .subscribe(response => {
+        const worker = response as Worker;
+        if (response == null) {
+          this.snackBar.open('Неправильний логін або пароль', null, {
+            duration: 3000,
+            panelClass: ['warn-color']
+          });
+        } else {
+          this.auth.login(worker);
+          this.router.navigate(['/']);
+        }
+      });
   }
 }
