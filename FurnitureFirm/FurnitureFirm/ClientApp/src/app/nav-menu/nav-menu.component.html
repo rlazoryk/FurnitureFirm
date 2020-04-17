@@ -18,6 +18,7 @@
           <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="getUserPost() === 'Менеджер з продажу'">
             <a class="nav-link text-dark" [routerLink]="['furniture', 'basket']">
               <mat-icon>shopping_cart</mat-icon>
+              <span *ngIf="this.getFurnitureBasketSize() > 0" style="color:blueviolet"> {{this.getFurnitureBasketSize()}}</span>
             </a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="getUserPost() === 'Менеджер з поставок'">
