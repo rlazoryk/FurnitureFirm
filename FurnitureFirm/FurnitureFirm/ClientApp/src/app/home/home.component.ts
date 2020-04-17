@@ -10,6 +10,6 @@ export class HomeComponent {
   constructor(private auth: AuthService) {}
 
   getUserName() {
-    return this.auth.worker.name;
+    return this.auth.worker.name + " " + this.auth.worker.surname;
   }
 }
