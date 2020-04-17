@@ -1,5 +1,5 @@
 <mat-card fxLayout="row" class="mat-elevation-z8" fxLayoutAlign="center center"
-  style="width: 50%; margin-left: 25%; margin-top: 12%;">
+  style="width: 50%; margin-left: 25%; margin-top: 6%;">
   <div class="container" fxLayout="column" fxLayoutAlign="center center">
     <h2>Вітаємо!</h2>
 
@@ -17,7 +17,7 @@
       <mat-form-field class="example-full-width">
         <mat-label>Password</mat-label>
 
-        <input matInput formControlName="userPassword">
+        <input matInput type="password" formControlName="userPassword">
 
         <mat-error *ngIf="!loginForm.get('userPassword').valid && loginForm.get('userPassword').touched">
           Password is <strong>required</strong>

@@ -50,7 +50,7 @@ export class FurnitureOrdersTableComponent implements OnInit {
       });
   }
 
-  isCanceled(order: Order) {
-    return order.status == "Скасовано";
+  isNew(order: Order) {
+    return order.status == "Прийнято";
   }
 }

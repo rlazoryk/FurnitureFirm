@@ -42,7 +42,7 @@
                     <mat-icon>info</mat-icon>
                     <span>Деталі</span>
                 </button>
-                <button *ngIf="!isCanceled(element)" mat-flat-button color="warn" (click)="cancelOrder(element)">
+                <button *ngIf="isNew(element)" mat-flat-button color="warn" (click)="cancelOrder(element)">
                     <span>Скасувати</span>
                 </button>
             </div>
