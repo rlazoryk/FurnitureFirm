@@ -85,7 +85,7 @@ namespace FurnitureFirm.Controllers
 
         //GET api/warehouse/consumptions
         [HttpGet("consumptions")]
-        public async Task<ActionResult<IEnumerable<WarehouseConsumptionDto>>> GetConsumptions(int warehouseId)
+        public async Task<ActionResult<IEnumerable<WarehouseConsumptionDto>>> GetConsumptions()
         {
             var warehouses = await _context.Warehouses.ToListAsync();
 
@@ -102,7 +102,7 @@ namespace FurnitureFirm.Controllers
                     Consumptions = await _context.Consumptions
                         .Include(c => c.WarehouseDetail)
                         .ThenInclude(c => c.Detail)
-                        .Where(c => c.WarehouseDetail.WarehouseId.Value == warehouseId)
+                        .Where(c => c.WarehouseDetail.WarehouseId.Value == w)
                         .Select(c => _mapper.Map<ConsumptionDto>(c))
                         .ToListAsync()
                 });

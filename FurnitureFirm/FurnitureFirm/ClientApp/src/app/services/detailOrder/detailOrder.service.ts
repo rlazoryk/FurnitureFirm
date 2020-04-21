@@ -13,6 +13,7 @@ export class DetailOrderService {
   }
 
   removeDetail(orderedDetail: OrderedDetail) {
+    console.log(orderedDetail);
     this.order.orderRows = this.order.orderRows.filter(obj => obj !== orderedDetail);
   }
 

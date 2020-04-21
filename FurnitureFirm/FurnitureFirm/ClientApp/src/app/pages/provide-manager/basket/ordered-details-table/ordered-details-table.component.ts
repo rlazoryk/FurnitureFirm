@@ -45,7 +45,7 @@ export class OrderedDetailsTableComponent implements OnInit {
   }
 
   removeFromOrder(detail: Detail) {
-    this.details = this.details.filter(d => d.detailId === detail.detailId);
+    this.details = this.details.filter(d => d.detailId !== detail.detailId);
     const itemToRemove = this.orderService.order.orderRows.filter(d => d.detailId === detail.detailId)[0];
     this.orderService.removeDetail(itemToRemove);
   }
