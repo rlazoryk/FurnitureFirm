@@ -22,7 +22,7 @@ export class BasketComponent implements OnInit {
   constructor(public orderService: OrderService,
     private httpService: HttpService,
     private snackBar: MatSnackBar,
-    private formBuilder: FormBuilder, ) {
+    private formBuilder: FormBuilder) {
     this.orderForm = this.formBuilder.group({
       totalPrice: '',
       workerId: '',
@@ -69,8 +69,10 @@ export class BasketComponent implements OnInit {
     //TODO: when roles and login will be implemented
     orderData.workerId = 1;
     orderData.deliveryInfo.deliveryPrice = Constants.deliveryPrice;
+    orderData.deliveryInfo.building = +orderData.deliveryInfo.building;
     orderData.totalPrice = this.orderService.currentOrder.totalPrice;
     orderData.orderedFurnitures = this.mapOrderedFurnitures();
+    console.log(orderData);
 
     this.httpService.createFurnitureOrder(orderData)
       .subscribe(response => {

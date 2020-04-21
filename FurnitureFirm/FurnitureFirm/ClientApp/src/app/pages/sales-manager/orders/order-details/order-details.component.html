@@ -47,7 +47,7 @@
 
             <ng-container matColumnDef="additionalCount">
                 <th mat-header-cell *matHeaderCellDef> К-сть додаткових деталей </th>
-                <td mat-cell *matCellDef="let element"> {{element.additionalDetailsOrdered.length}} </td>
+                <td mat-cell *matCellDef="let element"> {{getAdditionalDetailsCount(element)}} </td>
             </ng-container>
 
             <ng-container matColumnDef="totalPrice">

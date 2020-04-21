@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { OrderedDetail } from 'src/app/models/ordered-detail';
-import { MAT_DIALOG_DATA, MatDialog } from '@angular/material';
+import { MAT_DIALOG_DATA, MatDialog, MatSnackBar } from '@angular/material';
 import { Detail } from 'src/app/models/detail';
 import { DetailOrderService } from 'src/app/services/detailOrder/detailOrder.service';
 import { DescriptionModalComponent } from 'src/app/pages/shared/description-modal/description-modal.component';
@@ -18,7 +18,8 @@ export class DetailConfigureModalComponent implements OnInit {
 
   constructor(@Inject(MAT_DIALOG_DATA) public detail: Detail,
     private detailOrderService: DetailOrderService,
-    private dialog: MatDialog) { }
+    private dialog: MatDialog,
+    private snackBar: MatSnackBar) { }
 
   ngOnInit() {
     this.orderedDetail.detailId = this.detail.detailId;
@@ -68,5 +69,10 @@ export class DetailConfigureModalComponent implements OnInit {
     }
 
     this.dialog.closeAll();
+
+    this.snackBar.open('Успішно додано в корзину!', null, {
+      duration: 4000,
+      panelClass: ['accent-color']
+    });
   }
 }

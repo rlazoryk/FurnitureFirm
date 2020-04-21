@@ -11,10 +11,17 @@ export class OrderDetailsComponent implements OnInit {
 
   displayedColumns = ['name', 'count', 'additionalCount', 'totalPrice']
 
-  constructor(@Inject(MAT_DIALOG_DATA) public order: Order,) { }
+  constructor(@Inject(MAT_DIALOG_DATA) public order: Order) { }
 
   ngOnInit(): void {
     console.log(this.order)
   }
 
+  getAdditionalDetailsCount(orderRow) {
+    let count = 0;
+    orderRow.additionalDetailsOrdered.forEach(additionalDetail => {
+      count += additionalDetail.count;
+    });
+    return count;
+  }
 }

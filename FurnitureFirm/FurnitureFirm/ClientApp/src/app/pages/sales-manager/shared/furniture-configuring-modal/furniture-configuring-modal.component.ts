@@ -39,8 +39,6 @@ export class FurnitureConfiguringModalComponent implements OnInit {
     this.alreadyOrdered = this.orderService.currentOrder.orderedFurnitures
       .filter(f => f.furnitureId == this.orderedFurniture.furnitureId)[0];
 
-    console.log(this.alreadyOrdered)
-
     if (this.alreadyOrdered) {
       this.orderedFurniture.count = this.alreadyOrdered.count;
       this.alreadyOrdered.additionalDetails.forEach(detail => {
@@ -76,7 +74,7 @@ export class FurnitureConfiguringModalComponent implements OnInit {
       });
     }
     this.orderedFurniture.totalPrice *= this.orderedFurniture.count;
-    
+
     return this.orderedFurniture.totalPrice;
   }
 
@@ -140,7 +138,7 @@ export class FurnitureConfiguringModalComponent implements OnInit {
     else{
       this.orderService.addFurniture(this.orderedFurniture);
     }
-    
+
     this.snackBar.open('Додано в корзину', null, {
       duration: 2000,
       panelClass: ['accent-color']
