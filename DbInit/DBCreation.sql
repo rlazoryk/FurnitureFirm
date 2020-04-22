@@ -215,6 +215,7 @@ CREATE TABLE Details
 	ColorID              integer  NOT NULL ,
 	MaterialID           integer  NOT NULL ,
 	ProducerID           integer  NOT NULL ,
+	ProviderID			 integer  NOT NULL ,
 	Description          nvarchar(4000)  NULL 
 )
 go
@@ -674,6 +675,14 @@ go
 
 ALTER TABLE Details
 	ADD CONSTRAINT R_7 FOREIGN KEY (ProducerID) REFERENCES Producers(ProducerID)
+		ON DELETE NO ACTION
+		ON UPDATE NO ACTION
+go
+
+
+
+ALTER TABLE Details
+	ADD CONSTRAINT R_8 FOREIGN KEY (ProviderID) REFERENCES Providers(ProviderID)
 		ON DELETE NO ACTION
 		ON UPDATE NO ACTION
 go

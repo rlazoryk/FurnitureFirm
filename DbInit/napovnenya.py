@@ -155,9 +155,10 @@ for name in detailNames:
     materialId = random.randrange(1, len(materialNames) + 1)
     colorId = random.randrange(1, len(colorNames) + 1)
     producerId = random.randrange(1, len(producerNames) + 1)
+    providerId = random.randrange(1, len(providerNames) + 1)
     price = random.randrange(100, 1000)
-    insertStr = GetInsertStr("Details", "MaterialId, ColorId, ProducerId, Name, Price, Description",
-                             f'{materialId}, {colorId}, {producerId}, \'{name}\', {price}, \'{detailDescription}\'')
+    insertStr = GetInsertStr("Details", "MaterialId, ColorId, ProducerId, ProviderId, Name, Price, Description",
+                             f'{materialId}, {colorId}, {producerId}, {providerId}, \'{name}\', {price}, \'{detailDescription}\'')
     f.write(insertStr)
 
 # Warehouses TABLE
