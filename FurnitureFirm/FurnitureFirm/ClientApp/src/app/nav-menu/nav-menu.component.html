@@ -10,12 +10,12 @@
           <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="getUserPost() === 'Менеджер з поставок'">
             <a class="nav-link text-dark" [routerLink]="['/details']">Каталог деталей</a>
           </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="getUserPost() === 'Менеджер з поставок'">
+          <!-- <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="getUserPost() === 'Менеджер з поставок'">
             <a class="nav-link text-dark" [routerLink]="['details', 'basket']">
               <mat-icon>shopping_cart</mat-icon>
               <span *ngIf="this.getDetailBasketSize() > 0" style="color:blueviolet"> {{this.getDetailBasketSize()}}</span>
             </a>
-          </li>
+          </li> -->
           <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="getUserPost() === 'Менеджер з продажу'">
             <a class="nav-link text-dark" [routerLink]="['furniture', 'basket']">
               <mat-icon>shopping_cart</mat-icon>

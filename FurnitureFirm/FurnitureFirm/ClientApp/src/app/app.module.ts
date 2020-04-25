@@ -45,6 +45,7 @@ import { UsersPageComponent } from './pages/administrator/users-page/users-page.
 import { AuthGuard } from './services/auth-guard.service';
 import { WorkerConfiguringComponent } from './pages/administrator/worker-configuring/worker-configuring.component';
 import { ChooseWarehouseComponent } from './pages/production-worker/productions/productions-table/choose-warehouse/choose-warehouse.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 
 
@@ -124,6 +125,7 @@ import { ChooseWarehouseComponent } from './pages/production-worker/productions/
     ReactiveFormsModule,
     FormsModule,
     MatSnackBarModule,
+    MatCheckboxModule
   ],
   providers: [{provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: {duration: 2500}}, CookieService],
   bootstrap: [AppComponent],

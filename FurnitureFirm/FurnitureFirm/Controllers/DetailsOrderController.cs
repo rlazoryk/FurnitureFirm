@@ -88,7 +88,7 @@ namespace FurnitureFirm.Controllers
 
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return CreatedAtAction(nameof(GetOrderRows), new { id = order.DetailOrderId }, detailOrder);
         }
 
         [HttpDelete("{id}")]

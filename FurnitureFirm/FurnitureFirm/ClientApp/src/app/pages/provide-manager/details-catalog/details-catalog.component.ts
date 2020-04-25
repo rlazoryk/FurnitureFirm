@@ -3,8 +3,8 @@ import { Detail } from 'src/app/models/detail';
 import { MatTableDataSource, MatSort, MatDialog } from '@angular/material';
 import { HttpService } from 'src/app/services/http/http.service';
 import { DescriptionModalComponent } from '../../shared/description-modal/description-modal.component';
-import { DetailOrderService } from 'src/app/services/detailOrder/detailOrder.service';
 import { DetailConfigureModalComponent } from '../modals/detail-configure-modal/detail-configure-modal.component';
+import { SelectionModel } from '@angular/cdk/collections';
 
 @Component({
   selector: 'app-details-catalog',
@@ -15,14 +15,14 @@ export class DetailsCatalogComponent implements OnInit {
 
   details: Detail[];
   dataSource: MatTableDataSource<Detail>;
-  displayedColumns: string[] = ['name', 'color', 'material', 'producer', 'price', 'description', 'buy'];
+  selection = new SelectionModel<Detail>(true, []);
+  displayedColumns: string[] = ['name', 'color', 'material', 'producer', 'provider', 'price', 'description', 'select'];
   isLoading = false;
 
   @ViewChild(MatSort, {static: true}) sort: MatSort;
 
   constructor(private httpService: HttpService,
-              private dialog: MatDialog,
-              private detailOrder: DetailOrderService) { }
+              private dialog: MatDialog) { }
 
   ngOnInit() {
     this.isLoading = true;
@@ -45,11 +45,13 @@ export class DetailsCatalogComponent implements OnInit {
     });
   }
 
-  showDetailConfiguring(detail: Detail) {
-    this.dialog.open(DetailConfigureModalComponent, {
+  showDetailConfiguring() {
+    if (this.selection.selected.length > 0) {
+      this.dialog.open(DetailConfigureModalComponent, {
         width: '600px',
-        data: detail
-    });
+        data: this.selection.selected
+      });
+    }
   }
 }
 

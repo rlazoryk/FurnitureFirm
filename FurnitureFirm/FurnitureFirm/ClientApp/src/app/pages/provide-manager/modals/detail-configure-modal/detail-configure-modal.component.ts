@@ -2,8 +2,11 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { OrderedDetail } from 'src/app/models/ordered-detail';
 import { MAT_DIALOG_DATA, MatDialog, MatSnackBar } from '@angular/material';
 import { Detail } from 'src/app/models/detail';
-import { DetailOrderService } from 'src/app/services/detailOrder/detailOrder.service';
 import { DescriptionModalComponent } from 'src/app/pages/shared/description-modal/description-modal.component';
+import { DetailsOrderRequest } from 'src/app/models/detailOrder-request';
+import { Provider } from 'src/app/models/provider';
+import { HttpService } from 'src/app/services/http/http.service';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-detail-configure-modal',
@@ -12,33 +15,47 @@ import { DescriptionModalComponent } from 'src/app/pages/shared/description-moda
 })
 export class DetailConfigureModalComponent implements OnInit {
 
-  orderedDetail: OrderedDetail = new OrderedDetail();
-  totalPrice: number;
-  alreadyOrdered: OrderedDetail;
+  orderedDetails: OrderedDetail[] = new Array<OrderedDetail>();
+  totalPrice: number = 0;
+  displayedColumns: string[] = ['name', 'provider', 'count', 'price', 'description'];
+  providers: Provider[] = [];
 
-  constructor(@Inject(MAT_DIALOG_DATA) public detail: Detail,
-    private detailOrderService: DetailOrderService,
+  constructor(@Inject(MAT_DIALOG_DATA) public details: Detail[],
+    private http: HttpService,
     private dialog: MatDialog,
+    private auth: AuthService,
     private snackBar: MatSnackBar) { }
 
   ngOnInit() {
-    this.orderedDetail.detailId = this.detail.detailId;
-    this.orderedDetail.orderedDetailPrice = this.detail.price;
-    this.totalPrice = this.detail.price;
+    this.http.getProviders().subscribe(response => {
+      this.providers = response as Provider[];
+    });
 
-    this.alreadyOrdered = this.detailOrderService.order.orderRows
-      .filter(d => d.detailId === this.orderedDetail.detailId)[0];
-
-      if (this.alreadyOrdered) {
-        this.orderedDetail.count = this.alreadyOrdered.count;
-        this.orderedDetail.orderedDetailPrice = this.alreadyOrdered.orderedDetailPrice;
-        this.totalPrice = this.alreadyOrdered.count * this.alreadyOrdered.orderedDetailPrice;
-      } else {
-        this.orderedDetail.count = 1;
-      }
+    this.details.forEach(d => {
+      const orderedDetail = new OrderedDetail();
+      orderedDetail.detailId = d.detailId;
+      orderedDetail.provider = d.provider;
+      orderedDetail.count = 1;
+      orderedDetail.orderedDetailPrice = d.price;
+      this.orderedDetails.push(orderedDetail);
+      this.totalPrice += orderedDetail.orderedDetailPrice;
+    });
   }
 
-  showInfo(detail: Detail) {
+  getDetailName(id: number) {
+    const detail = this.details.filter(d => d.detailId === id)[0];
+
+    return detail.name;
+  }
+
+  getProviderName(id: number) {
+    const detail = this.details.filter(d => d.detailId === id)[0];
+
+    return detail.provider.name;
+  }
+
+  showInfo(id: number) {
+    const detail = this.details.filter(d => d.detailId === id)[0];
     this.dialog.open(DescriptionModalComponent, {
       data: {
         name: detail.name,
@@ -47,30 +64,42 @@ export class DetailConfigureModalComponent implements OnInit {
     });
   }
 
-  addDetail() {
-    this.orderedDetail.count++;
-    this.totalPrice += this.detail.price;
+  addDetail(det: OrderedDetail) {
+    det.count++;
+    this.totalPrice += det.orderedDetailPrice;
   }
 
-  removeDetail() {
-    if (this.orderedDetail.count === 1) {
+  removeDetail(det: OrderedDetail) {
+    if (det.count === 1) {
       return;
     } else {
-      this.orderedDetail.count--;
-      this.totalPrice -= this.detail.price;
+      det.count--;
+      this.totalPrice -= det.orderedDetailPrice;
     }
   }
 
-  addToOrder() {
-    if (this.alreadyOrdered) {
-      this.alreadyOrdered.count = this.orderedDetail.count;
-    } else {
-      this.detailOrderService.addDetail(this.orderedDetail);
-    }
+  CreateOrders() {
+    this.providers.forEach(p => {
+      const orderRows = this.orderedDetails.filter(od => od.provider.providerId === p.providerId);
+      if (orderRows.length > 0) {
+        const request = new DetailsOrderRequest();
+        request.orderRows = orderRows;
+        request.providerId = p.providerId;
+        request.totalPrice = 0;
+        orderRows.forEach(or => {
+          request.totalPrice += or.count * or.orderedDetailPrice;
+        });
+        request.workerId = this.auth.worker.workerId;
+
+        this.http.postDetailOrder(request).subscribe(response => {
+          console.log(response);
+        });
+      }
+    });
 
     this.dialog.closeAll();
 
-    this.snackBar.open('Успішно додано в корзину!', null, {
+    this.snackBar.open('Успішно замовлено!', null, {
       duration: 4000,
       panelClass: ['accent-color']
     });

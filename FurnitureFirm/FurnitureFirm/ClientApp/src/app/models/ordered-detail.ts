@@ -1,3 +1,5 @@
+import { Provider } from "./provider";
+
 export class OrderedAdditionalDetail {
     additionalDetailId : number
     count : number
@@ -7,6 +9,7 @@ export class OrderedAdditionalDetail {
 
 export class OrderedDetail {
     detailId: number;
+    provider: Provider;
     count: number;
     orderedDetailPrice: number;
 }
