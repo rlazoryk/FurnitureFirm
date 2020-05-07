@@ -1,10 +1,16 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Detail } from 'src/app/models/detail';
-import { MatTableDataSource, MatSort, MatDialog } from '@angular/material';
+import { MatTableDataSource, MatSort, MatDialog, MatSelect } from '@angular/material';
 import { HttpService } from 'src/app/services/http/http.service';
 import { DescriptionModalComponent } from '../../shared/description-modal/description-modal.component';
 import { DetailConfigureModalComponent } from '../modals/detail-configure-modal/detail-configure-modal.component';
 import { SelectionModel } from '@angular/cdk/collections';
+
+interface Filter {
+  selectedColor: string;
+  selectedMaterial: string;
+  selectedProducer: string;
+}
 
 @Component({
   selector: 'app-details-catalog',
@@ -14,12 +20,14 @@ import { SelectionModel } from '@angular/cdk/collections';
 export class DetailsCatalogComponent implements OnInit {
 
   details: Detail[];
-  dataSource: MatTableDataSource<Detail>;
+  displayedDetails: Detail[];
+  colors: string[];
+  materials: string[];
+  producers: string[];
+  filter: Filter = { selectedColor: '', selectedMaterial: '', selectedProducer: '' };
   selection = new SelectionModel<Detail>(true, []);
   displayedColumns: string[] = ['name', 'color', 'material', 'producer', 'provider', 'price', 'description', 'select'];
   isLoading = false;
-
-  @ViewChild(MatSort, {static: true}) sort: MatSort;
 
   constructor(private httpService: HttpService,
               private dialog: MatDialog) { }
@@ -30,9 +38,35 @@ export class DetailsCatalogComponent implements OnInit {
       .subscribe(response => {
         this.isLoading = false;
         this.details = response as Detail[];
-        this.dataSource  = new MatTableDataSource(this.details);
-        this.dataSource.sort = this.sort;
+        this.displayedDetails = this.details;
+
+        this.initFilter(this.details);
       });
+  }
+
+  initFilter(details: Detail[]) {
+    this.colors = this.pluck(details, 'colorName');
+    this.materials = this.pluck(details, 'materialName');
+    this.producers = this.pluck(details, 'producerName');
+  }
+
+  pluck(array: Detail[], key: string) {
+    return [...new Set(array.map(item => item[key]))];
+  }
+
+  onApplyFilter() {
+    this.displayedDetails = this.details;
+    if (this.filter.selectedColor !== undefined && this.filter.selectedColor !== '') {
+      this.displayedDetails = this.details.filter(d => d.colorName === this.filter.selectedColor);
+    }
+
+    if (this.filter.selectedMaterial !== undefined && this.filter.selectedMaterial !== '') {
+      this.displayedDetails = this.displayedDetails.filter(d => d.materialName === this.filter.selectedMaterial);
+    }
+
+    if (this.filter.selectedProducer !== undefined && this.filter.selectedProducer !== '') {
+      this.displayedDetails = this.displayedDetails.filter(d => d.producerName === this.filter.selectedProducer);
+    }
   }
 
   showInfo(detail: Detail) {
