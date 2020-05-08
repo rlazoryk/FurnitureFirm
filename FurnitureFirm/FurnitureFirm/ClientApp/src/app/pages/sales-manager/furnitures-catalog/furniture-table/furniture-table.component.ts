@@ -7,7 +7,10 @@ import { FurnitureConfiguringModalComponent } from '../../shared/furniture-confi
 import { Constants } from 'src/app/pages/shared/constants';
 
 
-
+interface Filter {
+  selectedCollection : string
+  selectedStyle : string
+}
 
 
 @Component({
@@ -19,6 +22,10 @@ export class FurnitureTableComponent implements OnInit {
 
   @Input() category: string;
   furnitures: Furniture[];
+  displayedFurnitures : Furniture[];
+  collections : string[];
+  styles : string[];
+  filter: Filter = { selectedCollection: '', selectedStyle: '' };
   dataSource : MatTableDataSource<Furniture>;
   displayedColumns: string[] = ['name', 'size', 'collection', 'style', 'price', 'description', 'buy'];
 
@@ -35,10 +42,13 @@ export class FurnitureTableComponent implements OnInit {
         this.furnitures.forEach(element => {
           element.price = Math.round(element.price * Constants.furniturePriceCoef);
         });
-        this.dataSource  = new MatTableDataSource(this.furnitures)
+        this.displayedFurnitures = this.furnitures;
+        this.dataSource  = new MatTableDataSource(this.displayedFurnitures)
         this.dataSource.sort = this.sort;
+        this.initFilter();
       })
   }
+
 
   showInfo(furniture : Furniture){
     console.log(furniture)
@@ -55,5 +65,25 @@ export class FurnitureTableComponent implements OnInit {
         width: '600px',
         data: furniture
     })
+  }
+
+  initFilter() {
+    this.collections = [...new Set(this.furnitures.map(item => item.collection.name))];
+    this.styles = [...new Set(this.furnitures.map(item => item.collection.styleName))];
+  }
+
+  onApplyFilter() {
+    this.displayedFurnitures = this.furnitures;
+    if (this.filter.selectedCollection !== undefined && this.filter.selectedCollection !== '') {
+      this.displayedFurnitures = this.displayedFurnitures.filter(d => d.collection.name === this.filter.selectedCollection);
+    }
+
+    if (this.filter.selectedStyle !== undefined && this.filter.selectedStyle !== '') {
+      this.displayedFurnitures = this.displayedFurnitures.filter(d => d.collection.styleName === this.filter.selectedStyle);
+    }
+  }
+
+  clearFilter() {
+    this.filter = { selectedCollection: '', selectedStyle: '' };
   }
 }

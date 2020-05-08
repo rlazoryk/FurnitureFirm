@@ -6,3 +6,11 @@ table {
 th.mat-sort-header-sorted {
     color: black;
   }
+
+.filters {
+    margin: 20px 0;
+}
+
+.space-hor {
+    width: 30px;
+}
