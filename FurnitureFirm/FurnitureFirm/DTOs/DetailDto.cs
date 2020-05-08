@@ -13,6 +13,7 @@ namespace FurnitureFirm.DTOs
         public string ColorName { get; set; }
         public string MaterialName { get; set; }
         public string ProducerName { get; set; }
+        public ProviderDto provider { get; set; } 
         public string Description { get; set; }
     }
 }

@@ -323,6 +323,8 @@ namespace FurnitureFirm.Models
 
                 entity.Property(e => e.ProducerId).HasColumnName("ProducerID");
 
+                entity.Property(e => e.ProviderId).HasColumnName("ProviderID");
+
                 entity.HasOne(d => d.Color)
                     .WithMany(p => p.Details)
                     .HasForeignKey(d => d.ColorId)
@@ -340,6 +342,12 @@ namespace FurnitureFirm.Models
                     .HasForeignKey(d => d.ProducerId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("R_7");
+
+                entity.HasOne(d => d.Provider)
+                    .WithMany(p => p.Details)
+                    .HasForeignKey(d => d.ProviderId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("R_8");
             });
 
             modelBuilder.Entity<DetailsInFurnitures>(entity =>

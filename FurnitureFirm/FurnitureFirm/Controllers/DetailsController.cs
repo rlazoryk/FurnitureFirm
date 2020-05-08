@@ -52,6 +52,7 @@ namespace FurnitureFirm.Controllers
                 .Include(d => d.Material)
                 .Include(d => d.Color)
                 .Include(d => d.Producer)
+                .Include(d => d.Provider)
                 .FirstOrDefaultAsync();
 
             return _mapper.Map<DetailDto>(result);
@@ -65,6 +66,7 @@ namespace FurnitureFirm.Controllers
                 .Include(d => d.Material)
                 .Include(d => d.Color)
                 .Include(d => d.Producer)
+                .Include(d => d.Provider)
                 .Select(d => _mapper.Map<DetailDto>(d))
                 .ToListAsync();            
         }              
