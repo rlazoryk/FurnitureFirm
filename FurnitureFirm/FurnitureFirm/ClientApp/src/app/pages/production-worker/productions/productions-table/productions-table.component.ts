@@ -18,7 +18,7 @@ export class ProductionsTableComponent implements OnInit {
   orders: Order[];
   dataSource: MatTableDataSource<Order>;
   displayedColumns: string[] = ['date', 'price', 'manager', 'workersCount', 'info', 'buttons'];
-  workersCount: { order: Order, workersCount: number }[] = []
+  workersCount: { order: Order, workersCount: number }[];
   attachedToProductions: Order[] = [];
 
   currentWorkerId = this.authService.worker.workerId;
@@ -129,6 +129,7 @@ export class ProductionsTableComponent implements OnInit {
       this.dataSource.sort = this.sort;
       this.orders.forEach(order => {
         let workersCount;
+        this.workersCount = [];
         this.productionService.getWorkersOnProductionCount(order.orderId)
           .subscribe(response => {
             workersCount = response as number;

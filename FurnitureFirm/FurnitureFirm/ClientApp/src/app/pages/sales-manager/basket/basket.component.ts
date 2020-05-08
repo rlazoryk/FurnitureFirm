@@ -6,6 +6,7 @@ import { FormBuilder } from '@angular/forms';
 import { Constants } from '../../shared/constants';
 import { City } from 'src/app/models/city';
 import { MatSnackBar } from '@angular/material';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-basket',
@@ -21,6 +22,7 @@ export class BasketComponent implements OnInit {
   //TODO: Validation
   constructor(public orderService: OrderService,
     private httpService: HttpService,
+    private authService: AuthService,
     private snackBar: MatSnackBar,
     private formBuilder: FormBuilder) {
     this.orderForm = this.formBuilder.group({
@@ -66,8 +68,8 @@ export class BasketComponent implements OnInit {
   }
 
   onSubmit(orderData) {
-    //TODO: when roles and login will be implemented
-    orderData.workerId = 1;
+    orderData.workerId = this.authService.worker.workerId;
+    orderData.customer.phoneNumber = '+380' + orderData.customer.phoneNumber;
     orderData.deliveryInfo.deliveryPrice = Constants.deliveryPrice;
     orderData.deliveryInfo.building = +orderData.deliveryInfo.building;
     orderData.totalPrice = this.orderService.currentOrder.totalPrice;
