@@ -9,6 +9,7 @@ using FurnitureFirm.Models;
 using FurnitureFirm.DTOs;
 using AutoMapper;
 using FurnitureFirm.Common;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace FurnitureFirm.Controllers
 {
@@ -63,10 +64,10 @@ namespace FurnitureFirm.Controllers
             {
                 //check if enough details
                 var furnitureDetails = row.Furniture.DetailsInFurnitures
-                    .Select(d => new { d.DetailId, d.Count })
+                    .Select(d => new { d.DetailId, Count = d.Count * row.Count})
                     .ToDictionary(k => k.DetailId);
                 var additionalDetails = row.AdditionalDetailsOrdered
-                    .Select(d => new { d.DetailInFurniture.DetailId, d.Count })
+                    .Select(d => new { d.DetailInFurniture.DetailId, Count = d.Count * row.Count })
                     .ToDictionary(k => k.DetailId);
                 var neededDetails = furnitureDetails.Concat(additionalDetails).GroupBy(d => d.Key)
                             .ToDictionary(d => d.Key,
@@ -80,13 +81,17 @@ namespace FurnitureFirm.Controllers
                     .Where(w => w.WarehouseId == warehouseId)
                     .Select(wd => new { wd.DetailId, wd.Count })
                     .ToDictionaryAsync(k => k.DetailId as int?);
+
+                var missingDetails = new Dictionary<int, int>();
+
                 foreach (var detail in neededDetails)
                 {
                     if (!warehouseDetails.ContainsKey(detail.Key)
                         || warehouseDetails[detail.Key].Count < detail.Value.Count)
                     {
                         //not enough
-                        return BadRequest("Not enough details on this warehouse");
+                        missingDetails.Add((int)detail.Key, 
+                            (int)(detail.Value.Count - warehouseDetails[detail.Key].Count));
                     }
                     warehouseDetails[detail.Key] = new
                     {
@@ -100,6 +105,11 @@ namespace FurnitureFirm.Controllers
                         .FirstOrDefaultAsync();
                     wd.Count = warehouseDetails[detail.Key].Count;
                     _context.WarehouseDetails.Update(wd);
+                }
+
+                if(missingDetails.Any())
+                {
+                    return BadRequest(missingDetails);
                 }
 
                 //add production

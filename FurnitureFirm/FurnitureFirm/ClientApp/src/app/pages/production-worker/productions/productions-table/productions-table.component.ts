@@ -6,6 +6,7 @@ import { OrderDetailsComponent } from 'src/app/pages/sales-manager/orders/order-
 import { ProductionService } from 'src/app/services/http/production.service';
 import { ChooseWarehouseComponent } from './choose-warehouse/choose-warehouse.component';
 import { AuthService } from 'src/app/services/auth.service';
+import { ProductionInfoComponent } from '../production-info/production-info.component';
 
 @Component({
   selector: 'app-productions-table',
@@ -38,7 +39,7 @@ export class ProductionsTableComponent implements OnInit {
 
   showDetails(order: Order) {
     console.log(order)
-    this.dialog.open(OrderDetailsComponent, {
+    this.dialog.open(ProductionInfoComponent, {
       data: order,
       width: '600px'
     })

@@ -5,3 +5,7 @@
 .title {
     font-size: 22px;
 }
+
+.missing {
+    color: rgb(146, 3, 3);
+} 

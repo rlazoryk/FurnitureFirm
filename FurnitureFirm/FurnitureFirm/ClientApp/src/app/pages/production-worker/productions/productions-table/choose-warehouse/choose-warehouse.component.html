@@ -9,6 +9,10 @@
             </mat-option>
         </mat-select>
     </mat-form-field>
+    <div *ngIf="this.missingDetails" class="missing">
+        <h5>Список деталей, яких не вистачає:</h5>
+        {{this.missingDetails}}
+    </div>
     <div class="space"></div>
     <div>
         <button mat-flat-button color="accent" (click)="choose()">Почати виробництво</button>
