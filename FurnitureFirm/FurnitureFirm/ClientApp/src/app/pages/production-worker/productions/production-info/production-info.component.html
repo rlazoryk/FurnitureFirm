@@ -4,37 +4,8 @@
     <div class="space"></div>
 
     <div fxLayout="column" fxLayoutAlign="space-evenly stretch">
-        <div>
-            <div class="title">Інформація про доставку</div>
-            <div style="height: 15px"></div>
-            <div fxLayout="row" fxLayoutAlign="start start">
-                <strong>Ім'я клієнта:</strong>
-                <div class="space-vertical"></div>
-                <div>{{order.customer.name}}</div>
-                <div class="space-vertical"></div>
-                <strong>Номер телефону:</strong>
-                <div class="space-vertical"></div>
-                <div>{{order.customer.phoneNumber}}</div>
-            </div>
-            <div style="height: 15px"></div>
-            <div fxLayout="row" fxLayoutAlign="start start">
-                <strong>Місто:</strong>
-                <div class="space-vertical"></div>
-                <div>{{order.deliveryInfo.city.name}}</div>
-                <div class="space-vertical"></div>
-                <strong>Вулиця:</strong>
-                <div class="space-vertical"></div>
-                <div>{{order.deliveryInfo.street}}</div>
-                <div class="space-vertical"></div>
-                <strong>Будинок:</strong>
-                <div class="space-vertical"></div>
-                <div>{{order.deliveryInfo.building}}</div>
-            </div>
-        </div>
-
-        <div class="space"></div>
         <div class="title">Список замовлених меблів</div>
-        <table mat-table [dataSource]="order.furnitureOrderRows">
+        <table mat-table [dataSource]="dataSource">
 
             <ng-container matColumnDef="name">
                 <th mat-header-cell *matHeaderCellDef> Назва </th>

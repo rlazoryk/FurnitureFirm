@@ -50,6 +50,7 @@ namespace FurnitureFirm.Controllers
                 .ThenInclude(f => f.Furniture)
                 .Include(o => o.FurnitureOrderRows)
                 .ThenInclude(f => f.AdditionalDetailsOrdered)
+                .OrderByDescending(o => o.OrderDate)
                 .ToListAsync();
         }
 
@@ -65,6 +66,9 @@ namespace FurnitureFirm.Controllers
                 .Include(o => o.Profit)
                 .Include(o => o.FurnitureOrderRows)
                 .ThenInclude(f => f.Furniture)
+                .Include(o => o.FurnitureOrderRows)
+                .ThenInclude(f => f.AdditionalDetailsOrdered)
+                .OrderByDescending(o => o.OrderDate)
                 .ToListAsync();
         }
 

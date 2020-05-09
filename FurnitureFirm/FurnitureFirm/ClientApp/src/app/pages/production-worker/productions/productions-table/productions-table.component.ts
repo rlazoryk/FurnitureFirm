@@ -6,6 +6,7 @@ import { OrderDetailsComponent } from 'src/app/pages/sales-manager/orders/order-
 import { ProductionService } from 'src/app/services/http/production.service';
 import { ChooseWarehouseComponent } from './choose-warehouse/choose-warehouse.component';
 import { AuthService } from 'src/app/services/auth.service';
+import { ProductionInfoComponent } from '../production-info/production-info.component';
 
 @Component({
   selector: 'app-productions-table',
@@ -18,7 +19,7 @@ export class ProductionsTableComponent implements OnInit {
   orders: Order[];
   dataSource: MatTableDataSource<Order>;
   displayedColumns: string[] = ['date', 'price', 'manager', 'workersCount', 'info', 'buttons'];
-  workersCount: { order: Order, workersCount: number }[] = []
+  workersCount: { order: Order, workersCount: number }[];
   attachedToProductions: Order[] = [];
 
   currentWorkerId = this.authService.worker.workerId;
@@ -38,7 +39,7 @@ export class ProductionsTableComponent implements OnInit {
 
   showDetails(order: Order) {
     console.log(order)
-    this.dialog.open(OrderDetailsComponent, {
+    this.dialog.open(ProductionInfoComponent, {
       data: order,
       width: '600px'
     })
@@ -129,6 +130,7 @@ export class ProductionsTableComponent implements OnInit {
       this.dataSource.sort = this.sort;
       this.orders.forEach(order => {
         let workersCount;
+        this.workersCount = [];
         this.productionService.getWorkersOnProductionCount(order.orderId)
           .subscribe(response => {
             workersCount = response as number;

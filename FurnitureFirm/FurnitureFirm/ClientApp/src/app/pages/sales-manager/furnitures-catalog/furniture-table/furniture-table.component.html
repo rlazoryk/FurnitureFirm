@@ -1,8 +1,36 @@
-<table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+<div>
+  <div class="filters" fxLayout="row" fxLayoutAlign="start center">
+    <h4>Фільтри:</h4>
+    <div class="space-hor"></div>
+    <mat-form-field>
+      <mat-label>Колекція</mat-label>
+      <mat-select [(value)]="filter.selectedCollection">
+        <mat-option>--</mat-option>
+        <mat-option *ngFor="let c of collections" [value]="c">
+          {{ c }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <div class="space-hor"></div>
+    <mat-form-field>
+      <mat-label>Стиль</mat-label>
+      <mat-select [(value)]="filter.selectedStyle">
+        <mat-option>--</mat-option>
+        <mat-option *ngFor="let s of styles" [value]="s">
+          {{ s }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <div class="space-hor"></div>
+    <button mat-button color="primary" (click)="clearFilter()">Очистити</button>
+    <button mat-flat-button color="primary" (click)="onApplyFilter()">Застосувати</button>
+  </div>
+
+  <table mat-table [dataSource]="displayedFurnitures" matSort class="mat-elevation-z8">
 
     <!--- Note that these columns can be defined in any order.
           The actual rendered columns are set as a property on the row definition" -->
-  
+
     <!-- Name Column -->
     <ng-container matColumnDef="name">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> Назва </th>
@@ -29,14 +57,16 @@
 
     <!-- Sizes Column -->
     <ng-container matColumnDef="price">
-      <th mat-header-cell *matHeaderCellDef  mat-sort-header> Ціна </th>
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Ціна </th>
       <td mat-cell *matCellDef="let element"> {{element.price}} грн.</td>
     </ng-container>
 
-     <!-- Symbol Column -->
-     <ng-container matColumnDef="description">
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="description">
       <th mat-header-cell *matHeaderCellDef></th>
-      <td mat-cell *matCellDef="let element"><button mat-icon-button (click)="showInfo(element)"><mat-icon>info</mat-icon></button></td>
+      <td mat-cell *matCellDef="let element"><button mat-icon-button (click)="showInfo(element)">
+          <mat-icon>info</mat-icon>
+        </button></td>
     </ng-container>
 
     <!-- Symbol Column -->
@@ -44,12 +74,12 @@
       <th mat-header-cell *matHeaderCellDef></th>
       <td mat-cell *matCellDef="let element">
         <button mat-flat-button color="accent" (click)="showFurnitureConfiguring(element)">
-          <mat-icon>add</mat-icon>
-          <span>Додати в корзину</span>
+          <span>Конфігурація</span>
         </button>
       </td>
     </ng-container>
-  
+
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
+</div>

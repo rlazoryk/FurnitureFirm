@@ -15,6 +15,7 @@ export class ChooseWarehouseComponent implements OnInit {
 
   warehouses : Warehouse[]
   selectedWarehouse : Warehouse
+  missingDetails : string
 
   constructor(public dialogRef: MatDialogRef<ChooseWarehouseComponent>,
     @Inject(MAT_DIALOG_DATA) public order: Order,
@@ -31,6 +32,8 @@ export class ChooseWarehouseComponent implements OnInit {
   }
 
   choose() {
+    this.missingDetails = null;
+
     const currentWorkerId = this.authService.worker.workerId;
     this.productionService.startProduction(this.order.orderId, this.selectedWarehouse.warehouseId)
       .subscribe(response => {
@@ -44,12 +47,17 @@ export class ChooseWarehouseComponent implements OnInit {
           })
       },
       error => {
+        let missingDetails = "";
+        let details = error.error as Object[]
+        for(let key in details)
+        {
+          missingDetails += "Деталь " + key + " Кількість: " + details[key] + "\n";
+        }
+        this.missingDetails = missingDetails;
         this.snackBar.open('Не достатньо деталей на вибраному складі, зверніться до менеджера з поставок.', null, {
-          duration: 4000,
-          panelClass: ['warn-color']
+          panelClass: ['warn-color'],
+          duration : 5000
         });
-      }
-      )
+      })
   }
-
 }

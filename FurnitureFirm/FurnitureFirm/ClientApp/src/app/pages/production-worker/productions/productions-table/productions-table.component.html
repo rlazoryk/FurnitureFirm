@@ -35,7 +35,7 @@
         <td mat-cell *matCellDef="let element">
             <div fxLayout="row" fxLayoutAlign="space-evenly start">
                 <button *ngIf="isNew(element)" mat-flat-button color="accent" (click)="startProduction(element)">
-                    <span>Почати</span>
+                    <span>Почати виробництво</span>
                 </button>
                 <div *ngIf="isInProduction(element)">
                     <button *ngIf="!isAttachedToProduction(element)" mat-flat-button color="accent"
@@ -44,7 +44,7 @@
                     </button>
                     <button *ngIf="isAttachedToProduction(element)" mat-flat-button color="accent"
                         (click)="finishProduction(element)">
-                        <span>Завершити</span>
+                        <span>Завершити виробництво</span>
                     </button>
                 </div>
                 <button *ngIf="isInDelivery(element)" mat-flat-button color="accent" (click)="finishDelivery(element)">

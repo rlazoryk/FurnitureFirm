@@ -46,6 +46,7 @@ import { AuthGuard } from './services/auth-guard.service';
 import { WorkerConfiguringComponent } from './pages/administrator/worker-configuring/worker-configuring.component';
 import { ChooseWarehouseComponent } from './pages/production-worker/productions/productions-table/choose-warehouse/choose-warehouse.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { ProductionInfoComponent } from './pages/production-worker/productions/production-info/production-info.component';
 
 
 
@@ -85,7 +86,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     LoginComponent,
     UsersPageComponent,
     WorkerConfiguringComponent,
-    ChooseWarehouseComponent
+    ChooseWarehouseComponent,
+    ProductionInfoComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -132,6 +134,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
   entryComponents: [
     DescriptionModalComponent,
     FurnitureConfiguringModalComponent,
+    ProductionInfoComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
