@@ -40,7 +40,7 @@ export class NavMenuComponent {
 
   Logout() {
     this.auth.logout();
-    this.router.navigate(['login']);
+    window.location.reload();
   }
 
   getFurnitureBasketSize(){

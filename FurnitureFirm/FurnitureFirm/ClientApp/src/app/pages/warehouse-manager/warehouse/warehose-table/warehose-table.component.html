@@ -1,5 +1,50 @@
 <h1 *ngIf='isLoading'>Loading...</h1>
-<table mat-table [dataSource]="details" matSort class="mat-elevation-z8">
+
+<div div fxLayout="row" fxLayoutAlign="space-around center" *ngIf="!isLoading">
+  <h4>Фільтри:</h4>
+
+  <div class="row" fxLayout="row" fxLayoutAlign="space-around center">
+    <mat-form-field>
+      <mat-label>Колір</mat-label>
+      <mat-select [(value)]="filter.selectedColor">
+          <mat-option>--</mat-option>
+          <mat-option *ngFor="let c of colors" [value]="c">
+              {{ c }}
+          </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="row" fxLayout="row" fxLayoutAlign="space-around center">
+    <mat-form-field>
+      <mat-label>Матеріал</mat-label>
+      <mat-select [(value)]="filter.selectedMaterial">
+          <mat-option>--</mat-option>
+          <mat-option *ngFor="let m of materials" [value]="m">
+              {{ m }}
+          </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="row" fxLayout="row" fxLayoutAlign="space-around center">
+    <mat-form-field>
+      <mat-label>Виробник</mat-label>
+      <mat-select [(value)]="filter.selectedProducer">
+          <mat-option>--</mat-option>
+          <mat-option *ngFor="let pr of producers" [value]="pr">
+              {{ pr }}
+          </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <button mat-flat-button color="accent" (click)="onApplyFilter()" style="width: 15%;">Застосувати</button>
+
+  <button mat-flat-button color="accent" (click)="onResetFilter()" style="width: 15%;">Скинути</button>
+</div>
+
+<table mat-table [dataSource]="displayedDetails" matSort class="mat-elevation-z8">
 
   <!--- Note that these columns can be defined in any order.
         The actual rendered columns are set as a property on the row definition" -->
@@ -40,16 +85,19 @@
     <td mat-cell *matCellDef="let element"><button mat-icon-button (click)="showInfo(element.detail)"><mat-icon>info</mat-icon></button></td>
   </ng-container>
 
-  <ng-container matColumnDef="transport">
+  <!-- Checkbox Column -->
+  <ng-container matColumnDef="select">
     <th mat-header-cell *matHeaderCellDef></th>
     <td mat-cell *matCellDef="let element">
-      <button mat-flat-button color="accent" (click)="showTransportConfiguring(element)">
-        <mat-icon>call_made</mat-icon>
-        <span>Перемістити</span>
-      </button>
+      <mat-checkbox (click)="$event.stopPropagation()"
+                    (change)="$event ? selection.toggle(element) : null"
+                    [checked]="selection.isSelected(element)">
+      </mat-checkbox>
     </td>
   </ng-container>
 
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
+
+<button mat-flat-button color="accent" class="order-btn" (click)="showTransportConfiguring()">Перемістити</button>

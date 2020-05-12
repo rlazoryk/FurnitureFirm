@@ -39,7 +39,7 @@
     <td mat-cell *matCellDef="let element">
       <button mat-flat-button color="primary" (click)="showWarehouseModal(element.detailOrderId)" *ngIf="isClosed === false">
         <mat-icon>add</mat-icon>
-        <span>Прийняти замовлення</span>
+        <span>Прийняти поставку</span>
       </button>
     </td>
   </ng-container>
@@ -49,7 +49,7 @@
     <td mat-cell *matCellDef="let element">
       <button mat-flat-button color="warn" (click)="deleteOrder(element.detailOrderId)" *ngIf="isClosed === false">
         <mat-icon>remove</mat-icon>
-        <span>Відмінити замовлення</span>
+        <span>Відмінити поставку</span>
       </button>
     </td>
   </ng-container>

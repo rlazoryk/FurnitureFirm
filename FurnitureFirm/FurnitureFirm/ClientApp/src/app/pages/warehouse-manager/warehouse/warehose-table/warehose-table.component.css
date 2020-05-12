@@ -1,9 +1,17 @@
 table {
   width: 100%;
   margin: auto;
+  margin-right: 0;
 }
 
 th.mat-sort-header-sorted {
   color: black;
 }
 
+.order-btn {
+  position: fixed;
+  bottom: 50px;
+  right: 35%;
+  width: 30%;
+  height: 50px;
+}

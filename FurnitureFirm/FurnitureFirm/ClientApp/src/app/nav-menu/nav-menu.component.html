@@ -25,7 +25,7 @@
           <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="getUserPost() === 'Менеджер з поставок'">
             <a class="nav-link text-dark" [routerLink]="['detailOrders']">Список замовлень</a>
           </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="getUserPost() === 'Працівник складу'">
+          <li class="nav-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }" *ngIf="getUserPost() === 'Працівник складу'">
             <a class="nav-link text-dark" [routerLink]="['warehouses']">Склади</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="getUserPost() === 'Менеджер з продажу'">
@@ -41,7 +41,7 @@
           <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="getUserPost() === 'Фахівець з виробництва'">
             <a class="nav-link text-dark" [routerLink]="['/productions']">Виробництва</a>
           <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="getUserPost() === 'Працівник складу'">
-            <a class="nav-link text-dark" [routerLink]="['warehouses', 'comings']">Прибуття</a>
+            <a class="nav-link text-dark" [routerLink]="['warehouses', 'comings']">Приходи</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="getUserPost() === 'Працівник складу'">
             <a class="nav-link text-dark" [routerLink]="['warehouses', 'consumptions']">Розходи</a>

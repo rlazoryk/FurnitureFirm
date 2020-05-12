@@ -6,6 +6,7 @@ import { WarehouseDetail } from 'src/app/models/warehouse-detail';
 import { Movement } from 'src/app/models/detail-movement';
 import { AuthService } from 'src/app/services/auth.service';
 
+
 @Component({
   selector: 'app-transport-configuring-modal',
   templateUrl: './transport-configuring-modal.component.html',
@@ -14,10 +15,12 @@ import { AuthService } from 'src/app/services/auth.service';
 export class TransportConfiguringModalComponent implements OnInit {
 
   warehouses: Warehouse[] = [];
-  selectedWarehouse = 1;
+  movements: Movement[] = [];
+  selectedWarehouse = 0;
   transportCount = 0;
+  displayedColumns: string[] = ['name', 'count'];
 
-  constructor(@Inject(MAT_DIALOG_DATA) public detail: WarehouseDetail,
+  constructor(@Inject(MAT_DIALOG_DATA) public details: WarehouseDetail[],
     private http: HttpService,
     private dialog: MatDialog,
     private auth: AuthService) { }
@@ -25,38 +28,61 @@ export class TransportConfiguringModalComponent implements OnInit {
   ngOnInit(): void {
     this.http.getWarehouses().subscribe(response => {
       this.warehouses = response as Warehouse[];
-      this.warehouses = this.warehouses.filter(wh => wh.warehouseId !== this.detail.warehouseId);
+      this.warehouses = this.warehouses.filter(wh => wh.warehouseId !== this.details[0].warehouseId);
+    });
+
+    this.details.forEach(d => {
+      this.movements.push({
+        detailId: d.detail.detailId,
+        count: 0,
+        workerId: this.auth.worker.workerId,
+        fromWarehouseDetailId: d.warehouseDetailId,
+        toWarehouseId: 0});
     });
   }
 
-  removeDetail() {
-    if (this.transportCount > 0) {
-      this.transportCount--;
+  removeDetail(movement: Movement) {
+    if (movement.count > 0) {
+      movement.count--;
     }
   }
 
-  addDetail() {
-    if (this.transportCount < this.detail.count) {
-      this.transportCount++;
+  addDetail(movement: Movement) {
+    if (movement.count < this.details.find(d => d.warehouseDetailId === movement.fromWarehouseDetailId).count) {
+      movement.count++;
     }
+  }
+
+  getDetailName(movement: Movement) {
+    return this.details.find(d => d.warehouseDetailId === movement.fromWarehouseDetailId).detail.name;
+  }
+
+  getProviderName(movement: Movement) {
+    return this.details.find(d => d.warehouseDetailId === movement.fromWarehouseDetailId).detail.provider.name;
   }
 
   Transportate() {
-    const transportate = new Movement();
-    transportate.fromWarehouseDetailId = this.detail.warehouseDetailId;
-    transportate.toWarehouseId = this.selectedWarehouse;
-    transportate.count = this.transportCount;
-    transportate.detailId = this.detail.detail.detailId;
-    transportate.workerId = this.auth.worker.workerId;
-
-    this.detail.count -= this.transportCount;
-
-    console.log(transportate);
-    this.http.putWarehouseDetail(transportate).subscribe(response => {
-      console.log(response);
+    this.movements.forEach(m => {
+      if (m.count < 1) {
+        return;
+      }
     });
 
+    if (this.selectedWarehouse === 0) {
+      return;
+    }
+
+    this.movements.forEach(m => {
+      m.toWarehouseId = this.selectedWarehouse;
+    });
+
+    console.log(this.movements);
+
+    this.http.putWarehouseDetail(this.movements);
+
     this.dialog.closeAll();
+
+    window.location.reload();
   }
 
   closeModal() {

@@ -85,8 +85,8 @@ export class HttpService {
     return this.httpClient.get(this.warehouseUrl + warehouseId);
   }
 
-  putWarehouseDetail(movement: Movement) {
-    return this.httpClient.put(this.warehouseUrl, movement);
+  putWarehouseDetail(movements: Movement[]) {
+    return this.httpClient.put(this.warehouseUrl, movements).subscribe();
   }
 
   createFurnitureOrder(order) {

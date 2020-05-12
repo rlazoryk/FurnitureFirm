@@ -1,13 +1,13 @@
 <h2 fxLayout="row" fxLayoutAlign="center center">Конфігурація</h2>
 
-<table mat-table [dataSource]="orderedDetails" matSort class="mat-elevation-z8">
+<table mat-table [dataSource]="orderedDetails">
 
   <!--- Note that these columns can be defined in any order.
         The actual rendered columns are set as a property on the row definition" -->
 
   <!-- Name Column -->
   <ng-container matColumnDef="name">
-    <th mat-header-cell *matHeaderCellDef mat-sort-header> Назва </th>
+    <th mat-header-cell *matHeaderCellDef> Назва </th>
     <td mat-cell *matCellDef="let element"> {{getDetailName(element.detailId)}} </td>
   </ng-container>
 
@@ -17,7 +17,7 @@
   </ng-container>
 
   <ng-container matColumnDef="count">
-    <th mat-header-cell *matHeaderCellDef  mat-sort-header style="text-align: center;"> Кількість </th>
+    <th mat-header-cell *matHeaderCellDef style="text-align: center;"> Кількість </th>
     <td mat-cell *matCellDef="let element">
       <div fxLayout="row" fxLayoutAlign="start center">
         <button mat-icon-button (click)="removeDetail(element)">
@@ -35,8 +35,8 @@
 
   <!-- Sizes Column -->
   <ng-container matColumnDef="price">
-    <th mat-header-cell *matHeaderCellDef  mat-sort-header> Ціна </th>
-    <td mat-cell *matCellDef="let element"> {{element.orderedDetailPrice * element.count}} грн.</td>
+    <th mat-header-cell *matHeaderCellDef> Ціна </th>
+    <td mat-cell *matCellDef="let element"> {{(element.orderedDetailPrice * element.count).toFixed(1)}} грн.</td>
   </ng-container>
 
    <!-- Symbol Column -->

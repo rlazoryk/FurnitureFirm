@@ -113,44 +113,47 @@ namespace FurnitureFirm.Controllers
 
         //PUT api/details
         [HttpPut]
-        public async Task<IActionResult> PutWarehouseDetails([FromBody]MovementDto movementDto)
+        public async Task<IActionResult> PutWarehouseDetails([FromBody]MovementDto[] movementDtos)
         {
-            var fromWarehouseDetail = await _context.WarehouseDetails.FirstOrDefaultAsync(wd => wd.WarehouseDetailId == movementDto.FromWarehouseDetailId);
-
-            fromWarehouseDetail.Count -= movementDto.Count;
-
-            var toWarehouseDetail = await _context.WarehouseDetails
-                .Where(wd => wd.WarehouseId == movementDto.ToWarehouseId)
-                .FirstOrDefaultAsync(wd => wd.DetailId == movementDto.DetailId);
-
-            if(toWarehouseDetail == null)
+            foreach(var movementDto in movementDtos)
             {
-                toWarehouseDetail = new WarehouseDetails()
-                {
-                    DetailId = movementDto.DetailId,
+                var fromWarehouseDetail = await _context.WarehouseDetails.FirstOrDefaultAsync(wd => wd.WarehouseDetailId == movementDto.FromWarehouseDetailId);
 
-                    WarehouseId = movementDto.ToWarehouseId,
+                fromWarehouseDetail.Count -= movementDto.Count;
+
+                var toWarehouseDetail = await _context.WarehouseDetails
+                    .Where(wd => wd.WarehouseId == movementDto.ToWarehouseId)
+                    .FirstOrDefaultAsync(wd => wd.DetailId == movementDto.DetailId);
+
+                if (toWarehouseDetail == null)
+                {
+                    toWarehouseDetail = new WarehouseDetails()
+                    {
+                        DetailId = movementDto.DetailId,
+
+                        WarehouseId = movementDto.ToWarehouseId,
+
+                        Count = movementDto.Count
+                    };
+                }
+                else
+                {
+                    toWarehouseDetail.Count += movementDto.Count;
+                }
+
+                await _context.WarehouseMovements.AddAsync(new WarehouseMovements()
+                {
+                    FromWarehouseDetailId = fromWarehouseDetail.WarehouseDetailId,
+
+                    ToWarehouseDetail = toWarehouseDetail,
+
+                    Date = DateTime.UtcNow,
+
+                    WorkerId = movementDto.WorkerId,
 
                     Count = movementDto.Count
-                };
-            }
-            else
-            {
-                toWarehouseDetail.Count += movementDto.Count;
-            }
-
-            await _context.WarehouseMovements.AddAsync(new WarehouseMovements()
-            {
-                FromWarehouseDetailId = fromWarehouseDetail.WarehouseDetailId,
-
-                ToWarehouseDetail = toWarehouseDetail,
-
-                Date = DateTime.UtcNow,
-
-                WorkerId = movementDto.WorkerId,
-                
-                Count = movementDto.Count
-            });
+                });
+            }            
 
             await _context.SaveChangesAsync();
 

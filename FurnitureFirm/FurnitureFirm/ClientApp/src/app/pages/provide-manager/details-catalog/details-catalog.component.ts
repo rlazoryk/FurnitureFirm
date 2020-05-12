@@ -1,16 +1,12 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Detail } from 'src/app/models/detail';
-import { MatTableDataSource, MatSort, MatDialog, MatSelect } from '@angular/material';
+import { MatDialog } from '@angular/material';
 import { HttpService } from 'src/app/services/http/http.service';
 import { DescriptionModalComponent } from '../../shared/description-modal/description-modal.component';
 import { DetailConfigureModalComponent } from '../modals/detail-configure-modal/detail-configure-modal.component';
 import { SelectionModel } from '@angular/cdk/collections';
+import { Filter } from 'src/app/models/Filter';
 
-interface Filter {
-  selectedColor: string;
-  selectedMaterial: string;
-  selectedProducer: string;
-}
 
 @Component({
   selector: 'app-details-catalog',
@@ -67,6 +63,14 @@ export class DetailsCatalogComponent implements OnInit {
     if (this.filter.selectedProducer !== undefined && this.filter.selectedProducer !== '') {
       this.displayedDetails = this.displayedDetails.filter(d => d.producerName === this.filter.selectedProducer);
     }
+  }
+
+  onResetFilter() {
+    this.filter.selectedColor = '';
+    this.filter.selectedMaterial = '';
+    this.filter.selectedProducer = '';
+
+    this.displayedDetails = this.details;
   }
 
   showInfo(detail: Detail) {
