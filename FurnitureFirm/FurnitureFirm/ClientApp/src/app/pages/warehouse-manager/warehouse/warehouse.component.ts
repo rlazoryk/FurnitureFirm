@@ -18,5 +18,4 @@ export class WarehouseComponent implements OnInit {
       this.warehouses = response as Warehouse[];
     });
   }
-
 }

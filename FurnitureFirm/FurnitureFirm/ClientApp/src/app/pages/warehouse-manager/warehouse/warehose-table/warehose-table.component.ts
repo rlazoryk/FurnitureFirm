@@ -85,6 +85,9 @@ export class WarehoseTableComponent implements OnInit {
   }
 
   showTransportConfiguring() {
+    if (this.selection.selected.length < 1) {
+      return;
+    }
     this.dialog.open(TransportConfiguringModalComponent, {
       width: '400px',
       data: this.selection.selected

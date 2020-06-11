@@ -62,11 +62,11 @@ export class TransportConfiguringModalComponent implements OnInit {
   }
 
   Transportate() {
-    this.movements.forEach(m => {
-      if (m.count < 1) {
+    for (let i = 0; i < this.movements.length; ++i) {
+      if (this.movements[i].count < 1) {
         return;
       }
-    });
+    }
 
     if (this.selectedWarehouse === 0) {
       return;
@@ -79,8 +79,6 @@ export class TransportConfiguringModalComponent implements OnInit {
     console.log(this.movements);
 
     this.http.putWarehouseDetail(this.movements);
-
-    this.dialog.closeAll();
 
     window.location.reload();
   }

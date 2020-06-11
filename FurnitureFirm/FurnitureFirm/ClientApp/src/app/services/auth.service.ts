@@ -8,8 +8,9 @@ export class AuthService {
   private loggedIn = false;
 
   constructor(private cookie: CookieService) {
-    const w = this.cookie.get('worker');
-    if (w !== '') {
+    const w = localStorage.getItem('worker');
+    console.log(w);
+    if (w !== null) {
       this.worker = JSON.parse(w);
       this.loggedIn = true;
     }
@@ -23,12 +24,12 @@ export class AuthService {
   login(newWorker: Worker) {
     this.worker = newWorker;
     this.loggedIn = true;
-    this.cookie.set('worker', JSON.stringify(newWorker));
+    localStorage.setItem('worker', JSON.stringify(newWorker));
   }
 
   logout() {
     this.worker = null;
     this.loggedIn = false;
-    this.cookie.deleteAll();
+    localStorage.clear();
   }
 }
